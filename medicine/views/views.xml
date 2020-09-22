@@ -1,0 +1,105 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    
+    <record model="ir.ui.view" id="medicine.list">
+      <field name="name">medicine list</field>
+      <field name="model">medicine.medicine</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="generic_name"/>
+          <field name="route"/>
+          <field name="medication_class"/>
+          <field name="description"/>
+          <field name="is_controlled"/>
+        </tree>
+      </field>
+    </record>
+   
+
+    <!-- actions opening views on models -->
+    
+    <record model="ir.actions.act_window" id="medicine_action_window">
+      <field name="name">Generic Medicines </field>
+      <field name="res_model">medicine.medicine</field>
+      <field name="view_mode">kanban,tree,form</field>
+      <field name="view_type">form</field>
+      <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">
+              Create a new Medicine
+          </p><p>
+              You must create a medicine after which,
+              you can assign it to a product
+          </p>
+      </field>
+    </record>
+    
+       <record id="medicine_kanban_view" model="ir.ui.view">
+        <field name="name">Medicine.medicine.kanban</field>
+        <field name="model">medicine.medicine</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="id"/>
+                <field name="image_small"/>
+                <field name="generic_name"/>
+                <field name="route"/>
+                <field name="medication_class"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <div class="o_kanban_image">
+                                <img t-att-src="kanban_image('medicine.medicine', 'image_small', record.id.raw_value)" alt="Medicine"/>
+                            </div>
+                            <div class="oe_kanban_details">
+                                <strong class="o_kanban_record_title">
+                                    <field name="name"/>
+                                    <small t-if="record.generic_name.value">[<field name="generic_name"/>]</small>
+                                </strong>
+                                <div name="tags"/>
+                                <ul>
+                                    <li>Class: <field name="medication_class"></field></li>
+                                </ul>
+                                <div name="tags"/>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+   
+
+    <!-- server action to the one above -->
+    
+    <record model="ir.actions.server" id="medicine_action_server">
+      <field name="name">medicine server</field>
+      <field name="model_id" ref="model_medicine_medicine"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+   
+
+    <!-- Top menu item -->
+    
+    <menuitem name="Medicines" id="medicine.menu_root"/>
+
+    <!-- menu categories -->
+    
+    <menuitem name="Menu 1" id="medicine.menu_1" parent="medicine.menu_root"/>
+    <menuitem name="Menu 2" id="medicine.menu_2" parent="medicine.menu_root"/>
+   
+    <!-- actions -->
+    <menuitem name="List" id="medicine.menu_1_list" parent="medicine.menu_1"
+              action="medicine_action_window"/>
+    <menuitem name="Server to list" id="medicine" parent="medicine.menu_2"
+              action="medicine_action_server"/>
+   
+  </data>
+</odoo>

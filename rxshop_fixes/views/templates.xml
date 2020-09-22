@@ -1,0 +1,9 @@
+<odoo>
+    <data>
+        <template id="rxshop" inherit_id="web.layout" name="RxShop Theme"> 
+            <xpath expr="//body/div[@id='wrapwrap']" position="attributes"> 
+                <attribute name="style">background-color: #333;</attribute> 
+            </xpath> 
+        </template>
+    </data>
+</odoo>
