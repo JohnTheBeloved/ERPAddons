@@ -1,0 +1,362 @@
+<odoo>
+  <template id="deal_of_the_day" inherit_id="website.layout" name="Featured products">
+    <xpath expr="//*[@id='after_deal_of_the_day']" position="before">
+       <div class="elementor-element elementor-element-7139c0a elementor-product-v1 elementor-widget elementor-widget-tbay-product-count-down"
+            data-id="7139c0a" data-element_type="widget" data-widget_type="tbay-product-count-down.default">
+            <div class="elementor-widget-container">
+                <div class="tbay-element tbay-element-product-count-down">
+                    <h3 class="heading-tbay-title">
+                        <span class="title">
+                            <span class="title-child">
+                                Deal of the Day
+                                <i aria-hidden="true" class="tb-icon tb-icon-plus-sub"></i>
+                            </span>
+                        </span>
+                    </h3>
+
+                    <div class="product-count-down rows-1 owl-carousel rows-1 products" data-carousel="owl" data-items="1"
+                        data-desktopslick="1" data-desktopsmallslick="3" data-tabletslick="2" data-landscapeslick="1"
+                        data-mobileslick="1" data-rows="1" data-nav="" data-pagination="1" data-loop="" data-auto=""
+                        data-unslick="">
+                        <div class="item">
+                            <div class="product-block grid product v1" data-product-id="67">
+                                <div class="product-top">
+                                    <span class="onsale"><span class="saled">-72%</span><span class="featured">Hot</span></span>
+                                </div>
+                                <div class="product-content">
+                                    <div class="time">
+                                        <div class="timming">
+                                            <div class="tbay-countdown" id="tbay-flash-sale-ixaPG" data-time="timmer"
+                                                data-date="10-13-2020-23-59-59"
+                                                data-days='&lt;span class="label"&gt;days&lt;/span&gt;'
+                                                data-hours='&lt;span class="label"&gt;hours&lt;/span&gt;'
+                                                data-mins='&lt;span class="label"&gt;mins&lt;/span&gt;'
+                                                data-secs='&lt;span class="label"&gt;secs&lt;/span&gt;'></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-inner">
+                                        <figure class="image">
+                                            <a title="Remedy No-Rinse Foam" href="//product/remedy-no-rinse-foam/"
+                                                class="product-image">
+                                                <img width="280" height="280"
+                                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20280%20280'%3E%3C/svg%3E"
+                                                    class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""
+                                                    data-lazy-src="/theme_diza/static/img/diza/06/product-49-280x280.jpg" /><noscript><img
+                                                        width="280" height="280"
+                                                        src="/theme_diza/static/img/diza/06/product-49-280x280.jpg"
+                                                        class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+                                                        alt="" /></noscript>
+                                            </a>
+                                        </figure>
+                                        <div class="group-buttons">
+                                            <div class="button-wishlist shown-mobile" title="Wishlist">
+                                                <div class="yith-wcwl-add-to-wishlist add-to-wishlist-67 wishlist-fragment on-first-load"
+                                                    data-fragment-ref="67"
+                                                    data-fragment-options='{"base_url":"","in_default_wishlist":false,"is_single":false,"show_exists":false,"product_id":67,"parent_product_id":67,"product_type":"simple","show_view":false,"browse_wishlist_text":"Browse wishlist","already_in_wishslist_text":"The product is already in your wishlist!","product_added_text":"Product added!","heading_icon":"fa-heart-o","available_multi_wishlist":false,"disable_wishlist":false,"show_count":false,"ajax_loading":false,"loop_position":"after_add_to_cart","item":"add_to_wishlist"}'>
+                                                    <!-- ADD TO WISHLIST -->
+
+                                                    <div class="yith-wcwl-add-button">
+                                                        <a href="?add_to_wishlist=67" rel="nofollow" data-product-id="67"
+                                                            data-product-type="simple" data-original-product-id="67"
+                                                            class="add_to_wishlist single_add_to_wishlist"
+                                                            data-title='&lt;i class="tb-icon tb-icon-heart"&gt;&lt;/i&gt;&lt;span&gt;Add to wishlist&lt;/span&gt;'>
+                                                            <i class="yith-wcwl-icon fa fa-heart-o"></i>
+                                                            <span><i class="tb-icon tb-icon-heart"></i><span>Add to
+                                                                    wishlist</span></span>
+                                                        </a>
+                                                    </div>
+                                                    <!-- COUNT TEXT -->
+                                                </div>
+                                            </div>
+                                            <div class="yith-compare">
+                                                <a href="/diza_medicine/?action=yith-woocompare-add-product&amp;id=67&amp;_wpnonce=4460ae475c"
+                                                    title="Compare" class="compare" data-product_id="67">
+                                                    <span>Compare</span>
+                                                </a>
+                                            </div>
+                                            <div class="tbay-quick-view">
+                                                <a href="#" class="qview-button" title="Quick View"
+                                                    data-effect="mfp-move-from-top" data-product_id="67" data-toggle="modal"
+                                                    data-target="#tbay-quickview-modal">
+                                                    <i class="tb-icon tb-icon-eye"></i>
+                                                    <span>Quick View</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="caption">
+                                        <h3 class="name">
+                                            <a href="//product/remedy-no-rinse-foam/">Remedy No-Rinse Foam</a>
+                                        </h3>
+
+                                        <ul class="show-brand">
+                                            <li>
+                                                <a href="//product-brands/devon-medical/">Devon Medical</a>
+                                            </li>
+                                        </ul>
+                                        <div class="rating">
+                                            <div class="star-rating" role="img" aria-label="Rated 4.00 out of 5">
+                                                <span style="width: 80%;">Rated
+                                                    <strong class="rating">4.00</strong>
+                                                    out of 5</span>
+                                            </div>
+                                            <div class="count">
+                                                <span>(1)</span>
+                                            </div>
+                                        </div>
+                                        <div class="price-wrapper">
+                                            <span class="price"><span class="woocs_price_code" data-product-id="67"><ins><span
+                                                            class="woocommerce-Price-amount amount"><bdi><span
+                                                                    class="woocommerce-Price-currencySymbol">&#36;</span>90.00</bdi>
+                                                        </span>
+                                                    </ins>
+                                                    <del><span class="woocommerce-Price-amount amount"><bdi><span
+                                                                    class="woocommerce-Price-currencySymbol">&#36;</span>320.00</bdi></span></del></span>
+                                            </span>
+                                        </div>
+
+                                        <div class="add-cart" title="Add to cart">
+                                            <a href="?add-to-cart=67" data-product_id="67" data-product_sku="MEGA-SHOE-03543543"
+                                                data-quantity="1"
+                                                class="button product_type_simple add_to_cart_button ajax_add_to_cart product_type_simple"><span
+                                                    class="title-cart">Add to cart</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="stock">
+                                        <div class="progress">
+                                            <div class="progress-bar active" role="progressbar" aria-valuenow="80"
+                                                aria-valuemin="0" aria-valuemax="100" style="width: 21.333333333333%;"></div>
+                                        </div>
+                                        <span class="tb-sold">Sold : <span class="sold">16</span><span
+                                                class="total">/75</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="product-block grid product v1" data-product-id="1634">
+                                <div class="product-top"></div>
+                                <div class="product-content">
+                                    <div class="block-inner">
+                                        <figure class="image">
+                                            <a title="Standard Surgical Gown" href="//product/standard-surgical-gown/"
+                                                class="product-image">
+                                                <img width="280" height="280"
+                                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20280%20280'%3E%3C/svg%3E"
+                                                    class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""
+                                                    data-lazy-src="/theme_diza/static/img/diza/06/product-19-280x280.jpg" /><noscript><img
+                                                        width="280" height="280"
+                                                        src="/theme_diza/static/img/diza/06/product-19-280x280.jpg"
+                                                        class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+                                                        alt="" /></noscript>
+                                            </a>
+                                        </figure>
+                                        <div class="group-buttons">
+                                            <div class="button-wishlist shown-mobile" title="Wishlist">
+                                                <div class="yith-wcwl-add-to-wishlist add-to-wishlist-1634 wishlist-fragment on-first-load"
+                                                    data-fragment-ref="1634"
+                                                    data-fragment-options='{"base_url":"","in_default_wishlist":false,"is_single":false,"show_exists":false,"product_id":1634,"parent_product_id":1634,"product_type":"simple","show_view":false,"browse_wishlist_text":"Browse wishlist","already_in_wishslist_text":"The product is already in your wishlist!","product_added_text":"Product added!","heading_icon":"fa-heart-o","available_multi_wishlist":false,"disable_wishlist":false,"show_count":false,"ajax_loading":false,"loop_position":"after_add_to_cart","item":"add_to_wishlist"}'>
+                                                    <!-- ADD TO WISHLIST -->
+
+                                                    <div class="yith-wcwl-add-button">
+                                                        <a href="?add_to_wishlist=1634" rel="nofollow" data-product-id="1634"
+                                                            data-product-type="simple" data-original-product-id="1634"
+                                                            class="add_to_wishlist single_add_to_wishlist"
+                                                            data-title='&lt;i class="tb-icon tb-icon-heart"&gt;&lt;/i&gt;&lt;span&gt;Add to wishlist&lt;/span&gt;'>
+                                                            <i class="yith-wcwl-icon fa fa-heart-o"></i>
+                                                            <span><i class="tb-icon tb-icon-heart"></i><span>Add to
+                                                                    wishlist</span></span>
+                                                        </a>
+                                                    </div>
+                                                    <!-- COUNT TEXT -->
+                                                </div>
+                                            </div>
+                                            <div class="yith-compare">
+                                                <a href="/diza_medicine/?action=yith-woocompare-add-product&amp;id=1634&amp;_wpnonce=4460ae475c"
+                                                    title="Compare" class="compare" data-product_id="1634">
+                                                    <span>Compare</span>
+                                                </a>
+                                            </div>
+                                            <div class="tbay-quick-view">
+                                                <a href="#" class="qview-button" title="Quick View"
+                                                    data-effect="mfp-move-from-top" data-product_id="1634" data-toggle="modal"
+                                                    data-target="#tbay-quickview-modal">
+                                                    <i class="tb-icon tb-icon-eye"></i>
+                                                    <span>Quick View</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="caption">
+                                        <h3 class="name">
+                                            <a href="//product/standard-surgical-gown/">Standard Surgical Gown</a>
+                                        </h3>
+
+                                        <ul class="show-brand">
+                                            <li>
+                                                <a href="//product-brands/3m-healthcare/">3M Healthcare</a>
+                                            </li>
+                                            <li>
+                                                <a href="//product-brands/basic-medical/">Basic Medical</a>
+                                            </li>
+                                        </ul>
+                                        <div class="rating no-rate">
+                                            <div class="star-rating"></div>
+                                            <div class="count">(0)</div>
+                                        </div>
+                                        <div class="price-wrapper">
+                                            <span class="price"><span class="woocs_price_code" data-product-id="1634"><span
+                                                        class="woocommerce-Price-amount amount"><bdi><span
+                                                                class="woocommerce-Price-currencySymbol">&#36;</span>175.07</bdi>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </div>
+
+                                        <div class="add-cart" title="Add to cart">
+                                            <a href="?add-to-cart=1634" data-product_id="1634"
+                                                data-product_sku="MEGA-SHOE-034321-1" data-quantity="1"
+                                                class="button product_type_simple add_to_cart_button ajax_add_to_cart product_type_simple"><span
+                                                    class="title-cart">Add to cart</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="stock">
+                                        <div class="progress">
+                                            <div class="progress-bar active" role="progressbar" aria-valuenow="80"
+                                                aria-valuemin="0" aria-valuemax="100" style="width: 28.888888888889%;"></div>
+                                        </div>
+                                        <span class="tb-sold">Sold : <span class="sold">26</span><span
+                                                class="total">/90</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="product-block grid product v1" data-product-id="747">
+                                <div class="product-top">
+                                    <span class="onsale"><span class="saled">-36%</span></span>
+                                </div>
+                                <div class="product-content">
+                                    <div class="time">
+                                        <div class="timming">
+                                            <div class="tbay-countdown" id="tbay-flash-sale-NS1H0" data-time="timmer"
+                                                data-date="06-17-2021-23-59-59"
+                                                data-days='&lt;span class="label"&gt;days&lt;/span&gt;'
+                                                data-hours='&lt;span class="label"&gt;hours&lt;/span&gt;'
+                                                data-mins='&lt;span class="label"&gt;mins&lt;/span&gt;'
+                                                data-secs='&lt;span class="label"&gt;secs&lt;/span&gt;'></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-inner">
+                                        <figure class="image">
+                                            <a title="Trionstrep Medication" href="//product/trionstrep-medication/"
+                                                class="product-image">
+                                                <img width="280" height="280"
+                                                    src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20280%20280'%3E%3C/svg%3E"
+                                                    class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""
+                                                    data-lazy-src="/theme_diza/static/img/diza/06/product-37-280x280.jpg" /><noscript><img
+                                                        width="280" height="280"
+                                                        src="/theme_diza/static/img/diza/06/product-37-280x280.jpg"
+                                                        class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+                                                        alt="" /></noscript>
+                                            </a>
+                                        </figure>
+                                        <div class="group-buttons">
+                                            <div class="button-wishlist shown-mobile" title="Wishlist">
+                                                <div class="yith-wcwl-add-to-wishlist add-to-wishlist-747 wishlist-fragment on-first-load"
+                                                    data-fragment-ref="747"
+                                                    data-fragment-options='{"base_url":"","in_default_wishlist":false,"is_single":false,"show_exists":false,"product_id":747,"parent_product_id":747,"product_type":"simple","show_view":false,"browse_wishlist_text":"Browse wishlist","already_in_wishslist_text":"The product is already in your wishlist!","product_added_text":"Product added!","heading_icon":"fa-heart-o","available_multi_wishlist":false,"disable_wishlist":false,"show_count":false,"ajax_loading":false,"loop_position":"after_add_to_cart","item":"add_to_wishlist"}'>
+                                                    <!-- ADD TO WISHLIST -->
+
+                                                    <div class="yith-wcwl-add-button">
+                                                        <a href="?add_to_wishlist=747" rel="nofollow" data-product-id="747"
+                                                            data-product-type="simple" data-original-product-id="747"
+                                                            class="add_to_wishlist single_add_to_wishlist"
+                                                            data-title='&lt;i class="tb-icon tb-icon-heart"&gt;&lt;/i&gt;&lt;span&gt;Add to wishlist&lt;/span&gt;'>
+                                                            <i class="yith-wcwl-icon fa fa-heart-o"></i>
+                                                            <span><i class="tb-icon tb-icon-heart"></i><span>Add to
+                                                                    wishlist</span></span>
+                                                        </a>
+                                                    </div>
+                                                    <!-- COUNT TEXT -->
+                                                </div>
+                                            </div>
+                                            <div class="yith-compare">
+                                                <a href="/diza_medicine/?action=yith-woocompare-add-product&amp;id=747&amp;_wpnonce=4460ae475c"
+                                                    title="Compare" class="compare" data-product_id="747">
+                                                    <span>Compare</span>
+                                                </a>
+                                            </div>
+                                            <div class="tbay-quick-view">
+                                                <a href="#" class="qview-button" title="Quick View"
+                                                    data-effect="mfp-move-from-top" data-product_id="747" data-toggle="modal"
+                                                    data-target="#tbay-quickview-modal">
+                                                    <i class="tb-icon tb-icon-eye"></i>
+                                                    <span>Quick View</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="caption">
+                                        <h3 class="name">
+                                            <a href="//product/trionstrep-medication/">Trionstrep Medication</a>
+                                        </h3>
+
+                                        <ul class="show-brand">
+                                            <li>
+                                                <a href="//product-brands/posey-company/">Posey Company</a>
+                                            </li>
+                                        </ul>
+                                        <div class="rating">
+                                            <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
+                                                <span style="width: 100%;">Rated
+                                                    <strong class="rating">5.00</strong>
+                                                    out of 5</span>
+                                            </div>
+                                            <div class="count">
+                                                <span>(1)</span>
+                                            </div>
+                                        </div>
+                                        <div class="price-wrapper">
+                                            <span class="price"><span class="woocs_price_code" data-product-id="747"><ins><span
+                                                            class="woocommerce-Price-amount amount"><bdi><span
+                                                                    class="woocommerce-Price-currencySymbol">&#36;</span>140.00</bdi>
+                                                        </span>
+                                                    </ins>
+                                                    <del><span class="woocommerce-Price-amount amount"><bdi><span
+                                                                    class="woocommerce-Price-currencySymbol">&#36;</span>220.00</bdi></span></del></span>
+                                            </span>
+                                        </div>
+
+                                        <div class="add-cart" title="Add to cart">
+                                            <a href="?add-to-cart=747" data-product_id="747" data-product_sku="MEGA-SHOE-11768"
+                                                data-quantity="1"
+                                                class="button product_type_simple add_to_cart_button ajax_add_to_cart product_type_simple"><span
+                                                    class="title-cart">Add to cart</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="stock">
+                                        <div class="progress">
+                                            <div class="progress-bar active" role="progressbar" aria-valuenow="80"
+                                                aria-valuemin="0" aria-valuemax="100" style="width: 21.875%;"></div>
+                                        </div>
+                                        <span class="tb-sold">Sold : <span class="sold">28</span><span
+                                                class="total">/128</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </xpath>
+  </template>
+</odoo>

@@ -1,0 +1,125 @@
+<odoo>
+    <template id="testimonials" inherit_id="website.layout" name="Featured products">
+      <xpath expr="//*[@id='after_testimonials']" position="before">
+            <section
+                class="elementor-section elementor-top-section elementor-element elementor-element-b7dad7a elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                data-id="b7dad7a" data-element_type="section"
+                data-settings='{"stretch_section":"section-stretched","background_background":"classic"}'>
+                <div class="elementor-container elementor-column-gap-default">
+                    <div class="elementor-row">
+                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ff5bd2a"
+                            data-id="ff5bd2a" data-element_type="column">
+                            <div class="elementor-column-wrap elementor-element-populated">
+                                <div class="elementor-widget-wrap">
+                                    <div class="elementor-element elementor-element-73712e2 elementor-widget elementor-widget-tbay-testimonials"
+                                        data-id="73712e2" data-element_type="widget" data-widget_type="tbay-testimonials.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="tbay-element tbay-element-testimonials">
+                                                <div class="testimonials rows-1 owl-carousel" data-carousel="owl" data-items="1"
+                                                    data-desktopslick="1" data-desktopsmallslick="1" data-tabletslick="1"
+                                                    data-landscapeslick="1" data-mobileslick="1" data-rows="1" data-nav="1"
+                                                    data-pagination="" data-loop="" data-auto="" data-unslick="">
+                                                    <div class="item">
+                                                        <div class="testimonials-body">
+                                                            <span class="excerpt">I am so pleased with this
+                                                                product. Medical saved my
+                                                                business. I am really satisfied
+                                                                with my medical. Medical is
+                                                                exactly what our business has
+                                                                been lacking.</span>
+
+                                                            <img width="370" height="370"
+                                                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20370%20370'%3E%3C/svg%3E"
+                                                                class="attachment-full size-full" alt=""
+                                                                data-lazy-src="/theme_diza/static/img/diza/06/term-01.png" /><noscript><img
+                                                                    width="370" height="370"
+                                                                    src="/theme_diza/static/img/diza/06/term-01.png"
+                                                                    class="attachment-full size-full" alt="" /></noscript>
+                                                            <div class="testimonial-meta">
+                                                                <span class="name">Murielle B</span>
+                                                                <span class="job">Supporter</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="item">
+                                                        <div class="testimonials-body">
+                                                            <span class="excerpt">I am so pleased with this
+                                                                product. Medical saved my
+                                                                business. I am really satisfied
+                                                                with my medical. Medical is
+                                                                exactly what our business has
+                                                                been lacking.</span>
+
+                                                            <img width="370" height="370"
+                                                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20370%20370'%3E%3C/svg%3E"
+                                                                class="attachment-full size-full" alt=""
+                                                                data-lazy-src="/theme_diza/static/img/diza/06/term-02.png" /><noscript><img
+                                                                    width="370" height="370"
+                                                                    src="/theme_diza/static/img/diza/06/term-02.png"
+                                                                    class="attachment-full size-full" alt="" /></noscript>
+                                                            <div class="testimonial-meta">
+                                                                <span class="name">Name 2</span>
+                                                                <span class="job">Job 2</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="item">
+                                                        <div class="testimonials-body">
+                                                            <span class="excerpt">I am so pleased with this
+                                                                product. Medical saved my
+                                                                business. I am really satisfied
+                                                                with my medical. Medical is
+                                                                exactly what our business has
+                                                                been lacking.</span>
+
+                                                            <img width="370" height="370"
+                                                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20370%20370'%3E%3C/svg%3E"
+                                                                class="attachment-full size-full" alt=""
+                                                                data-lazy-src="/theme_diza/static/img/diza/06/term-04.png" /><noscript><img
+                                                                    width="370" height="370"
+                                                                    src="/theme_diza/static/img/diza/06/term-04.png"
+                                                                    class="attachment-full size-full" alt="" /></noscript>
+                                                            <div class="testimonial-meta">
+                                                                <span class="name">Name 3</span>
+                                                                <span class="job">Job 3</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="item">
+                                                        <div class="testimonials-body">
+                                                            <span class="excerpt">I am so pleased with this
+                                                                product. Medical saved my
+                                                                business. I am really satisfied
+                                                                with my medical. Medical is
+                                                                exactly what our business has
+                                                                been lacking.</span>
+
+                                                            <img width="370" height="370"
+                                                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20370%20370'%3E%3C/svg%3E"
+                                                                class="attachment-full size-full" alt=""
+                                                                data-lazy-src="/theme_diza/static/img/diza/06/term-06.png" /><noscript><img
+                                                                    width="370" height="370"
+                                                                    src="/theme_diza/static/img/diza/06/term-06.png"
+                                                                    class="attachment-full size-full" alt="" /></noscript>
+                                                            <div class="testimonial-meta">
+                                                                <span class="name">Name 4</span>
+                                                                <span class="job">Job 4</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </xpath>
+    </template>
+</odoo>

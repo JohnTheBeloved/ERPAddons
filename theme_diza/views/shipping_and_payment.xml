@@ -1,0 +1,102 @@
+<odoo>
+  <template id="shipping_and_payment" inherit_id="website.layout" name="Featured products">
+    <xpath expr="//*[@id='after_shipping_and_payment']" position="before">
+        <section
+            class="elementor-section elementor-top-section elementor-element elementor-element-e52beb2 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+            data-id="e52beb2" data-element_type="section"
+            data-settings='{"stretch_section":"section-stretched","background_background":"classic"}'>
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-row">
+                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-85117c2"
+                        data-id="85117c2" data-element_type="column">
+                        <div class="elementor-column-wrap elementor-element-populated">
+                            <div class="elementor-widget-wrap">
+                                <div class="elementor-element elementor-element-9fd8bf1 elementor-widget elementor-widget-tbay-features"
+                                    data-id="9fd8bf1" data-element_type="widget" data-widget_type="tbay-features.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="tbay-element tbay-element-features">
+                                            <div class="features row grid" data-xlgdesktop="4" data-desktop="4"
+                                                data-desktopsmall="2" data-tablet="2" data-landscape="2" data-mobile="2">
+                                                <div class="item">
+                                                    <div class="inner">
+                                                        <div class="fbox-icon">
+                                                            <i aria-hidden="true"
+                                                                class="tb-icon tb-icon-shipping-worldwide"></i>
+                                                        </div>
+
+                                                        <div class="fbox-content">
+                                                            <h3 class="ourservice-heading">
+                                                                Shipping
+                                                                <br />worldwide
+                                                            </h3>
+                                                            <p class="description">
+                                                                Ut enim ad minim veniam
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="item">
+                                                    <div class="inner">
+                                                        <div class="fbox-icon">
+                                                            <i aria-hidden="true" class="tb-icon tb-icon-free-return"></i>
+                                                        </div>
+
+                                                        <div class="fbox-content">
+                                                            <h3 class="ourservice-heading">
+                                                                Free <br />
+                                                                returns
+                                                            </h3>
+                                                            <p class="description">
+                                                                Ut enim ad minim veniam
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="item">
+                                                    <div class="inner">
+                                                        <div class="fbox-icon">
+                                                            <i aria-hidden="true" class="tb-icon tb-icon-location"></i>
+                                                        </div>
+
+                                                        <div class="fbox-content">
+                                                            <h3 class="ourservice-heading">
+                                                                Order <br />tracking
+                                                            </h3>
+                                                            <p class="description">
+                                                                Ut enim ad minim veniam
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="item">
+                                                    <div class="inner">
+                                                        <div class="fbox-icon">
+                                                            <i aria-hidden="true" class="tb-icon tb-icon-fast-delivery"></i>
+                                                        </div>
+
+                                                        <div class="fbox-content">
+                                                            <h3 class="ourservice-heading">
+                                                                Order <br />tracking
+                                                            </h3>
+                                                            <p class="description">
+                                                                Ut enim ad minim veniam
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </xpath>
+  </template>
+</odoo>

@@ -1,0 +1,337 @@
+<odoo>
+    <template id="slider_snippet" name="Slider snippet">
+        <rs-module-wrap
+        id="rev_slider_8_1_wrapper"
+        data-source="gallery"
+        style="
+            background: transparent;
+            padding: 0;
+            margin: 0px auto;
+            margin-top: 0;
+            margin-bottom: 0;
+        "
+        >
+        <rs-module id="rev_slider_8_1" style="" data-version="6.2.23">
+            <rs-slides>
+            <rs-slide
+                data-key="rs-31"
+                data-title="Slide"
+                data-thumb="/theme_diza/static/img/diza/07/bg-slider-home-2-2-50x100.png"
+                data-duration="5000ms"
+                data-anim="ei:d;eo:d;s:1000;r:0;t:fade;sl:0;"
+            >
+                <img
+                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201320%20570'%3E%3C/svg%3E"
+                title="bg-slider-home-2-2"
+                width="1320"
+                height="570"
+                data-bg="f:auto;"
+                class="rev-slidebg"
+                data-no-retina=""
+                data-lazy-src="/theme_diza/static/img/diza/07/bg-slider-home-2-2.png"
+                />
+                <noscript
+                ><img
+                    src="/theme_diza/static/img/diza/07/bg-slider-home-2-2.png"
+                    title="bg-slider-home-2-2"
+                    width="1320"
+                    height="570"
+                    data-bg="f:auto;"
+                    class="rev-slidebg"
+                    data-no-retina=""
+                />
+                </noscript>
+                <rs-layer
+                    id="slider-8-slide-31-layer-6"
+                    data-type="text"
+                    data-color="#0b132b"
+                    data-rsp_ch="on"
+                    data-xy="xo:15px,30px,30px,30px;yo:120px,120px,120px,119px;"
+                    data-text="w:normal;s:60,60,60,48;l:68,68,68,56;fw:600;"
+                    data-dim="w:640px,640px,640px,434px;"
+                    data-frame_0="o:1;"
+                    data-frame_0_chars="y:-100%;o:0;rZ:35deg;"
+                    data-frame_0_mask="u:t;"
+                    data-frame_1="st:230;sp:400;sR:230;"
+                    data-frame_1_chars="e:power4.inOut;d:10;rZ:0deg;"
+                    data-frame_1_mask="u:t;"
+                    data-frame_999="o:0;st:w;sR:1170;"
+                    style="z-index: 8; font-family: Nunito Sans;"
+                >
+                Consulting Pharmacist on Duty Call Now
+                </rs-layer>
+                <rs-layer
+                    id="slider-8-slide-31-layer-8"
+                    data-type="text"
+                    data-color="#0b132b"
+                    data-rsp_ch="on"
+                    data-xy="xo:15px,30px,30px,30px;yo:270px,270px,270px,273px;"
+                    data-text="w:normal;l:28;"
+                    data-frame_0="y:bottom;"
+                    data-frame_1="st:620;sp:2500;sR:620;"
+                    data-frame_999="o:0;st:w;sR:1880;"
+                    style="z-index: 9; font-family: Nunito Sans;"
+                >
+                Stay safe, stay home. Let’s stop it together
+                </rs-layer>
+                <a
+                    id="slider-8-slide-31-layer-9"
+                    class="rs-layer rev-btn"
+                    href="//shop"
+                    target="_blank"
+                    rel="nofollow noopener"
+                    data-type="button"
+                    data-color="#000000"
+                    data-rsp_ch="on"
+                    data-xy="xo:15px,30px,30px,30px;yo:333px,333px,333px,338px;"
+                    data-text="w:normal;s:16;l:28;fw:600;a:center;"
+                    data-dim="w:150px;minh:0px,none,none,none;"
+                    data-padding="t:10;r:20;b:10;l:20;"
+                    data-border="bor:5px,5px,5px,5px;"
+                    data-frame_0="y:50;"
+                    data-frame_1="st:1760;sp:2000;sR:1760;"
+                    data-frame_999="o:0;st:w;sR:1240;"
+                    data-frame_hover="c:#fff;bgc:#ff9d30;bor:5px,5px,5px,5px;"
+                    style="
+                        z-index: 10;
+                        background-color: rgba(255, 255, 255, 1);
+                        font-family: Nunito Sans;
+                    "
+                >Buy Now
+                </a>
+                <rs-layer
+                    id="slider-8-slide-31-layer-10"
+                    data-type="text"
+                    data-color="#0b132b"
+                    data-rsp_ch="on"
+                    data-xy="xo:191px,206px,206px,206px;yo:343px,343px,343px,348px;"
+                    data-text="w:normal;l:28;"
+                    data-frame_0="y:bottom;"
+                    data-frame_1="st:1870;sp:2000;sR:1870;"
+                    data-frame_999="o:0;st:w;sR:1130;"
+                    style="z-index: 11; font-family: Nunito Sans;"
+                >
+                Start from $150.00
+                </rs-layer>
+            </rs-slide>
+            <rs-slide
+                data-key="rs-32"
+                data-title="Slide"
+                data-thumb="/theme_diza/static/img/diza/07/bg-slider-home-2-50x100.png"
+                data-duration="5000ms"
+                data-anim="ei:d;eo:d;s:1000;r:0;t:fade;sl:0;"
+            >
+                <img
+                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201320%20570'%3E%3C/svg%3E"
+                title="bg-slider-home-2"
+                width="1320"
+                height="570"
+                data-bg="f:auto;"
+                class="rev-slidebg"
+                data-no-retina=""
+                data-lazy-src="/theme_diza/static/img/diza/07/bg-slider-home-2.png"
+                /><noscript
+                ><img
+                    src="/theme_diza/static/img/diza/07/bg-slider-home-2.png"
+                    title="bg-slider-home-2"
+                    width="1320"
+                    height="570"
+                    data-bg="f:auto;"
+                    class="rev-slidebg"
+                    data-no-retina=""
+                /></noscript>
+                <rs-layer
+                    id="slider-8-slide-32-layer-6"
+                    data-type="text"
+                    data-color="#0b132b"
+                    data-rsp_ch="on"
+                    data-xy="xo:15px,30px,30px,30px;yo:120px,120px,120px,119px;"
+                    data-text="w:normal;s:60,60,60,48;l:68,68,68,56;fw:600;"
+                    data-dim="w:640px,640px,640px,434px;"
+                    data-frame_0="o:1;"
+                    data-frame_0_chars="y:-100%;o:0;rZ:35deg;"
+                    data-frame_0_mask="u:t;"
+                    data-frame_1="st:230;sp:400;sR:230;"
+                    data-frame_1_chars="e:power4.inOut;d:10;rZ:0deg;"
+                    data-frame_1_mask="u:t;"
+                    data-frame_999="o:0;st:w;sR:1170;"
+                    style="z-index: 8; font-family: Nunito Sans;"
+                >
+                Protect Your Family From Coronavirus
+                </rs-layer>
+                <rs-layer
+                id="slider-8-slide-32-layer-8"
+                data-type="text"
+                data-color="#0b132b"
+                data-rsp_ch="on"
+                data-xy="xo:15px,30px,30px,30px;yo:270px,270px,270px,273px;"
+                data-text="w:normal;l:28;"
+                data-frame_0="y:bottom;"
+                data-frame_1="st:620;sp:2500;sR:620;"
+                data-frame_999="o:0;st:w;sR:1880;"
+                style="z-index: 9; font-family: Nunito Sans;"
+                >
+                Stay safe, stay home. Let’s stop it together
+                </rs-layer>
+                <a
+                id="slider-8-slide-32-layer-9"
+                class="rs-layer rev-btn"
+                href="//shop"
+                target="_blank"
+                rel="nofollow noopener"
+                data-type="button"
+                data-color="#000000"
+                data-rsp_ch="on"
+                data-xy="xo:15px,30px,30px,30px;yo:333px,333px,333px,338px;"
+                data-text="w:normal;s:16;l:28;fw:600;a:center;"
+                data-dim="w:150px;minh:0px,none,none,none;"
+                data-padding="t:10;r:20;b:10;l:20;"
+                data-border="bor:5px,5px,5px,5px;"
+                data-frame_0="y:50;"
+                data-frame_1="st:1760;sp:2000;sR:1760;"
+                data-frame_999="o:0;st:w;sR:1240;"
+                data-frame_hover="c:#fff;bgc:#ff9d30;bor:5px,5px,5px,5px;"
+                style="
+                    z-index: 10;
+                    background-color: rgba(255, 255, 255, 1);
+                    font-family: Nunito Sans;
+                "
+                >Buy Now
+                </a>
+                <rs-layer
+                id="slider-8-slide-32-layer-10"
+                data-type="text"
+                data-color="#0b132b"
+                data-rsp_ch="on"
+                data-xy="xo:191px,206px,206px,206px;yo:343px,343px,343px,348px;"
+                data-text="w:normal;l:28;"
+                data-frame_0="y:bottom;"
+                data-frame_1="st:1870;sp:2000;sR:1870;"
+                data-frame_999="o:0;st:w;sR:1130;"
+                style="z-index: 11; font-family: Nunito Sans;"
+                >
+                Start from $150.00
+                </rs-layer>
+            </rs-slide>
+            <rs-slide
+                data-key="rs-33"
+                data-title="Slide"
+                data-thumb="/theme-diza/static/img/diza/revslider/slider-medicine/bg-slider-home-2-31-50x100.png"
+                data-duration="5000ms"
+                data-anim="ei:d;eo:d;s:1000;r:0;t:fade;sl:0;"
+            >
+                <img
+                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201320%20570'%3E%3C/svg%3E"
+                title="bg-slider-home-2-31.png"
+                width="1320"
+                height="570"
+                data-bg="f:contain;"
+                class="rev-slidebg"
+                data-no-retina=""
+                data-lazy-src="/theme_diza/static/img/diza/revslider/slider-medicine/bg-slider-home-2-31.png"
+                /><noscript
+                ><img
+                    src="/theme_diza/static/img/diza/revslider/slider-medicine/bg-slider-home-2-31.png"
+                    title="bg-slider-home-2-31.png"
+                    width="1320"
+                    height="570"
+                    data-bg="f:contain;"
+                    class="rev-slidebg"
+                    data-no-retina=""
+                /></noscript>
+                <rs-layer
+                id="slider-8-slide-33-layer-6"
+                data-type="text"
+                data-color="#0b132b"
+                data-rsp_ch="on"
+                data-xy="xo:15px,30px,30px,30px;yo:120px,120px,120px,119px;"
+                data-text="w:normal;s:60,60,60,48;l:68,68,68,56;fw:600;"
+                data-dim="w:640px,640px,640px,434px;"
+                data-frame_0="o:1;"
+                data-frame_0_chars="y:-100%;o:0;rZ:35deg;"
+                data-frame_0_mask="u:t;"
+                data-frame_1="st:230;sp:400;sR:230;"
+                data-frame_1_chars="e:power4.inOut;d:10;rZ:0deg;"
+                data-frame_1_mask="u:t;"
+                data-frame_999="o:0;st:w;sR:1170;"
+                style="z-index: 8; font-family: Nunito Sans;"
+                >
+                Protect Your Family From Coronavirus
+                </rs-layer>
+                <rs-layer
+                id="slider-8-slide-33-layer-8"
+                data-type="text"
+                data-color="#0b132b"
+                data-rsp_ch="on"
+                data-xy="xo:15px,30px,30px,30px;yo:270px,270px,270px,273px;"
+                data-text="w:normal;l:28;"
+                data-frame_0="y:bottom;"
+                data-frame_1="st:620;sp:2500;sR:620;"
+                data-frame_999="o:0;st:w;sR:1880;"
+                style="z-index: 9; font-family: Nunito Sans;"
+                >
+                Stay safe, stay home. Let’s stop it together
+                </rs-layer>
+                <a
+                id="slider-8-slide-33-layer-9"
+                class="rs-layer rev-btn"
+                href="//shop"
+                target="_blank"
+                rel="nofollow noopener"
+                data-type="button"
+                data-color="#000000"
+                data-rsp_ch="on"
+                data-xy="xo:15px,30px,30px,30px;yo:333px,333px,333px,338px;"
+                data-text="w:normal;s:16;l:28;fw:600;a:center;"
+                data-dim="w:150px;minh:0px,none,none,none;"
+                data-padding="t:10;r:20;b:10;l:20;"
+                data-border="bor:5px,5px,5px,5px;"
+                data-frame_0="y:50;"
+                data-frame_1="st:1760;sp:2000;sR:1760;"
+                data-frame_999="o:0;st:w;sR:1240;"
+                data-frame_hover="c:#fff;bgc:#ff9d30;bor:5px,5px,5px,5px;"
+                style="
+                    z-index: 10;
+                    background-color: rgba(255, 255, 255, 1);
+                    font-family: Nunito Sans;
+                "
+                >Buy Now
+                </a>
+                <rs-layer
+                id="slider-8-slide-33-layer-10"
+                data-type="text"
+                data-color="#0b132b"
+                data-rsp_ch="on"
+                data-xy="xo:191px,206px,206px,206px;yo:343px,343px,343px,348px;"
+                data-text="w:normal;l:28;"
+                data-frame_0="y:bottom;"
+                data-frame_1="st:1870;sp:2000;sR:1870;"
+                data-frame_999="o:0;st:w;sR:1130;"
+                style="z-index: 11; font-family: Nunito Sans;"
+                >
+                Start from $150.00
+                </rs-layer>
+            </rs-slide>
+            </rs-slides>
+            <rs-static-layers>
+            </rs-static-layers>
+        </rs-module>
+        </rs-module-wrap>
+    </template>
+
+    <template
+    id="place_slider_snippet"
+    inherit_id="website.snippets"
+    name="Place Slider div"
+    >
+    <xpath
+    expr="//div[@id='snippet_structure']/div[@class='o_panel_body']"
+    position="inside"
+    >
+    <t
+        t-snippet="theme_diza.slider_snippet"
+        t-thumbnail="/theme_diza/static/img/ui/snippet_thumb.png"
+    />
+    </xpath>
+    </template>
+</odoo>

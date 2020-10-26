@@ -5,10 +5,10 @@
   'author':'Your name',
 
   'data': [
+    'views/snippets.xml',
     'views/layout.xml',
     'views/pages.xml',
     'views/assets.xml',
-    'views/snippets.xml',
     'views/templates.xml',
     'views/options.xml',
     'views/header.xml'

@@ -1,0 +1,18 @@
+<odoo>
+  
+  <!-- <template
+    id="place_slider_snippet"
+    inherit_id="website.snippets"
+    name="Place Slider div"
+  >
+    <xpath
+      expr="//div[@id='snippet_structure']/div[@class='o_panel_body']"
+      position="inside"
+    >
+      <t
+        t-snippet="theme_diza.slider_snippet"
+        t-thumbnail="/theme_diza/static/img/ui/snippet_thumb.png"
+      />
+    </xpath>
+  </template> -->
+</odoo>

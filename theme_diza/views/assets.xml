@@ -1,0 +1,212 @@
+<odoo>
+  <template id="mystyle" name="My style" inherit_id="website.assets_frontend">
+      <xpath expr="link[last()]" position="after">
+      
+          <link rel="stylesheet" type="text/css" href="/theme_diza/static/scss/index.scss"/>
+          <!-- Change location -->
+          <link rel="stylesheet" type="text/css" href="/theme_diza/static/css/index.below.css"/>
+          <!--Diza Css-->
+          <!-- <l989?ink rel="stylesheet" type="text/css" data-minify="1"
+          href="/theme_diza/static/css/wp_content/c5a3598920867518618c14b0855e2d14.css"/> -->
+          <link rel="stylesheet" type="text/css" data-minify="1"
+          href="/theme_diza/static/css/wp_content.css"/>
+          <link rel='stylesheet' id='woocommerce-smallscreen-css'
+          href='/theme_diza/static/css/elementor/diza/woocommerce-smallscreen.css'
+          type='text/css' media='only screen and (max-width: 768px)' />
+
+          <!--Fonts-->
+         <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/nunito-sans-200-normal-tU1E.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/nunito-sans-300-normal-tU1E.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/nunito-sans-200-italic-MIUg.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/nunito-sans-400-normal-9I9s.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/nunito-sans-300-italic-MIUg.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/nunito-sans-400-italic-lKdg.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/nunito-sans-600-normal-tU1E.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/nunito-sans-600-italic-MIUg.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/nunito-sans-700-normal-tU1E.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/nunito-sans-700-italic-MIUg.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/nunito-sans-800-normal-tU1E.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/nunito-sans-800-italic-MIUg.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/nunito-sans-900-italic-MIUg.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/nunito-sans-900-normal-tU1E.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/roboto-100-normal-IIzI.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/roboto-100-italic-AdLw.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/roboto-300-normal-BBc4.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/roboto-400-normal-4mxK.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/roboto-300-italic-6CsQ.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/roboto-400-italic-IIzI.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/roboto-500-italic-6CsQ.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/roboto-700-normal-BBc4.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/roboto-500-normal-BBc4.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/roboto-700-italic-6CsQ.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/roboto-900-normal-BBc4.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/roboto-900-italic-6CsQ.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/roboto-slab-100-normal-b2Rj.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/roboto-slab-300-normal-b2Rj.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/roboto-slab-200-normal-b2Rj.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/roboto-slab-500-normal-b2Rj.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/roboto-slab-400-normal-b2Rj.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/roboto-slab-600-normal-b2Rj.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/roboto-slab-700-normal-b2Rj.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/roboto-slab-800-normal-b2Rj.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+          <link rel='preload'
+              href='/theme_diza/static/fonts/wp-content/omgf/roboto-slab-900-normal-b2Rj.woff2'
+              as='font' type='font/woff2' crossorigin="" />
+            <link rel="preload" as="font"
+        href="/theme_diza/static/fonts/tb-icon/tb-icon.woff2"
+        crossorigin=""/>
+        <link rel="preload" as="font"
+            href="/theme_diza/static/fonts/material-design-iconic/material-design-iconic-font.woff2"
+            crossorigin=""/>
+        <link rel="preload" as="font"
+            href="/theme_diza/static/fonts/star/star.woff"
+            crossorigin=""/>
+        <link rel="preload" as="font"
+            href="/theme_diza/static/fonts/tb-icon/tb-icon.woff"
+            crossorigin=""/>
+        <link rel="preload" as="font"
+            href="/theme_diza/static/fonts/simple-line-icons/simple-line-icons.woff2"
+            crossorigin=""/>  -->
+          <!--End of Fonts-->
+
+          <!--DNS Prefetch-->
+          <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+          <link rel='dns-prefetch' href='//fonts.gstatic.com' />
+          <link rel='dns-prefetch' href='//connect.facebook.net' />
+          <link rel='dns-prefetch' href='//www.google-analytics.com' />
+          <!--TODO: what? something-->
+          <link rel='dns-prefetch' href='/theme_diza/static/elementor' />
+          <link href='https://fonts.gstatic.com' crossorigin="" rel='preconnect' />
+          <!--TODO: can be removed-->
+          <link rel="alternate" type="application/rss+xml" title="Diza >> Feed"
+              href="https://elementor.thembay.com/diza_medicine/feed/" />
+          <link rel="alternate" type="application/rss+xml" title="Diza >> Comments Feed"
+              href="https://elementor.thembay.com/diza_medicine/comments/feed/" />
+          <!--End of DNS Prefetch-->
+
+          <!--Other file types-->
+          <link rel="wlwmanifest" type="application/wlwmanifest+xml"
+              href="./asset/elementor-10aba.kxcdn.com/diza_medicine/wp-includes/wlwmanifest.xml" />
+           <meta name="generator" content="WordPress 5.5.1" />
+        <meta name="generator" content="WooCommerce 4.5.2" />
+        <!--TODO: rename-->
+        <link rel="canonical" href="https://elementor.thembay.com/diza_medicine/" />
+        <link rel='shortlink' href='https://elementor.thembay.com/diza_medicine/' />
+
+          <!--External links-->
+          <link rel="https://api.w.org/" href="https://elementor.thembay.com/diza_medicine/wp-json/" />
+          <link rel="alternate" type="application/json"
+        href="https://elementor.thembay.com/diza_medicine/wp-json/wp/v2/pages/1747" />
+          <link rel="EditURI" type="application/rsd+xml" title="RSD"
+          href="https://elementor.thembay.com/diza_medicine/xmlrpc.php?rsd" />
+        <link rel="icon"
+        href="/theme_diza/static/img/diza/07/cropped-logo-footer-1-32x32.png"
+        sizes="32x32" />
+      <link rel="icon"
+          href="/theme_diza/static/img/diza/07/cropped-logo-footer-1-192x192.png"
+          sizes="192x192" />
+      <link rel="apple-touch-icon"
+          href="/theme_diza/static/img/diza/07/cropped-logo-footer-1-180x180.png" />
+      <meta name="msapplication-TileImage"
+          content="/theme_diza/static/img/diza/07/cropped-logo-footer-1-270x270.png" />
+
+  
+
+          -->
+
+      </xpath>
+  </template>
+
+  <template id="my_js" inherit_id="website.layout" name="My Js">
+    <xpath expr="//footer[last()]" position="after">
+     <!--Scripts-->
+
+      <!--Scripts end-->
+    <script src="/theme_diza/static/js/elementor/jquery.prettyPhoto.min.js" type="text/javascript" id="prettyPhoto-js"></script>
+    <!-- <script type='text/javascript' src='/theme_diza/static/js/jquery/jquery.js' id='jquery-core-js'></script> -->
+    <script type='text/javascript' src='/theme_diza/static/js/index.js' ></script>
+    <script type='text/javascript' src='/theme_diza/static/js/index.bottom.js'  ></script>
+    <script type='text/javascript' src='/theme_diza/static/js/wp_content/a05072a1d39318e2c5c019bb5cd71ad3.js' ></script>
+    <script type='text/javascript'  src='/theme_diza/static/js/elementor/lazyload/lazyload.min.js'></script>
+<!--       
+    <script
+        data-rocketlazyloadscript='/theme_diza/static/js/elementor/font-awesome/v4-shims.min.js?ver=3.0.10'
+        type='text/javascript' id='font-awesome-4-shim-js'></script>
+
+      <link rel="alternate" type="application/json+oembed"
+        href="/theme_diza/static/json/iframe.json" />
+    <link rel="alternate" type="text/xml+oembed"
+        href="https://elementor.thembay.com/diza_medicine/wp-json/oembed/1.0/embed?url=https%3A%2F%2Felementor.thembay.com%2Fdiza_medicine%2F&#038;format=xml" />
+    <meta name="framework" content="Redux 4.1.20" />
+-->
+    </xpath>
+</template>
+</odoo>
