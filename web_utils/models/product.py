@@ -12,3 +12,13 @@ class Product(models.Model):
         return 'active'
       else:
         return ''
+
+
+
+class ProductGroup(models.Model):
+    _name = "web_utils.product_group"
+
+    group_name = fields.Char(string='Group Name')
+    query_id = fields.Char(string='Query ID')
+    description = fields.Char(string='Description')
+    product_ids = fields.One2many('product.product', 'id', 'Feature Products')

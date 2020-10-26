@@ -16,13 +16,13 @@
     -->
 
     <!-- actions opening views on models -->
-    <!--
+    
     <record model="ir.actions.act_window" id="web_utils.action_window">
-      <field name="name">WebUtils window</field>
-      <field name="res_model">web_utils.web_utils</field>
+      <field name="name">Product Groups</field>
+      <field name="res_model">web_utils.product_group</field>
       <field name="view_mode">tree,form</field>
     </record>
-    -->
+   
 
     <!-- server action to the one above -->
     <!--
@@ -41,19 +41,19 @@
     -->
 
     <!-- Top menu item -->
-    <!--
+    
     <menuitem name="WebUtils" id="web_utils.menu_root"/>
-    -->
+   
     <!-- menu categories -->
-    <!--
-    <menuitem name="Menu 1" id="web_utils.menu_1" parent="web_utils.menu_root"/>
-    <menuitem name="Menu 2" id="web_utils.menu_2" parent="web_utils.menu_root"/>
-    -->
+    
+    <menuitem name="Product Groups" id="web_utils.product_groups" parent="web_utils.menu_root"/>
+    <!-- <menuitem name="Menu 2" id="web_utils.menu_2" parent="web_utils.menu_root"/> -->
+   
     <!-- actions -->
-    <!--
-    <menuitem name="List" id="web_utils.menu_1_list" parent="web_utils.menu_1"
+
+    <menuitem name="List" id="web_utils.menu_1_list" parent="web_utils.product_groups"
               action="web_utils.action_window"/>
-    <menuitem name="Server to list" id="web_utils" parent="web_utils.menu_2"
+    <!--    <menuitem name="Server to list" id="web_utils" parent="web_utils.menu_2"
               action="web_utils.action_server"/>
     -->
   </data>
