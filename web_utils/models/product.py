@@ -21,4 +21,4 @@ class ProductGroup(models.Model):
     group_name = fields.Char(string='Group Name')
     query_id = fields.Char(string='Query ID')
     description = fields.Char(string='Description')
-    product_ids = fields.One2many('product.product', 'id', 'Feature Products')
+    product_ids = fields.Many2many('product.product', string="Product Lines")

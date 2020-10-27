@@ -1,27 +1,28 @@
 <odoo>
-    <data>
-        <!-- <template id="listing"> -->
-        <!--   <ul> -->
-        <!--     <li t-foreach="objects" t-as="object"> -->
-        <!--       <a t-attf-href="#{ root }/objects/#{ object.id }"> -->
-        <!--         <t t-esc="object.display_name"/> -->
-        <!--       </a> -->
-        <!--     </li> -->
-        <!--   </ul> -->
-        <!-- </template> -->
-        <!-- <template id="object"> -->
-        <!--   <h1><t t-esc="object.display_name"/></h1> -->
-        <!--   <dl> -->
-        <!--     <t t-foreach="object._fields" t-as="field"> -->
-        <!--       <dt><t t-esc="field"/></dt> -->
-        <!--       <dd><t t-esc="object[field]"/></dd> -->
-        <!--     </t> -->
-        <!--   </dl> -->
-        <!-- </template> -->
+
+    <!-- <record id="view_product_group" model="ir.ui.view">
+        <field name="name">product_group.tree</field>
+        <field name="model">web_utils.product_group</field>
+        <field name="arch" type="xml">
+            <form>
+                <field name="group_name" />
+                <field name="query_id" />
+                <field name="product_ids" widget="one2many_list" />
+            </form>
+        </field>
+    </record>
 
 
-<!-- Misc templates -->
+        <record id="product_group_line_tree" model="ir.ui.view">
+            <field name="name">product.group.line.tree</field>
+            <field name="model">product.product</field>
+            <field name="arch" type="xml">
+                <tree string="Product Group Lines" create="false">
+                    <field name="id"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record> -->
 
 
-    </data>
 </odoo>
