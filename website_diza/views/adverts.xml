@@ -1,0 +1,82 @@
+<odoo>
+    <template id="diza_adverts" inherit_id="diza_home" name="Adverts" customize_show="True">
+    <data inherit_id="diza_home">
+        <xpath expr="//*[@id='after_side_advert']" position="before">
+            <section
+                class="elementor-section elementor-inner-section elementor-element elementor-element-cff3d61 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                data-id="cff3d61" data-element_type="section" data-settings='{"background_background":"classic"}'>
+                <div class="elementor-container elementor-column-gap-default">
+                    <div class="elementor-row">
+                        <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-6159042"
+                            data-id="6159042" data-element_type="column">
+                            <div class="elementor-column-wrap elementor-element-populated">
+                                <div class="elementor-widget-wrap">
+                                    <div class="elementor-element elementor-element-ca58760 elementor-widget elementor-widget-text-editor"
+                                        data-id="ca58760" data-element_type="widget" data-widget_type="text-editor.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="elementor-text-editor elementor-clearfix">
+                                                <p>
+                                                    Nutritional Supplements
+                                                    <strong>discount</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-bdc017a elementor-widget elementor-widget-text-editor"
+                                        data-id="bdc017a" data-element_type="widget" data-widget_type="text-editor.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="elementor-text-editor elementor-clearfix">
+                                                <p>25% Off</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </xpath>
+
+        <xpath expr="//*[@id='after_mid_advert']" position="before">
+            <section
+                class="elementor-section elementor-inner-section elementor-element elementor-element-7271008 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default"
+                data-id="7271008" data-element_type="section" data-settings='{"background_background":"classic"}'>
+                <div class="elementor-container elementor-column-gap-default">
+                    <div class="elementor-row">
+                        <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-c7e7368"
+                            data-id="c7e7368" data-element_type="column">
+                            <div class="elementor-column-wrap elementor-element-populated">
+                                <div class="elementor-widget-wrap">
+                                    <div class="elementor-element elementor-element-33eadc8 elementor-widget elementor-widget-heading"
+                                        data-id="33eadc8" data-element_type="widget" data-widget_type="heading.default">
+                                        <div class="elementor-widget-container">
+                                            <h2 class="elementor-heading-title elementor-size-default">
+                                                Buy all your medicines<br />
+                                                at 50% offer
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-4eee7de elementor-widget elementor-widget-button"
+                                        data-id="4eee7de" data-element_type="widget" data-widget_type="button.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="elementor-button-wrapper">
+                                                <a href="//shop/" class="elementor-button-link elementor-button elementor-size-sm"
+                                                    role="button">
+                                                    <span class="elementor-button-content-wrapper">
+                                                        <span class="elementor-button-text">Explore Now!</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </xpath>
+    </data>
+    </template>
+</odoo>
