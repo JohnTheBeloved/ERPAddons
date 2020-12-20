@@ -1,0 +1,105 @@
+<templates id="template2" xml:space="preserve">
+    <t t-name="diza.new_cart_product">
+        <t t-set="product_name" t-value="widget.get('product_name')"/>
+        <div class="woocommerce-notices-wrapper">
+            <div class="woocommerce-message" role="alert">
+                <a href="/shop/cart" tabindex="1" class="button wc-forward">View cart</a>
+                “
+                <span t-esc="product_name" />
+                ” has been added to your cart.
+            </div>
+        </div>
+    </t>
+
+    <t  t-name="diza.cart_empty_popup">
+        <div class="widget_shopping_cart_content">
+            <div class="mini_cart_content">
+                <div class="mini_cart_inner">
+                    <div class="mcart-border">
+                        <ul class="cart_empty ">
+                            <li>
+                                <span>Your cart is empty</span>
+                            </li>
+                            <li class="total">
+                                <a class="button wc-continue" href="https://elementor.thembay.com/diza_medicine/shop/">
+                                    Continue Shopping
+                                    <i class="tb-icon tb-icon-chevron-right"/>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="clearfix"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="website_.diza.cart_empty_popup">
+        <div class="widget_shopping_cart_content">
+            <div class="mini_cart_content">
+                <div class="mini_cart_inner">
+                    <div class="mcart-border">
+                        <ul class="cart_list product_list_widget ">
+                            <li t-foreach="website_sale_order.website_order_line" t-as="line">
+                                <div class="product-image">
+                                    <a class="image" href="https://elementor.thembay.com/diza_medicine/product/adant-meiji/">
+                                        <span t-field="line.product_id.image_small" t-options="{'widget': 'image', 'class': 'rounded'}" />
+                                    </a>
+                                </div>
+                                <div class="product-details">
+                                    <a class="product-name" href="https://elementor.thembay.com/diza_medicine/product/adant-meiji/">
+                                        <span>Adant Meiji</span>
+                                        <t t-call="website_sale.cart_line_product_link">
+                                            <span class="h6" t-esc="line.name_short" />
+                                        </t>
+                                    </a>
+                                    <div class="group">
+                                        <span class="quantity">
+                                            <t t-esc="int(line.product_uom_qty) == line.product_uom_qty and int(line.product_uom_qty) or line.product_uom_qty" />
+                                            x
+                                        </span>
+                                        <span class="woocs_special_price_code">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi t-att-data-precision="str(website.currency_id.decimal_places)">
+                                                    <span class="woocommerce-Price-currencySymbol">$</span>
+                                                    <span t-field="product.list_price"
+                                                        t-options='{
+                                                                                                                            "widget": "monetary",
+                                                                                                                            "display_currency": product.currency_id,
+                                                                                                                        }'/>
+                                                </bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <a href="https://elementor.thembay.com/diza_medicine/cart/?remove_item=f2201f5191c4e92cc5af043eebfd0946&amp;_wpnonce=fbdc78a13c" class="remove remove_from_cart_button" aria-label="Remove this item" data-product_id="767" data-product_sku="MEGA-JEWE-12" data-cart_item_key="f2201f5191c4e92cc5af043eebfd0946">
+                                        <i class="tb-icon tb-icon-trash"/>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- end product list -->
+                        <div class="group-button">
+                            <p class="total">
+                                <strong>Subtotal:</strong>
+                                <span class="woocs_special_price_code">
+                                    <span class="woocommerce-Price-amount amount">
+                                        <bdi>
+                                            <span class="woocommerce-Price-currencySymbol">$</span>
+                                            350.00
+                                        </bdi>
+                                    </span>
+                                </span>
+                            </p>
+                            <p class="buttons">
+                                <a href="https://elementor.thembay.com/diza_medicine/cart/" class="button view-cart">View Cart</a>
+                                <a href="https://elementor.thembay.com/diza_medicine/checkout/" class="button checkout">Checkout</a>
+                            </p>
+                        </div>
+                        <div class="clearfix"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>

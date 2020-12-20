@@ -21,7 +21,7 @@
                                                     <div class="item">
                                                         <div class="inner">
                                                             <div class="fbox-icon">
-                                                                <i aria-hidden="true"
+                                                                <i 
                                                                     class="tb-icon tb-icon-shipping-worldwide"></i>
                                                             </div>
 
@@ -40,7 +40,7 @@
                                                     <div class="item">
                                                         <div class="inner">
                                                             <div class="fbox-icon">
-                                                                <i aria-hidden="true" class="tb-icon tb-icon-free-return"></i>
+                                                                <i  class="tb-icon tb-icon-free-return"></i>
                                                             </div>
 
                                                             <div class="fbox-content">
@@ -58,7 +58,7 @@
                                                     <div class="item">
                                                         <div class="inner">
                                                             <div class="fbox-icon">
-                                                                <i aria-hidden="true" class="tb-icon tb-icon-location"></i>
+                                                                <i  class="tb-icon tb-icon-location"></i>
                                                             </div>
 
                                                             <div class="fbox-content">
@@ -75,7 +75,7 @@
                                                     <div class="item">
                                                         <div class="inner">
                                                             <div class="fbox-icon">
-                                                                <i aria-hidden="true" class="tb-icon tb-icon-fast-delivery"></i>
+                                                                <i  class="tb-icon tb-icon-fast-delivery"></i>
                                                             </div>
 
                                                             <div class="fbox-content">

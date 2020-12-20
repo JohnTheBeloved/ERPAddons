@@ -20,23 +20,30 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'website_utils'],
+    'depends': ['base', 'website_sale', ],
 
     # always loaded
     'data': [
         'security/ir.model.access.csv',
+        'views/assets.xml',
+        'views/templates.xml',
         'views/views.xml',
         'views/product.xml',
-        'views/templates.xml',
+        'views/cart.xml',
         'views/homepage.xml',
         'views/adverts.xml',
+        'views/product_quickview.xml',
         'views/featured_products.xml',
         'views/deal_of_the_day.xml',
         'views/testimonials.xml',
         'views/top_rating.xml',
         'views/shipping_and_payment.xml',
         'views/last_chance_to_buy.xml',
+
+        'views/product_detail.xml',
+
     ],
+    'qweb': ['static/src/xml/diza_chatter.xml'],
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',

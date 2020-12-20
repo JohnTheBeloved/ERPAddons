@@ -2,7 +2,7 @@
   <template id="mystyle" name="My style" inherit_id="website.assets_frontend">
       <xpath expr="link[last()]" position="after">
       
-          <link rel="stylesheet" type="text/css" href="/theme_diza/static/scss/index.scss"/>
+          <link rel="stylesheet" type="text/css" href="/theme_diza/static/css/index.css"/>
           <!-- Change location -->
           <link rel="stylesheet" type="text/css" href="/theme_diza/static/css/index.below.css"/>
           <!--Diza Css-->
@@ -190,11 +190,73 @@
      <!--Scripts-->
 
       <!--Scripts end-->
-    <script src="/theme_diza/static/js/elementor/jquery.prettyPhoto.min.js" type="text/javascript" id="prettyPhoto-js"></script>
     <!-- <script type='text/javascript' src='/theme_diza/static/js/jquery/jquery.js' id='jquery-core-js'></script> -->
-    <script type='text/javascript' src='/theme_diza/static/js/index.js' ></script>
+    
     <script type='text/javascript' src='/theme_diza/static/js/index.bottom.js'  ></script>
-    <script type='text/javascript' src='/theme_diza/static/js/wp_content/a05072a1d39318e2c5c019bb5cd71ad3.js' ></script>
+    <!--JQuery-->
+    <script type='text/javascript' src='/theme_diza/static/js/jquery/autocomplete.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/jquery/countdownTimer.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/jquery/fastclick.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/jquery/mmenu.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/jquery/onepagenav.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/jquery/prettyPhoto.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/jquery/sumoselect.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/jquery/selectBox.min.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/jquery/treeview.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/jquery/validate.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/jquery/yith-wcwl.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/jquery/blockUI.min.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/jquery/core.min.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/jquery/ui.others.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/jquery/chosen.min.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/jquery/position.min.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/jquery/colorbox.min.js' ></script>
+    <!--Libs-->
+   <script type='text/javascript' src='/theme_diza/static/js/lib/ajax-auth-script.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/lib/bootstrap.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/lib/detect-mobile-browser.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/lib/function.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/lib/popper.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/lib/skip-link-fix.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/lib/slick.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/lib/custom-slick.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/lib/rs6.min.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/lib/rbtools.min.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/lib/cookie.min.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/lib/accounting.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/lib/form.min.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/lib/dialog.min.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/lib/swiper.min.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/lib/share-link.min.js' ></script>
+   <!-- <script type='text/javascript' src='/theme_diza/static/js/lib/underscore.min.js' ></script> -->
+
+   <!--App Custom-->
+   <script type='text/javascript' src='/theme_diza/static/js/app/price-slider_33.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/app/price-slider.min.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/app/woocommerce.notification.min.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/app/html.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/app/unknown.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/app/wpcf7.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/app/add-to-cart.min.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/app/woocommerce.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/app/cart-fragments.min.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/app/woocompare.min.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/app/wp-util.min.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/app/frontend.min.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/app/skip-link-fix.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/app/add-to-cart-variation.min.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/app/wp-embed.min.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/app/woof.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/app/tooltipster.bundle.min.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/app/waypoints.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/app/front-end-modules.min.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/app/frontend2.min.js' ></script>
+   <script type='text/javascript' src='/theme_diza/static/js/app/single-products.min.js' ></script>
+
+    <!--Plugins-->
+
+   
+    <script type='text/javascript' src='/theme_diza/static/js/woocommerce.js' ></script>
     <script type='text/javascript'  src='/theme_diza/static/js/elementor/lazyload/lazyload.min.js'></script>
 <!--       
     <script

@@ -21,4 +21,12 @@ class ProductGroup(models.Model):
     group_name = fields.Char(string='Group Name')
     query_id = fields.Char(string='Query ID')
     description = fields.Char(string='Description')
-    product_ids = fields.Many2many('product.product', string="Product Lines")
+    product_ids = fields.Many2many('product.template', string="Product Lines")
+    my_href = fields.Char(string='href', compute='__my_href', store=False)
+    my_hash_href = fields.Char(string='hash href', compute='__my_hash_href', store=False)
+
+    def __my_href(self):
+      return self.name.replace(" ", "_")    
+      
+    def __my_hash_href(self):
+      return '#' + self.myHref()

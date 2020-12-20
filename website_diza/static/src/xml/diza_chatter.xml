@@ -1,0 +1,31 @@
+<templates id="template" xml:space="preserve">
+
+    <t t-name="diza.chatter">
+        <t t-set="width" t-value="widget.get('rating_width')"/>
+        <t t-set="no_of_ratings" t-value="widget.get('no_of_ratings')"/>
+        <t t-set="rating_avg" t-value="widget.get('rating_avg')"/>
+        <div>
+            <div class="star-rating" role="img" t-attf-aria-label="Rated {{rating_avg}} out of 5">
+                <span t-attf-style="{{width}}">
+                    Rated
+                    <strong class="rating">
+                        <t t-esc="rating_avg"/>
+                    </strong>
+                    out of 5 based on
+                    <span class="rating" t-esc="no_of_ratings"/>
+                    customer ratings
+                </span>
+            </div>
+            <a href="#reviews" class="woocommerce-review-link">
+                (
+                <span class="count" t-esc="no_of_ratings"/>
+                customer reviews)
+            </a>
+
+            <!-- <span class="rate-sold">
+                <span class="sold-text">Sold:</span>
+                <span class="count">37</span>
+            </span> -->
+        </div>
+    </t>
+</templates>

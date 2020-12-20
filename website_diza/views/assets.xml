@@ -1,0 +1,10 @@
+<odoo>
+    <template id="assets_frontend" inherit_id="website.assets_frontend">
+        <xpath expr="script[last()]" position="after">
+            <script type="text/javascript" src="/website_diza/static/src/js/diza_home.js"></script>
+            <script type="text/javascript" src="/website_diza/static/src/js/diza_wish_list.js"></script>
+            <script type="text/javascript" src="/website_diza/static/src/js/diza_chatter.js"></script>
+            <script type="text/javascript" src="/website_diza/static/src/js/diza_cart.js"></script>
+        </xpath>
+    </template>
+</odoo>

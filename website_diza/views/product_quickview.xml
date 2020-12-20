@@ -1,0 +1,151 @@
+<odoo>
+    <template id="product_quickview">
+        <div id="tbay-quick-view-modal" class="singular-shop">
+            <div id="product-748" class="product  post-748 type-product status-publish has-post-thumbnail product_cat-anti-fungal-anti-itch product_tag-aspirin product_tag-corona product_tag-functional-foods pa_color-blue pa_color-yellow yith_product_brand-3m-healthcare yith_product_brand-curad instock featured shipping-taxable purchasable product-type-simple">
+                <div id="tbay-quick-view-content" class="woocommerce single-product no-gutters">
+                    <div class="image-mains product col-12 col-md-6">
+                        <div id="quickview-carousel" class="owl-carousel quickview-carousel" data-carousel="owl" data-items="1" data-desktopslick="1" data-desktopsmallslick="1" data-tabletslick="1" data-landscapeslick="1" data-mobileslick="1" data-rows="1" data-nav="" data-pagination="1" data-loop="1" data-auto="" data-unslick="">
+                            <div class="item">
+                               <span t-field="product.image" t-options="{'widget': 'image', 'resize': None if product_image_big else '600x600'}"/>
+                            </div>
+                            <div class="item">
+                                <span t-field="product.image" t-options="{'widget': 'image', 'resize': None if product_image_big else '600x600'}"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="summary entry-summary col-12 col-md-6">
+                        <div class="information">
+                            <h1 class="product_title entry-title" t-esc="product.name" />
+                            <div class="woocommerce-product-rating">
+                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
+                                    <span style="width:100%">
+                                        Rated
+                                        <strong class="rating">5.00</strong>
+                                        out of 5 based on
+                                        <span class="rating">1</span>
+                                        customer rating
+                                    </span>
+                                </div>
+                                <a href="#reviews" class="woocommerce-review-link">
+                                    (
+                                    <span class="count">1</span>
+                                    customer review)
+                                </a>
+                                <span class="rate-sold">
+                                    <span class="sold-text">Sold:</span>
+                                    <span class="count">32</span>
+                                </span>
+                            </div>
+                            <p class="price">
+                                <span class="woocs_price_code" data-product-id="748">
+                                    <span class="woocommerce-Price-amount amount">
+                                        <bdi>
+                                            <t t-esc="product.list_price" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                        </bdi>
+                                    </span>
+                                </span>
+                            </p>
+                            <div class="woocommerce-product-details__short-description">
+                                <p>
+                                    Promote wound healing
+                                    <br/>
+                                    Helps maintain capillary health.
+                                    <br/>
+                                    Is a strong antioxidant
+                                </p>
+                            </div>
+                            <p class="stock in-stock">68 in stock</p>
+                            <form class="cart" action="https://elementor.thembay.com/diza_medicine/product/fortamox/" method="post" enctype="multipart/form-data">
+                                
+                                <div id="shop-now" class="shop-now has-buy-now has-wishlist">
+                                    <div class="quantity">
+                                        <label class="screen-reader-text" for="quantity_5fde2461470ae">Fortamox quantity</label>
+                                        <input type="number" id="quantity_5fde2461470ae" class="input-text qty text" step="1" min="1" max="68" name="quantity" value="1" title="Qty" size="4" placeholder="" inputmode="numeric"/>
+                                    </div>
+                                    <button type="submit" name="add-to-cart" value="748" class="single_add_to_cart_button button alt">Add to cart</button>
+                                    <button class="tbay-buy-now button">Buy Now</button>
+                                    <input type="hidden" value="0" name="diza_buy_now"/>
+                                    <div class="group-button">
+                                        <div class="tbay-wishlist">
+                                            <div class="button-wishlist shown-mobile" title="Wishlist">
+                                                <div class="yith-wcwl-add-to-wishlist add-to-wishlist-748  wishlist-fragment on-first-load" data-fragment-ref="748" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:748,&quot;parent_product_id&quot;:748,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+                                                    <!-- ADD TO WISHLIST -->
+                                                    <div class="yith-wcwl-add-button">
+                                                        <a href="?add_to_wishlist=748" rel="nofollow" data-product-id="748" data-product-type="simple" data-original-product-id="748" class="add_to_wishlist single_add_to_wishlist" data-title="&lt;i class=&quot;tb-icon tb-icon-heart&quot;&gt;&lt;/i&gt;&lt;span&gt;Add to wishlist&lt;/span&gt;">
+                                                            <i class="yith-wcwl-icon fa fa-heart-o"/>
+                                                            <span>
+                                                                <i class="tb-icon tb-icon-heart"/>
+                                                                <span>Add to wishlist</span>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <!-- COUNT TEXT -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tbay-compare">
+                                            <div class="yith-compare">
+                                                <a href="/diza_medicine/wp-admin/admin-ajax.php?action=yith-woocompare-add-product&amp;product_id=748&amp;id=748&amp;_wpnonce=14b59f1fec" title="Compare" class="compare" data-product_id="748">
+                                                    <span>Compare</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div id="mobile-close-infor-wrapper"/>
+                            <div class="mobile-btn-cart-click  has-buy-now has-wishlist">
+                                <div id="tbay-click-addtocart">Add to cart</div>
+                                <div id="tbay-click-buy-now">Buy Now</div>
+                                <div class="tbay-mobile-wishlist">
+                                    <div class="button-wishlist shown-mobile" title="Wishlist">
+                                        <div class="yith-wcwl-add-to-wishlist add-to-wishlist-748  wishlist-fragment on-first-load" data-fragment-ref="748" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:748,&quot;parent_product_id&quot;:748,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+                                            <!-- ADD TO WISHLIST -->
+                                            <div class="yith-wcwl-add-button">
+                                                <a href="?add_to_wishlist=748" rel="nofollow" data-product-id="748" data-product-type="simple" data-original-product-id="748" class="add_to_wishlist single_add_to_wishlist" data-title="&lt;i class=&quot;tb-icon tb-icon-heart&quot;&gt;&lt;/i&gt;&lt;span&gt;Add to wishlist&lt;/span&gt;">
+                                                    <i class="yith-wcwl-icon fa fa-heart-o"/>
+                                                    <span>
+                                                        <i class="tb-icon tb-icon-heart"/>
+                                                        <span>Add to wishlist</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <!-- COUNT TEXT -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_meta">
+                                <span class="sku_wrapper">
+                                    SKU:
+                                    <span class="sku">MEGA-SHOE-11781</span>
+                                </span>
+                                <span class="posted_in">
+                                    Category:
+                                    <a href="https://elementor.thembay.com/diza_medicine/product-category/anti-fungal-anti-itch/" rel="tag">Anti-Fungal &amp; Anti-Itch</a>
+                                </span>
+                                <span class="tagged_as">
+                                    Tags:
+                                    <a href="https://elementor.thembay.com/diza_medicine/product-tag/aspirin/" rel="tag">Aspirin</a>
+                                    <a href="https://elementor.thembay.com/diza_medicine/product-tag/corona/" rel="tag">Corona</a>
+                                    <a href="https://elementor.thembay.com/diza_medicine/product-tag/functional-foods/" rel="tag">Functional foods</a>
+                                </span>
+                                <span class="yith-wcbr-brands">
+                                    Brand:
+                                    <span itemprop="brand">
+                                        <a href="https://elementor.thembay.com/diza_medicine/product-brands/3m-healthcare/" rel="tag">3M Healthcare</a>
+                                        ,
+                                        <a href="https://elementor.thembay.com/diza_medicine/product-brands/curad/" rel="tag">Curad</a>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="tbay-woo-share">
+                                <div class="addthis_inline_share_toolbox"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</odoo>

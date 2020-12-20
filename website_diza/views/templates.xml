@@ -1,5 +1,7 @@
 <odoo>
 
+
+
     <!-- <record id="view_product_group" model="ir.ui.view">
         <field name="name">product_group.tree</field>
         <field name="model">website_utils.product_group</field>
@@ -23,6 +25,18 @@
                 </tree>
             </field>
         </record> -->
+
+    <record id="product_group_line_tree" model="ir.ui.view">
+        <field name="name">product.group.line.tree</field>
+        <field name="model">website_diza.product_group</field>
+        <field name="arch" type="xml">
+            <tree string="Product Group Lines" create="true">
+                <field name="id"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
 
 
 </odoo>

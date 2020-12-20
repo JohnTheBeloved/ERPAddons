@@ -10,272 +10,62 @@
                             <span class="title">
                                 <span class="title-child">
                                     Last chance to buy
-                                    <i aria-hidden="true" class="tb-icon tb-icon-plus-sub"></i>
+                                    <i class="tb-icon tb-icon-plus-sub"></i>
                                 </span>
                             </span>
                         </h3>
 
                         <div class="products row grid products" data-xlgdesktop="3" data-desktop="3" data-desktopsmall="3"
                             data-tablet="3" data-landscape="2" data-mobile="2">
-                            <div class="item">
-                                <div class="product-block product vertical-v1" data-product-id="718">
-                                    <div class="product-content">
-                                        <div class="block-inner">
-                                            <figure class="image">
-                                                <a href="//product/constipation-medication/">
-                                                    <img width="280" height="280"
-                                                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20280%20280'%3E%3C/svg%3E"
-                                                        class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""
-                                                        data-lazy-src="/theme_diza/static/img/diza/07/product-57-280x280.jpg" /><noscript><img
-                                                            width="280" height="280"
-                                                            src="/theme_diza/static/img/diza/07/product-57-280x280.jpg"
-                                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                            alt="" /></noscript>
-                                                </a>
-                                            </figure>
-                                        </div>
-                                        <div class="caption">
-                                            <h3 class="name">
-                                                <a href="//product/constipation-medication/">Constipation medication</a>
-                                            </h3>
-
-                                            <span class="price"><span class="woocs_price_code" data-product-id="718"><span
-                                                        class="woocommerce-Price-amount amount"><bdi><span
-                                                                class="woocommerce-Price-currencySymbol">&#36;</span>122.00</bdi>
-                                                    </span>
-                                                </span>
-                                            </span>
-
-                                            <div class="rating no-rate">
-                                                <div class="star-rating"></div>
-                                                <div class="count">
-                                                    (0)
-                                                </div>
+                            <t t-foreach="last_chance_product_group.product_ids" t-as="product">
+                                <t t-set="product_href" t-value="keep('/shop/product/%s' % slug(product), None)" />
+                                <div class="item">
+                                    <div class="product-block product vertical-v1" data-product-id="718">
+                                        <div class="product-content">
+                                            <div class="block-inner">
+                                                <figure class="image">
+                                                    <a href="//product/constipation-medication/">
+                                                        <img width="280" height="280"
+                                                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20280%20280'%3E%3C/svg%3E"
+                                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""
+                                                            data-lazy-src="/theme_diza/static/img/diza/07/product-57-280x280.jpg" /><noscript><img
+                                                                width="280" height="280"
+                                                                src="/theme_diza/static/img/diza/07/product-57-280x280.jpg"
+                                                                class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+                                                                alt="" /></noscript>
+                                                    </a>
+                                                </figure>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                            <div class="caption">
+                                                <h3 class="name">
+                                                    <a href="//product/constipation-medication/"><t t-esc="product.name"/></a>
+                                                </h3>
 
-                            <div class="item">
-                                <div class="product-block product vertical-v1" data-product-id="724">
-                                    <div class="product-content">
-                                        <div class="block-inner">
-                                            <figure class="image">
-                                                <a href="//product/ht-strokend-tab-30/">
-                                                    <img width="280" height="280"
-                                                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20280%20280'%3E%3C/svg%3E"
-                                                        class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""
-                                                        data-lazy-src="/theme_diza/static/img/diza/07/product-55-280x280.jpg" /><noscript><img
-                                                            width="280" height="280"
-                                                            src="/theme_diza/static/img/diza/07/product-55-280x280.jpg"
-                                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                            alt="" /></noscript>
-                                                </a>
-                                            </figure>
-                                        </div>
-                                        <div class="caption">
-                                            <h3 class="name">
-                                                <a href="//product/ht-strokend-tab-30/">HT Strokend Tab.30</a>
-                                            </h3>
-
-                                            <span class="price"><span class="woocs_price_code" data-product-id="724"><span
-                                                        class="woocommerce-Price-amount amount"><bdi><span
-                                                                class="woocommerce-Price-currencySymbol">&#36;</span>70.00</bdi>
-                                                    </span>
-                                                </span>
-                                            </span>
-
-                                            <div class="rating no-rate">
-                                                <div class="star-rating"></div>
-                                                <div class="count">
-                                                    (0)
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="product-block product vertical-v1" data-product-id="725">
-                                    <div class="product-content">
-                                        <div class="block-inner">
-                                            <figure class="image">
-                                                <a href="//product/cumar-gold-fast/">
-                                                    <img width="280" height="280"
-                                                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20280%20280'%3E%3C/svg%3E"
-                                                        class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""
-                                                        data-lazy-src="/theme_diza/static/img/diza/07/product-55-280x280.jpg" /><noscript><img
-                                                            width="280" height="280"
-                                                            src="/theme_diza/static/img/diza/07/product-55-280x280.jpg"
-                                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                            alt="" /></noscript>
-                                                </a>
-                                            </figure>
-                                        </div>
-                                        <div class="caption">
-                                            <h3 class="name">
-                                                <a href="//product/cumar-gold-fast/">Cumar Gold Fast</a>
-                                            </h3>
-
-                                            <span class="price"><span class="woocs_price_code" data-product-id="725"><ins><span
+                                                <span class="price"><span class="woocs_price_code" data-product-id="718"><span
                                                             class="woocommerce-Price-amount amount"><bdi><span
-                                                                    class="woocommerce-Price-currencySymbol">&#36;</span>41.00</bdi>
+                                                                    class="woocommerce-Price-currencySymbol">
+                                                                        <t t-esc="product.list_price" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                                                    </span>
+                                                                    </bdi>
                                                         </span>
-                                                    </ins>
-                                                    <del><span class="woocommerce-Price-amount amount"><bdi><span
-                                                                    class="woocommerce-Price-currencySymbol">&#36;</span>50.00</bdi></span></del></span>
-                                            </span>
-
-                                            <div class="rating">
-                                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                                    <span style="width: 100%;">Rated
-                                                        <strong class="rating">5.00</strong>
-                                                        out of 5</span>
-                                                </div>
-                                                <div class="count">
-                                                    <span>(1)</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="product-block product vertical-v1" data-product-id="726">
-                                    <div class="product-content">
-                                        <div class="block-inner">
-                                            <figure class="image">
-                                                <a href="//product/tebexerol-immunoxel/">
-                                                    <img width="280" height="280"
-                                                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20280%20280'%3E%3C/svg%3E"
-                                                        class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""
-                                                        data-lazy-src="/theme_diza/static/img/diza/07/product-54-280x280.jpg" /><noscript><img
-                                                            width="280" height="280"
-                                                            src="/theme_diza/static/img/diza/07/product-54-280x280.jpg"
-                                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                            alt="" /></noscript>
-                                                </a>
-                                            </figure>
-                                        </div>
-                                        <div class="caption">
-                                            <h3 class="name">
-                                                <a href="//product/tebexerol-immunoxel/">Tebexerol Immunoxel</a>
-                                            </h3>
-
-                                            <span class="price"><span class="woocs_price_code" data-product-id="726"><span
-                                                        class="woocommerce-Price-amount amount"><bdi><span
-                                                                class="woocommerce-Price-currencySymbol">&#36;</span>134.00</bdi>
                                                     </span>
                                                 </span>
-                                            </span>
 
-                                            <div class="rating">
-                                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                                    <span style="width: 100%;">Rated
-                                                        <strong class="rating">5.00</strong>
-                                                        out of 5</span>
-                                                </div>
-                                                <div class="count">
-                                                    <span>(1)</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="product-block product vertical-v1" data-product-id="727">
-                                    <div class="product-content">
-                                        <div class="block-inner">
-                                            <figure class="image">
-                                                <a href="//product/pricefil/">
-                                                    <img width="280" height="280"
-                                                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20280%20280'%3E%3C/svg%3E"
-                                                        class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""
-                                                        data-lazy-src="/theme_diza/static/img/diza/06/product-51-280x280.jpg" /><noscript><img
-                                                            width="280" height="280"
-                                                            src="/theme_diza/static/img/diza/06/product-51-280x280.jpg"
-                                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                            alt="" /></noscript>
-                                                </a>
-                                            </figure>
-                                        </div>
-                                        <div class="caption">
-                                            <h3 class="name">
-                                                <a href="//product/pricefil/">Pricefil</a>
-                                            </h3>
-
-                                            <span class="price"><span class="woocs_price_code" data-product-id="727"><span
-                                                        class="woocommerce-Price-amount amount"><bdi><span
-                                                                class="woocommerce-Price-currencySymbol">&#36;</span>144.00</bdi>
-                                                    </span>
-                                                </span>
-                                            </span>
-
-                                            <div class="rating">
-                                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                                    <span style="width: 100%;">Rated
-                                                        <strong class="rating">5.00</strong>
-                                                        out of 5</span>
-                                                </div>
-                                                <div class="count">
-                                                    <span>(1)</span>
+                                                <div class="rating">
+                                                    <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
+                                                        <span style="width: 100%;">Rated
+                                                            <strong class="rating">5.00</strong>
+                                                            out of 5</span>
+                                                    </div>
+                                                    <div class="count">
+                                                        <span>(1)</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="product-block product vertical-v1" data-product-id="747">
-                                    <div class="product-content">
-                                        <div class="block-inner">
-                                            <figure class="image">
-                                                <a href="//product/trionstrep-medication/">
-                                                    <img width="280" height="280"
-                                                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20280%20280'%3E%3C/svg%3E"
-                                                        class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""
-                                                        data-lazy-src="/theme_diza/static/img/diza/06/product-37-280x280.jpg" /><noscript><img
-                                                            width="280" height="280"
-                                                            src="/theme_diza/static/img/diza/06/product-37-280x280.jpg"
-                                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                            alt="" /></noscript>
-                                                </a>
-                                            </figure>
-                                        </div>
-                                        <div class="caption">
-                                            <h3 class="name">
-                                                <a href="//product/trionstrep-medication/">Trionstrep Medication</a>
-                                            </h3>
-
-                                            <span class="price"><span class="woocs_price_code" data-product-id="747"><ins><span
-                                                            class="woocommerce-Price-amount amount"><bdi><span
-                                                                    class="woocommerce-Price-currencySymbol">&#36;</span>140.00</bdi>
-                                                        </span>
-                                                    </ins>
-                                                    <del><span class="woocommerce-Price-amount amount"><bdi><span
-                                                                    class="woocommerce-Price-currencySymbol">&#36;</span>220.00</bdi></span></del></span>
-                                            </span>
-
-                                            <div class="rating">
-                                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-                                                    <span style="width: 100%;">Rated
-                                                        <strong class="rating">5.00</strong>
-                                                        out of 5</span>
-                                                </div>
-                                                <div class="count">
-                                                    <span>(1)</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </t>
                         </div>
                     </div>
                 </div>

@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 from addons_mine.website_utils.models.product import ProductGroup
 from odoo.addons.portal.controllers.web import Home
+from odoo.addons.website.controllers.main import QueryURL
 from odoo import http
 from odoo.http import request
 import json
+from werkzeug.exceptions import NotFound
 
 class WebUtils(http.Controller):
     # @http.route('/web_utils/web_utils/', auth='public')
@@ -34,9 +36,16 @@ class WebUtils(http.Controller):
 class WebsiteSort(Home):
    @http.route()
    def index(self, **kw):
-       super(WebsiteSort, self).index()
-       ProductGroupModel = request.env['website_utils.product_group']
-       featured_product_group = ProductGroupModel.browse(['query_id', '=', 'featured'])
-       return request.render('website.homepage', {
-           'featured_product_group': featured_product_group
-       })
+        super(WebsiteSort, self).index()
+        featured_product_groups = request.env['website_utils.product_group'].search([('query_id', '=', 'featured')])
+        last_chance_product_group = request.env['website_utils.product_group'].search([('query_id', '=', 'last-chance')])
+        # category = request.env['product.public.category'].search([('id', '=', int(None))], limit=1)
+        # if not category or not category.can_access_from_current_website():
+        #     raise NotFound()
+        attrib_list = request.httprequest.args.getlist('attrib')
+        keep = QueryURL('/shop', False, search='', attrib=attrib_list, order=kw.get('order'))
+        return request.render('website.homepage', {
+            'featured_product_groups': featured_product_groups,
+            'last_chance_product_group': last_chance_product_group,
+            'keep': keep
+        })

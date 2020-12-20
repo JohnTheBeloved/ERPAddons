@@ -10,19 +10,16 @@
                 <field name="product_ids" widget="one2many_list" />
             </form>
         </field>
+    </record> -->
+    <record id="product_group_line_tree" model="ir.ui.view">
+        <field name="name">product.group.line.tree</field>
+        <field name="model">website_utils.product_group</field>
+        <field name="arch" type="xml">
+            <tree string="Product Group Lines" create="true">
+                <field name="id"/>
+                <field name="group_name"/>
+            </tree>
+        </field>
     </record>
-
-
-        <record id="product_group_line_tree" model="ir.ui.view">
-            <field name="name">product.group.line.tree</field>
-            <field name="model">product.product</field>
-            <field name="arch" type="xml">
-                <tree string="Product Group Lines" create="false">
-                    <field name="id"/>
-                    <field name="name"/>
-                </tree>
-            </field>
-        </record> -->
-
 
 </odoo>

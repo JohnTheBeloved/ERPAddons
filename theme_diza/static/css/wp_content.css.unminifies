@@ -34465,8 +34465,8 @@ only screen and (min-resolution:144dpi) {
 @font-face {
     font-display: swap;
     font-family: WooCommerce;
-    src: url(/theme_diza/static/fonts/woocomerce/WooCommerce.eot);
-    src: url(/theme_diza/static/fonts/woocomerce/WooCommerce.eot?#iefix) format("embedded-opentype"), url(/theme_diza/static/fonts/woocomerce/WooCommerce.woff) format("woff"), url(/theme_diza/static/fonts/woocomerce/WooCommerce.ttf) format("truetype"), url(/theme_diza/static/fonts/woocomerce/WooCommerce.svg#WooCommerce) format("svg");
+    src: url(/theme_diza/static/fonts/woocommerce/WooCommerce.eot);
+    src: url(/theme_diza/static/fonts/woocommerce/WooCommerce.eot?#iefix) format("embedded-opentype"), url(/theme_diza/static/fonts/woocommerce/WooCommerce.woff) format("woff"), url(/theme_diza/static/fonts/woocommerce/WooCommerce.ttf) format("truetype"), url(/theme_diza/static/fonts/woocommerce/WooCommerce.svg#WooCommerce) format("svg");
     font-weight: 400;
     font-style: normal
 }
@@ -38015,8 +38015,8 @@ div#show-all-questions {
 @font-face {
     font-display: swap;
     font-family: WooCommerce;
-    src: url(/theme_diza/static/fonts/woocomerce/WooCommerce.eot);
-    src: url(/theme_diza/static/fonts/woocomerce/WooCommerce.eot) format("embedded-opentype"), url(/theme_diza/static/fonts/woocomerce/WooCommerce.woff) format("woff"), url(/theme_diza/static/fonts/woocomerce/WooCommerce.ttf) format("truetype"), url(/theme_diza/static/fonts/woocomerce/WooCommerce.svg) format("svg");
+    src: url(/theme_diza/static/fonts/woocommerce/WooCommerce.eot);
+    src: url(/theme_diza/static/fonts/woocommerce/WooCommerce.eot) format("embedded-opentype"), url(/theme_diza/static/fonts/woocommerce/WooCommerce.woff) format("woff"), url(/theme_diza/static/fonts/woocommerce/WooCommerce.ttf) format("truetype"), url(/theme_diza/static/fonts/woocommerce/WooCommerce.svg) format("svg");
     font-weight: 400;
     font-style: normal
 }
@@ -55237,7 +55237,7 @@ table.wcvendors-table-order form #tracking_number_save_button:focus,
 form#wcv-store-settings input#store_save_button:focus,
 .wcv_store_search form input[type="submit"]:focus,
 .wcv_vendor_search form input[type="submit"]:focus {
-    background: #52d5e6
+    background: #dd8829 /**refactored**/
 }
 
 .btn-theme:hover,
@@ -56354,7 +56354,7 @@ form.checkout input[type="checkbox"]:checked+label:before,
 }
 
 .diza-search-results .autocomplete-suggestions>div.view-all-products:hover {
-    color: #52d5e6
+    color: #dd8829 /**refactored**/
 }
 
 .diza-search-results .autocomplete-suggestions>div.list-header {
@@ -57371,7 +57371,7 @@ body.search .entry-content h2 {
 }
 
 #tbay-footer a:hover {
-    color: #52d5e6
+    color: #dd8829 /**refactored**/
 }
 
 #tbay-footer .elementor-widget-text-editor p {
@@ -62851,8 +62851,8 @@ ul.list-tags li {
 }
 
 .tbay-body-default .woocommerce-mini-cart__buttons>a.wc-forward.checkout:hover {
-    background: #52d5e6;
-    border-color: #52d5e6
+    background: #dd8829 /**refactored**/;
+    border-color: #dd8829 /**refactored**/
 }
 
 .tbay-body-default ul.cart_empty>li {
@@ -63782,11 +63782,11 @@ body.tbay-body-default .has-large-font-size {
         transform: scale(.6)
     }
     .product-block.v1 .group-buttons>div a:hover {
-        background: #52d5e6;
+        background: #dd8829 /**refactored**/;
         color: #fff
     }
     .product-block.v1 .group-buttons>div a.added {
-        background: #52d5e6
+        background: #dd8829 /**refactored**/
     }
     .product-block.v1 .group-buttons>div a.added:hover {
         color: #fff
@@ -63814,7 +63814,7 @@ body.tbay-body-default .has-large-font-size {
     }
     .product-block.v1 .group-buttons .yith-wcwl-wishlistexistsbrowse a,
     .product-block.v1 .group-buttons .yith-wcwl-wishlistaddedbrowse a {
-        background: #52d5e6;
+        background: #dd8829 /**refactored**/;
         color: #fff !important
     }
     .product-block.v1 .time {
@@ -63863,7 +63863,7 @@ body.tbay-body-default .has-large-font-size {
     }
     .product-block.v1 .add-cart a:hover,
     .product-block.v1 .add-cart a:focus {
-        background: #52d5e6
+        background: #dd8829 /**refactored**/
     }
     .product-block.v1 .add-cart a:hover,
     .product-block.v1 .add-cart a:focus,
@@ -64461,7 +64461,7 @@ body.tbay-body-default .has-large-font-size {
 }
 
 .show-all:hover {
-    color: #52d5e6
+    color: #dd8829 /**refactored**/
 }
 
 .show-all i {
@@ -64815,7 +64815,7 @@ body.tbay-body-default .has-large-font-size {
 }
 
 .elementor-widget-tbay-posts-grid .readmore:hover {
-    color: #52d5e6
+    color: #dd8829 /**refactored**/
 }
 
 .tbay-element-instagram {
@@ -66202,8 +66202,8 @@ a.vc_single_image-wrapper:hover:before,
 }
 
 #tbay-cart-modal .main-content a.checkout:hover {
-    background: #52d5e6;
-    border-color: #52d5e6
+    background: #dd8829 /**refactored**/;
+    border-color: #dd8829 /**refactored**/
 }
 
 #tbay-cart-modal .main-content .btn-close {
@@ -66479,8 +66479,8 @@ a.vc_single_image-wrapper:hover:before,
 }
 
 .custom-image-list-categories .item-cat:hover>.cat-icon {
-    border-color: #52d5e6;
-    background-color: #52d5e6
+    border-color: #dd8829 /**refactored**/;
+    background-color: #dd8829 /**refactored**/
 }
 
 .custom-image-list-categories .item-cat:hover>.cat-icon i {
@@ -66499,7 +66499,7 @@ a.vc_single_image-wrapper:hover:before,
 }
 
 .custom-image-list-categories .cat-name:hover {
-    color: #52d5e6;
+    color: #dd8829 /**refactored**/;
     text-decoration: none
 }
 
@@ -66893,7 +66893,7 @@ div.tbay-element.tbay-element-product-count-down .product-count-down.slick-slide
 }
 
 .tbay-element.tbay-element-product-flash-sales .show-all:hover {
-    color: #52d5e6;
+    color: #dd8829 /**refactored**/;
     text-decoration: none
 }
 
@@ -67957,7 +67957,7 @@ article .more {
 }
 
 .post .entry-header .readmore:hover {
-    color: #52d5e6
+    color: #dd8829 /**refactored**/
 }
 
 .post .post-type {
@@ -68090,7 +68090,7 @@ article .more {
 }
 
 .post .entry-thumb .entry-image:hover .post-type {
-    background-color: #52d5e6;
+    background-color: #dd8829 /**refactored**/;
     color: #fff
 }
 
@@ -79371,13 +79371,13 @@ body.admin-bar #sidebar-shop.sidebar-desktop {
         -o-border-radius: 4px
     }
     .products-list .product-block .group-buttons>div a:hover {
-        background: #52d5e6;
-        border-color: #52d5e6
+        background: #dd8829 /**refactored**/;
+        border-color: #dd8829 /**refactored**/
     }
     .products-list .product-block .group-buttons>div .yith-wcwl-wishlistexistsbrowse a,
     .products-list .product-block .group-buttons>div .yith-wcwl-wishlistaddedbrowse a {
-        background: #52d5e6;
-        border-color: #52d5e6
+        background: #dd8829 /**refactored**/;
+        border-color: #dd8829 /**refactored**/
     }
     .products-list .owl-carousel:not(.slick-slider) {
         display: -ms-flexbox;
@@ -79721,7 +79721,7 @@ body ul.product_list_widget li .wcfm_dashboard_item_title {
 
 .tbay-dropdown-cart .cart_empty>li a.button:hover,
 .cart-dropdown .cart_empty>li a.button:hover {
-    color: #52d5e6
+    color: #dd8829 /**refactored**/
 }
 
 .tbay-dropdown-cart .cart_list li,
@@ -80603,7 +80603,7 @@ body.woocommerce div.product form.cart .variations label {
 
 .singular-shop div.product .tbay-wishlist .yith-wcwl-wishlistexistsbrowse a,
 .singular-shop div.product .tbay-wishlist .yith-wcwl-wishlistaddedbrowse a {
-    color: #52d5e6
+    color: #dd8829 /**refactored**/
 }
 
 .singular-shop div.product .tbay-wishlist .yith-wcwl-add-button>a>i {
@@ -80691,7 +80691,7 @@ body.woocommerce div.product form.cart .variations label {
 .singular-shop div.product .tbay-wishlist a.added,
 .singular-shop div.product .tbay-compare a:hover,
 .singular-shop div.product .tbay-compare a.added {
-    color: #52d5e6
+    color: #dd8829 /**refactored**/
 }
 
 .singular-shop div.product .tbay-wishlist a>i+span {
@@ -81068,7 +81068,7 @@ div.product table.variations tr {
 
 #shop-now.has-buy-now .tbay-buy-now:hover,
 #shop-now.has-buy-now .tbay-buy-now:focus {
-    background: #52d5e6
+    background: #dd8829 /**refactored**/
 }
 
 #shop-now.has-buy-now .group-button .tbay-wishlist a.view-wishlist {
@@ -81082,7 +81082,7 @@ div.product table.variations tr {
 
 #shop-now.has-buy-now .group-button .tbay-wishlist .yith-wcwl-wishlistexistsbrowse a,
 #shop-now.has-buy-now .group-button .tbay-wishlist .yith-wcwl-wishlistaddedbrowse a {
-    color: #52d5e6
+    color: #dd8829 /**refactored**/
 }
 
 #shop-now.has-buy-now .group-button .tbay-wishlist .yith-wcwl-wishlistexistsbrowse span,
@@ -83030,7 +83030,7 @@ body div.product.product-type-grouped form.cart .group_table .label {
 }
 
 .singular-shop div.product.product-type-external .single_add_to_cart_button:hover {
-    background: #52d5e6
+    background: #dd8829 /**refactored**/
 }
 
 #sticky-menu-bar {
@@ -84438,7 +84438,7 @@ dd.variation-Vendor {
 
 .account-orders-table .order-actions>a {
     color: #fff;
-    background: #52d5e6;
+    background: #dd8829 /**refactored**/;
     line-height: 40px;
     padding: 0 15px
 }
@@ -91913,8 +91913,8 @@ table.wcvendors-table-shop_coupon {
     }
     .products-list .product-block .group-buttons>div a.added {
         color: #fff;
-        background: #52d5e6;
-        border-color: #52d5e6
+        background: #dd8829 /**refactored**/;
+        border-color: #dd8829 /**refactored**/
     }
     .products-list .product-block .group-buttons>div a i {
         margin: 0;
@@ -93485,7 +93485,7 @@ body.admin-bar .image-mains .share-content .content {
         background: transparent
     }
     .topbar-device-mobile .tbay-element-mini-cart a.wc-continue:hover {
-        color: #52d5e6
+        color: #dd8829 /**refactored**/
     }
     .topbar-device-mobile i {
         font-size: 20px;
@@ -93648,7 +93648,7 @@ body.admin-bar .image-mains .share-content .content {
         min-width: 20px;
         text-align: center;
         border-radius: 50%;
-        background: #52d5e6;
+        background: #dd8829 /**refactored**/;
         color: #000
     }
     .footer-device-mobile .list-menu-icon>* a span.count h1,
@@ -93696,7 +93696,7 @@ body.admin-bar .image-mains .share-content .content {
         min-width: 20px;
         text-align: center;
         border-radius: 50%;
-        background: #52d5e6;
+        background: #dd8829 /**refactored**/;
         color: #000
     }
     .tbay-element-mini-cart .cart-dropdown .dropdown-menu {
@@ -95666,7 +95666,7 @@ body.admin-bar .image-mains .share-content .content {
         line-height: 46px
     }
     #shop-now.has-buy-now.has-wishlist .single_add_to_cart_button {
-        background: #52d5e6
+        background: #dd8829 /**refactored**/
     }
     #shop-now .tbay-wishlist .yith-wcwl-add-to-wishlist span span {
         display: none
@@ -96907,7 +96907,7 @@ div.wp-block-themepunch-revslider {
 
 .btn-theme:hover,
 .btn-theme:focus {
-    background: #52d5e6
+    background: #dd8829 /**refactored**/
 }
 
 .btn-theme:hover,

@@ -1,3 +1,8 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_web_utils_product_group,website_utils.product_group,model_website_utils_product_group,,1,1,1,1
-access_web_utils_product_product,product.product,product.model_product_product,,1,1,1,1
+access_website_diza_product_group,website_diza.product_group,model_website_diza_product_group,,1,1,1,1
+access_website_diza_product_product,product.product,product.model_product_product,,1,1,1,1
+access_website_diza_medicine_medicine,medicine.medicine,medicine.model_medicine_medicine,,1,1,1,1
+access_website_diza_product_category,product.category,product.model_product_category,,1,1,1,1
+access_website_diza_product_template,product.template,product.model_product_template,,1,1,1,1
+access_website_diza_res_company,res.company,base.model_res_company,,1,0,0,0
+access_website_diza_uom_uom,uom.uom,uom.model_uom_uom,,1,0,0,0

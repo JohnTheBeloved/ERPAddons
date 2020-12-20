@@ -5,21 +5,17 @@
   </template> -->
 
   <template
-    id="new_homepage" name="Woocomerce" inherit_id="website.homepage" customize_show="True">
+    id="new_homepage" name="Woocomerce Class Setup" inherit_id="website.layout">
   
     <!-- Assign an id  -->
 
     <!-- Add an element after the top menu  -->
- <data inherit_id="website.layout">
-    <xpath expr="//div[@id='wrapwrap']" position="attributes">
-      <attribute name="class">home page-template-default page page-id-1747 theme-diza woocommerce-no-js
-        woo-variation-swatches wvs-theme-diza wvs-theme-child-diza wvs-style-squared wvs-attr-behavior-blur wvs-tooltip
-        wvs-css tbay-homepage-demo skin-medicine tbay-home tbay-show-cart-mobile tbay-body-mobile-product-two
-        tbay-hide-variation-selector tbay-show-quantity-mobile elementor-default elementor-kit-1689 elementor-page
-        elementor-page-1747 woocommerce tbay-variation-free ajax_cart_popup header-mobile-center currency-usd
-      </attribute>
-      <attribute name="data-rsssl">1</attribute>
-    </xpath>
+  <data inherit_id="website.layout">
+      <xpath expr="//div[@id='wrapwrap']" position="attributes">
+        <attribute name="t-attf-class" add="#{' wrapper-container boxed-layout home page-template-default page page-id-1747 theme-diza woocommerce-no-js woo-variation-swatches wvs-theme-diza wvs-theme-child-diza wvs-style-squared wvs-attr-behavior-blur wvs-tooltip wvs-css tbay-homepage-demo skin-medicine tbay-home tbay-show-cart-mobile tbay-body-mobile-product-two tbay-hide-variation-selector tbay-show-quantity-mobile elementor-default elementor-kit-1689 elementor-page elementor-page-1747 woocommerce tbay-variation-free ajax_cart_popup header-mobile-center currency-usd'}"  seperator=" "/>
+        <attribute name="data-rsssl">1</attribute>
+        <attribute name="data-rsssl2">2</attribute>
+      </xpath>
     </data>
   </template>
 

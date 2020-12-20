@@ -1,30 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
-        <!--  -->
-        <!--   <record id="object0" model="website_utils.web_utils"> -->
-        <!--     <field name="name">Object 0</field> -->
-        <!--     <field name="value">0</field> -->
-        <!--   </record> -->
-        <!--  -->
-        <!--   <record id="object1" model="website_utils.web_utils"> -->
-        <!--     <field name="name">Object 1</field> -->
-        <!--     <field name="value">10</field> -->
-        <!--   </record> -->
-        <!--  -->
-        <!--   <record id="object2" model="website_utils.web_utils"> -->
-        <!--     <field name="name">Object 2</field> -->
-        <!--     <field name="value">20</field> -->
-        <!--   </record> -->
-        <!--  -->
-        <!--   <record id="object3" model="website_utils.web_utils"> -->
-        <!--     <field name="name">Object 3</field> -->
-        <!--     <field name="value">30</field> -->
-        <!--   </record> -->
-        <!--  -->
-        <!--   <record id="object4" model="website_utils.web_utils"> -->
-        <!--     <field name="name">Object 4</field> -->
-        <!--     <field name="value">40</field> -->
-        <!--   </record> -->
-        <!--  -->
+    <data noupdate="1">
+        <record id="website_diza.medicine_pcm" model="medicine.medicine">
+            <field name="name">Paracetamol (Diza)</field>
+            <field name="generic_name">Paracetamol (Diza)</field>
+        </record>
+         <record id="website_diza.medicine_azith" model="medicine.medicine">
+            <field name="name">Azithromycin (Diza)</field>
+            <field name="generic_name">Azithromycin (Diza)</field>
+        </record>
+        <record id="website_diza.medicine_artes" model="medicine.medicine">
+            <field name="name">Artesunate (Diza)</field>
+            <field name="generic_name">Artesunate (Diza)</field>
+        </record>
+        <record id="website_diza.medicine_at_lum" model="medicine.medicine">
+            <field name="name">Arthemether/Lumefantrine (Diza)</field>
+            <field name="generic_name">Arthemether/Lumefantrine (Diza)</field>
+        </record>
+        <record id="website_diza.medicine_blood_tonic" model="medicine.medicine">
+            <field name="name">Blood Tonic - Iron (Diza)</field>
+            <field name="generic_name">Blood Tonic - Iron (Diza)</field>
+        </record>
+        <record id="website_diza.medicine_zinc" model="medicine.medicine">
+            <field name="name">Zinc (Diza)</field>
+            <field name="generic_name">Zinc (Diza)</field>
+        </record> 
+
+        <record id="website_diza.category_diza" model="product.category"> 
+            <field name="name">Diza</field>
+            <field name="parent_id" eval="1.0"/>
+        </record>
+
+        <record id="website_diza.product_fortamox" model="product.template"> 
+            <field name="name">Fortamox</field> 
+            <field name="type">product</field>  
+            <field name="sale_ok">True</field>  
+            <field name="purchase_ok">True</field>   
+            <field name="website_published">True</field> 
+            <field name="categ_id" ref="website_diza.category_diza"/>
+            <field name="is_medicine">True</field>
+            <field name="medicine_id" ref="website_diza.medicine_zinc"/> 
+            <field name="company_id" eval="1.0"/>
+            <field name="uom_id" eval="1.0"/>
+            <field name="uom_po_id" eval="1.0"/>
+            <field name="list_price">300.0</field> 
+            <field name="image_medium" type="base64" file="website_diza/static/img/products/featured/adant_meiji.jpg"/>
+        </record> 
+        <record id="website_diza.product_ringerfundin" model="product.template"> 
+            <field name="name">Ringerfundin</field> 
+            <field name="type">product</field>  
+            <field name="sale_ok">True</field>  
+            <field name="purchase_ok">True</field>   
+            <field name="website_published">True</field> 
+            <field name="categ_id" ref="website_diza.category_diza"/>
+            <field name="is_medicine">True</field>
+            <field name="medicine_id" ref="website_diza.medicine_azith"/> 
+            <field name="company_id" eval="1.0"/>
+            <field name="uom_id" eval="1.0"/>
+            <field name="uom_po_id" eval="1.0"/>
+            <field name="list_price">140.0</field> 
+            <field name="image_medium" type="base64" file="website_diza/static/img/products/featured/Ringerfundin1.jpg"/>
+        </record>
+        <record id="website_diza.product_record_b_medlac" model="product.template"> 
+            <field name="name">Record B Medlac</field> 
+            <field name="type">product</field>  
+            <field name="sale_ok">True</field>  
+            <field name="purchase_ok">True</field>   
+            <field name="website_published">True</field> 
+            <field name="categ_id" ref="website_diza.category_diza"/>
+            <field name="is_medicine">True</field>
+            <field name="medicine_id" ref="website_diza.medicine_azith"/> 
+            <field name="company_id" eval="1.0"/>
+            <field name="uom_id" eval="1.0"/>
+            <field name="uom_po_id" eval="1.0"/>
+            <field name="list_price">50.0</field> 
+            <field name="image_medium" type="base64" file="website_diza/static/img/products/featured/RecordBMedlac1.jpg"/>
+        </record> 
+        <record id="website_diza.product_macdin_600" model="product.template"> 
+            <field name="name">Macdin 600 Medicine</field> 
+            <field name="type">product</field>  
+            <field name="sale_ok">True</field>  
+            <field name="purchase_ok">True</field>   
+            <field name="website_published">True</field> 
+            <field name="categ_id" ref="website_diza.category_diza"/>
+            <field name="is_medicine">True</field>
+            <field name="medicine_id" ref="website_diza.medicine_at_lum"/> 
+            <field name="company_id" eval="1.0"/>
+            <field name="uom_id" eval="1.0"/>
+            <field name="uom_po_id" eval="1.0"/>
+            <field name="list_price">50.0</field> 
+            <field name="image_medium" type="base64" file="website_diza/static/img/products/featured/Macdin600Medicine1.jpg"/>
+        </record> 
+        <record id="website_diza.product_adant" model="product.template"> 
+            <field name="name">Adant Meiji</field> 
+            <field name="type">product</field>  
+            <field name="sale_ok">True</field>  
+            <field name="purchase_ok">True</field>   
+            <field name="website_published">True</field> 
+            <field name="categ_id" ref="website_diza.category_diza"/>
+            <field name="is_medicine">True</field>
+            <field name="medicine_id" ref="website_diza.medicine_pcm"/> 
+            <field name="company_id" eval="1.0"/>
+            <field name="uom_id" eval="1.0"/>
+            <field name="uom_po_id" eval="1.0"/>
+            <field name="list_price">500.0</field> 
+            <field name="image_medium" type="base64" file="website_diza/static/img/products/featured/Fortamox1.jpg"/>
+        </record> 
+        <record id="website_diza.product_gown" model="product.template"> 
+            <field name="name">Standard Surgical Gown</field> 
+            <field name="type">product</field>  
+            <field name="sale_ok">True</field>  
+            <field name="purchase_ok">True</field>   
+            <field name="website_published">True</field> 
+            <field name="categ_id" ref="website_diza.category_diza"/>
+            <field name="is_medicine">True</field>
+            <field name="medicine_id" ref="website_diza.medicine_zinc"/> 
+            <field name="company_id" eval="1.0"/>
+            <field name="uom_id" eval="1.0"/>
+            <field name="uom_po_id" eval="1.0"/>
+            <field name="list_price">175.07</field> 
+            <field name="image_medium" type="base64" file="website_diza/static/img/products/featured/StandardSurgicalGown1.jpg"/>
+        </record> 
+
+
+        <record id="website_diza.product_image_adant" model="product.image"> 
+            <field name="name">Fortamox</field>
+            <field name="image" type="base64" file="website_diza/static/img/products/featured/Fortamox2.jpg"/>
+            <field name="product_tmpl_id" ref="website_diza.product_fortamox"/>
+        </record>
+        <record id="website_diza.product_image_ring" model="product.image"> 
+            <field name="name">Ringerfundin</field>
+            <field name="image" type="base64" file="website_diza/static/img/products/featured/Ringerfundin2.jpg"/>
+            <field name="product_tmpl_id" ref="website_diza.product_ringerfundin"/>
+        </record>
+        <record id="website_diza.product_image_medlac1" model="product.image"> 
+            <field name="name">Record B Medlac</field>
+            <field name="image" type="base64" file="website_diza/static/img/products/featured/RecordBMedlac2.jpg"/>
+            <field name="product_tmpl_id" ref="website_diza.product_record_b_medlac"/>
+        </record>
+        <record id="website_diza.product_image_medlac2" model="product.image"> 
+            <field name="name">Record B Medlac</field>
+            <field name="image" type="base64" file="website_diza/static/img/products/featured/RecordBMedlac3.jpg"/>
+            <field name="product_tmpl_id" ref="website_diza.product_record_b_medlac"/>
+        </record>
+        <record id="website_diza.product_image_medlac3" model="product.image"> 
+            <field name="name">Record B Medlac</field>
+            <field name="image" type="base64" file="website_diza/static/img/products/featured/RecordBMedlac4.jpg"/>
+            <field name="product_tmpl_id" ref="website_diza.product_record_b_medlac"/>
+        </record>
+        <record id="website_diza.product_image_macdin600" model="product.image"> 
+            <field name="name">Macdin 600 Medicine</field>
+            <field name="image" type="base64" file="website_diza/static/img/products/featured/Macdin600Medicine2.jpg"/>
+            <field name="product_tmpl_id" ref="website_diza.product_macdin_600"/>
+        </record>                      
+        <record id="website_diza.product_image_adant" model="product.image"> 
+            <field name="name">Adant</field>
+            <field name="image" type="base64" file="website_diza/static/img/products/featured/adant_meiji_2.jpg"/>
+            <field name="product_tmpl_id" ref="website_diza.product_adant"/>
+        </record>
+        <record id="website_diza.product_image_gown" model="product.image"> 
+            <field name="name">Macdin 600 Medicine</field>
+            <field name="image" type="base64" file="website_diza/static/img/products/featured/StandardSurgicalGown2.jpg"/>
+            <field name="product_tmpl_id" ref="website_diza.product_gown"/>
+        </record>
+ 
+      <record id="diza_product_group_featured" model="website_diza.product_group"> 
+        <field name="name">Anti-Fungal &amp; Anti-Itch</field> 
+        <field name="description">Anti-Fungal &amp; Anti-Itch</field> 
+        <field name="query_id">featured</field>
+        <field name="product_ids" eval="[(6, 0, [ref('website_diza.product_fortamox'), ref('website_diza.product_ringerfundin'), ref('website_diza.product_record_b_medlac'), ref('website_diza.product_macdin_600'), ref('website_diza.product_adant'), ref('website_diza.product_gown')])]"/> 
+      </record> 
+    
     </data>
 </odoo>

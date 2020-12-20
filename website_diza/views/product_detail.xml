@@ -1,0 +1,278 @@
+<odoo>
+
+    <template id="diza_products_item" inherit_id="website_sale.product" name="Products item">
+        <data inherit_id="diza_product_detail">
+            <xpath expr="//section[@id=&apos;product_detail&apos;]" position="replace">
+                <t t-set="first_possible_combination" t-value="product._get_first_possible_combination()"/>
+                <t t-set="combination_info" t-value="product._get_combination_info(first_possible_combination, add_qty=add_qty or 1, pricelist=pricelist)"/>
+                <t t-set="product_variant" t-value="product.env[&apos;product.product&apos;].browse(combination_info[&apos;product_id&apos;])"/><!-- Product detail header -->
+                <t t-set="website_sale_order" t-value="website.sale_get_order()" />
+                <section id="tbay-breadscrumb" class="tbay-breadscrumb  breadcrumbs-image">
+                    <img width="1920" height="200" src="/theme_diza/static/img/diza/07/image-background-woo.jpg" class="attachment-full size-full" alt="breadscrumb"/>
+                    <div class="container">
+                        <div class="breadscrumb-inner">
+                            <h1 class="page-title">Product</h1>
+                            <ol class="tbay-woocommerce-breadcrumb breadcrumb">
+                                <li>
+                                    <a href="/">Home</a>
+                                </li>
+                                <li t-if="len(product.public_categ_ids)">
+                                    <a href="/shop/category/">
+                                        <t t-esc="product.public_categ_ids[0].name"/>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./">
+                                        <t t-esc="product.name"/>
+                                    </a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+                <div id="main-container" class="container">
+                    <div class="row ">
+                        <div id="main" class="singular-shop archive-full content col-12"><!-- .content -->
+                            <div class="woocommerce-notices-wrapper"/>
+                            <div id="sticky-menu-bar" class="">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="menu-bar-left col-lg-7">
+                                            <div class="media">
+                                                <div class="media-left media-top pull-left">
+                                                    <img width="50" height="50" src="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-21-100x100.jpg" class="attachment-50x50 size-50x50 wp-post-image" alt=""/>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h1 class="product_title entry-title" t-esc="product.name"/>
+                                                    <div class="woocommerce-product-rating current"
+                                                        t-att-data-token="token" t-att-data-res_model="product._name" t-att-data-pid="pid" 
+                                                        t-att-data-hash="hash" t-att-data-res_id="product.id" 
+                                                        t-att-data-pager_step="message_per_page or 10" 
+                                                        t-att-data-display_rating="True" 
+                                                        t-att-data-allow_composer="'0' if disable_composer else '1'">
+                                                        <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
+                                                            <span t-attf-style="width:0%">
+                                                                Rated 
+                                                                <strong class="rating">5.00</strong>
+                                                                out of 5 based on
+                                                                <span class="rating">2</span> 
+                                                                customer ratings
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="menu-bar-right product col-lg-5">
+                                            <form class="add_to_cart" method="post" enctype="multipart/form-data">
+                                                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                                                <input type="hidden" class="product_id" name="product_id" t-att-value="product_variant.id" />
+                                                <input type="hidden" class="product_template_id" name="product_template_id" t-att-value="product.id" />
+                                                <input type="hidden" class="product_name" name="product_name" t-att-value="product.name" />
+                                                <p class="price">
+                                                    <span class="woocs_price_code" data-product-id="767">
+                                                        <span class="woocommerce-Price-amount amount">
+                                                            <bdi>
+                                                                <span class="woocommerce-Price-currencySymbol">$</span>
+                                                                50.00
+                                                            </bdi>
+                                                            <t t-call="website_sale.product_price" />
+                                                        </span>
+                                                    </span>
+                                                </p>
+                                                <a id="sticky-custom-add-to-cart" href="javascript:void(0);">Add to cart</a>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="product-767" class="style-vertical form-cart-popup product type-product post-767 status-publish first instock product_cat-anti-fungal-anti-itch product_cat-sleep-aids product_tag-clinic product_tag-corona product_tag-functional-foods product_tag-medicine product_tag-vitamin has-post-thumbnail featured shipping-taxable purchasable product-type-simple">
+                                <div class="single-main-content">
+                                    <div class="row">
+                                        <div class="image-mains col-lg-6 ">
+                                            <div class="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images" data-columns="4" style="opacity: 1; transition: opacity 0.25s ease-in-out 0s;">
+                                                <div class="flex-viewport" style="overflow: hidden; position: relative; height: 490px;">
+                                                    <figure class="woocommerce-product-gallery__wrapper" style="width: 800%; transition-duration: 0.5s; transform: translate3d(0px, 0px, 0px);">
+                                                        <div data-thumb="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-39-100x100.jpg" data-thumb-alt="" class="woocommerce-product-gallery__image flex-active-slide" style="width: 490px; margin-right: 0px; float: left; display: block;">
+                                                            <a href="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-39.jpg">
+                                                                <img width="600" height="600" src="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-39-600x600.jpg" class="wp-post-image" alt="" title="product-39" data-caption="" data-src="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-39.jpg" data-large_image="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-39.jpg" data-large_image_width="800" data-large_image_height="800" draggable="false"></img>
+                                                            </a>
+                                                        </div>
+                                                        <div data-thumb="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-40-100x100.jpg" data-thumb-alt="" class="woocommerce-product-gallery__image" style="width: 490px; margin-right: 0px; float: left; display: block;">
+                                                            <a href="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-40.jpg">
+                                                                <img width="600" height="600" src="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-40-600x600.jpg" class="" alt="" title="product-40" data-caption="" data-src="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-40.jpg" data-large_image="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-40.jpg" data-large_image_width="800" data-large_image_height="800" draggable="false"></img>
+                                                            </a>
+                                                        </div>
+                                                        <div data-thumb="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-29-100x100.jpg" data-thumb-alt="" class="woocommerce-product-gallery__image" style="width: 490px; margin-right: 0px; float: left; display: block;">
+                                                            <a href="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-29.jpg">
+                                                                <img width="600" height="600" src="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-29-600x600.jpg" class="" alt="" title="product-29" data-caption="" data-src="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-29.jpg" data-large_image="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-29.jpg" data-large_image_width="800" data-large_image_height="800" draggable="false"></img>
+                                                            </a>
+                                                        </div>
+                                                        <div data-thumb="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-30-100x100.jpg" data-thumb-alt="" class="woocommerce-product-gallery__image" style="width: 490px; margin-right: 0px; float: left; display: block;">
+                                                            <a href="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-30.jpg">
+                                                                <img width="600" height="600" src="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-30-600x600.jpg" class="" alt="" title="product-30" data-caption="" data-src="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-30.jpg" data-large_image="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-30.jpg" data-large_image_width="800" data-large_image_height="800" draggable="false"></img>
+                                                            </a>
+                                                        </div>
+                                                    </figure>
+                                                </div>
+                                                <ol class="flex-control-nav flex-control-thumbs slick-slider slick-vertical">
+                                                    <div class="slick-list draggable" style="height: 248px;">
+                                                        <div class="slick-track" style="opacity: 1; height: 248px; transform: translate3d(0px, 0px, 0px);">
+                                                            <li class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 55px;" tabindex="0">
+                                                                <img src="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-39-100x100.jpg" class="flex-active" draggable="false"></img>
+                                                            </li>
+                                                            <li class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 55px;" tabindex="0">
+                                                                <img src="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-40-100x100.jpg" draggable="false" class=""></img>
+                                                            </li>
+                                                            <li class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 55px;" tabindex="0">
+                                                                <img src="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-29-100x100.jpg" draggable="false" class=""></img>
+                                                            </li>
+                                                            <li class="slick-slide slick-active" data-slick-index="3" aria-hidden="false" style="width: 55px;" tabindex="0">
+                                                                <img src="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-30-100x100.jpg" draggable="false" class=""></img>
+                                                            </li>
+                                                        </div>
+                                                    </div>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div class="information col-lg-6">
+                                            <div class="summary entry-summary ">
+                                                <h1 class="product_title entry-title">Adant Meiji</h1>
+                                                <div class="woocommerce-product-rating" 
+                                                    t-att-data-token="token" t-att-data-res_model="product._name" t-att-data-pid="pid" 
+                                                    t-att-data-hash="hash" t-att-data-res_id="product.id" 
+                                                    t-att-data-pager_step="message_per_page or 10" 
+                                                    t-att-data-display_rating="True" 
+                                                    t-att-data-allow_composer="'0' if disable_composer else '1'">
+                                                    <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
+                                                        <span t-attf-style="width:0%">
+                                                            Rated 
+                                                            <strong class="rating">5.00</strong>
+                                                            out of 5 based on
+                                                            <span class="rating">2</span> 
+                                                            customer ratings
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <p class="price">
+                                                    <span class="woocs_price_code" data-product-id="767">
+                                                        <span class="woocommerce-Price-amount amount">
+                                                            <bdi>
+                                                                <span class="woocommerce-Price-currencySymbol">$</span>
+                                                                50.00
+                                                            </bdi>
+                                                        </span>
+                                                    </span>
+                                                </p>
+                                                <div class="woocommerce-product-details__short-description">
+                                                    <p t-raw="product.web_description"></p>
+                                                </div>
+                                                <p class="stock in-stock"><t t-esc="product.qty_available"></t> in stock</p>
+                                                <form class="cart" method="post" enctype="multipart/form-data">
+                                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                                                    <input type="hidden" class="product_id" name="product_id" t-att-value="product_variant.id" />
+                                                    <input type="hidden" class="product_template_id" name="product_template_id" t-att-value="product.id" />
+                                                    <input type="hidden" class="product_name" name="product_name" t-att-value="product.name" />
+                                                    <div id="shop-now" class="shop-now has-buy-now has-wishlist">
+                                                        <div class="quantity">
+                                                            <label class="screen-reader-text" for="quantity_5fd4d60aad627">Fortamox quantity</label>
+                                                            <span class="box">
+                                                                <button class="minus" type="button" value=" ">
+                                                                    <i class="tb-icon tb-icon-minus"></i>
+                                                                </button>
+                                                                <input name="add_qty" type="number" class="input-text qty text" step="1" min="1" max="69" value="1" title="Qty" size="4" placeholder="" inputmode="numeric"/>
+                                                                <button class="plus" type="button" value=" ">
+                                                                    <i class="tb-icon tb-icon-plus"></i>
+                                                                </button>
+                                                            </span>
+                                                        </div>
+                                                        <button type="submit" name="add-to-cart" value="767" class="single_add_to_cart_button button alt a-submit js_check_product">Add to cart</button>
+                                                        <button class="tbay-buy-now button">Buy Now</button>
+                                                        <input type="hidden" value="0" name="diza_buy_now">
+                                                            <div class="group-button">
+                                                                <div class="tbay-wishlist">
+                                                                    <div class="button-wishlist shown-mobile" title="Wishlist">
+                                                                        <div class="yith-wcwl-add-to-wishlist add-to-wishlist-767  wishlist-fragment on-first-load" data-fragment-ref="767" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:true,&quot;show_exists&quot;:false,&quot;product_id&quot;:767,&quot;parent_product_id&quot;:767,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:true,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}"><!-- ADD TO WISHLIST -->
+                                                                            <div class="yith-wcwl-add-button">
+                                                                                <a href="?add_to_wishlist=767" rel="nofollow" data-product-id="767" data-product-type="simple" data-original-product-id="767" class="add_to_wishlist single_add_to_wishlist" data-title="&lt;i class=&quot;tb-icon tb-icon-heart&quot;&gt;&lt;/i&gt;&lt;span&gt;Add to wishlist&lt;/span&gt;">
+                                                                                    <i class="yith-wcwl-icon fa fa-heart-o"/>
+                                                                                    <span>
+                                                                                        <i class="tb-icon tb-icon-heart"/>
+                                                                                        <span>Add to wishlist</span>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </div><!-- COUNT TEXT -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="tbay-compare">
+                                                                    <div class="yith-compare">
+                                                                        <a href="/diza_medicine/product/adant-meiji/?action=yith-woocompare-add-product&amp;id=767&amp;_wpnonce=d6397a4b9d" title="Compare" class="compare" data-product_id="767">
+                                                                            <span>Compare</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </input>
+                                                    </div>
+                                                </form>
+                                                <!-- <div id="mobile-close-infor-wrapper"/>
+                                                <div class="mobile-btn-cart-click  has-buy-now has-wishlist">
+                                                    <div id="tbay-click-addtocart">Add to cart</div>
+                                                    <div id="tbay-click-buy-now">Buy Now</div>
+                                                    <div class="tbay-mobile-wishlist">
+                                                        <div class="button-wishlist shown-mobile" title="Wishlist">
+                                                            <div class="yith-wcwl-add-to-wishlist add-to-wishlist-767  wishlist-fragment on-first-load" data-fragment-ref="767" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:true,&quot;show_exists&quot;:false,&quot;product_id&quot;:767,&quot;parent_product_id&quot;:767,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:true,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+                                                                <div class="yith-wcwl-add-button">
+                                                                    <a href="?add_to_wishlist=767" rel="nofollow" data-product-id="767" data-product-type="simple" data-original-product-id="767" class="add_to_wishlist single_add_to_wishlist" data-title="&lt;i class=&quot;tb-icon tb-icon-heart&quot;&gt;&lt;/i&gt;&lt;span&gt;Add to wishlist&lt;/span&gt;">
+                                                                        <i class="yith-wcwl-icon fa fa-heart-o"/>
+                                                                        <span>
+                                                                            <i class="tb-icon tb-icon-heart"/>
+                                                                            <span>Add to wishlist</span>
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+                                                <div class="product_meta">
+                                                    <span class="sku_wrapper">
+                                                        SKU:
+                                                        <span class="sku">MEGA-JEWE-12</span>
+                                                    </span>
+                                                    <span class="posted_in">
+                                                        Categories:
+                                                        <a href="https://elementor.thembay.com/diza_medicine/product-category/anti-fungal-anti-itch/" rel="tag">Anti-Fungal &amp; Anti-Itch</a>
+                                                        <a href="https://elementor.thembay.com/diza_medicine/product-category/sleep-aids/" rel="tag">Sleep Aids</a>
+                                                    </span>
+                                                    <span class="tagged_as">
+                                                        Tags:
+                                                        <a href="https://elementor.thembay.com/diza_medicine/product-tag/clinic/" rel="tag">Clinic</a>
+                                                        <a href="https://elementor.thembay.com/diza_medicine/product-tag/corona/" rel="tag">Corona</a>
+                                                        <a href="https://elementor.thembay.com/diza_medicine/product-tag/functional-foods/" rel="tag">Functional foods</a>
+                                                        <a href="https://elementor.thembay.com/diza_medicine/product-tag/medicine/" rel="tag">Medicine</a>
+                                                        <a href="https://elementor.thembay.com/diza_medicine/product-tag/vitamin/" rel="tag">Vitamin</a>
+                                                    </span>
+                                                    <span class="yith-wcbr-brands">
+                                                        Brand:
+                                                        <span itemprop="brand">
+                                                            <a href="https://elementor.thembay.com/diza_medicine/product-brands/devon-medical/" rel="tag">Devon Medical</a>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="tbay-woo-share">
+                                                    <div class="addthis_inline_share_toolbox"/>
+                                                </div>
+                                            </div><!-- .summary -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- #product-767 -->
+                        </div><!-- .content -->
+                    </div><!-- .row -->
+                </div>
+            </xpath>
+        </data>
+    </template>
+</odoo>

@@ -2,9 +2,9 @@
   <data>
     <!-- explicit list view definition -->
     <!--
-    <record model="ir.ui.view" id="website_utils.list">
+    <record model="ir.ui.view" id="website_diza.list">
       <field name="name">WebUtils list</field>
-      <field name="model">website_utils.web_utils</field>
+      <field name="model">website_diza.website_diza</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
@@ -17,18 +17,18 @@
 
     <!-- actions opening views on models -->
     
-    <record model="ir.actions.act_window" id="website_utils.action_window">
+    <record model="ir.actions.act_window" id="website_diza.action_window">
       <field name="name">Product Groups</field>
-      <field name="res_model">website_utils.product_group</field>
+      <field name="res_model">website_diza.product_group</field>
       <field name="view_mode">tree,form</field>
     </record>
    
 
     <!-- server action to the one above -->
     <!--
-    <record model="ir.actions.server" id="website_utils.action_server">
+    <record model="ir.actions.server" id="website_diza.action_server">
       <field name="name">WebUtils server</field>
-      <field name="model_id" ref="model_website_utils_web_utils"/>
+      <field name="model_id" ref="model_website_diza_website_diza"/>
       <field name="state">code</field>
       <field name="code">
         action = {
@@ -41,20 +41,23 @@
     -->
 
     <!-- Top menu item -->
-    
-    <menuitem name="WebUtils" id="website_utils.menu_root"/>
+<!--     
+    <menuitem name="WebUtils" id="website_diza.menu_root"/> -->
    
     <!-- menu categories -->
-    
-    <menuitem name="Product Groups" id="website_utils.product_groups" parent="website_utils.menu_root"/>
-    <!-- <menuitem name="Menu 2" id="website_utils.menu_2" parent="website_utils.menu_root"/> -->
+<!--     
+    <menuitem name="Product Groups" id="website_diza.product_groups" parent="website_diza.menu_root"/> -->
+    <!-- <menuitem name="Menu 2" id="website_diza.menu_2" parent="website_diza.menu_root"/> -->
    
     <!-- actions -->
+    <menuitem id="menu_catalog_home_page_product_groups" name="Home Page Products"
+        action="website_diza.action_window"
+        parent="website_sale.menu_catalog" groups="product.group_sale_pricelist" sequence="4"/>
 
-    <menuitem name="List" id="website_utils.menu_1_list" parent="website_utils.product_groups"
-              action="website_utils.action_window"/>
-    <!--    <menuitem name="Server to list" id="web_utils" parent="website_utils.menu_2"
-              action="website_utils.action_server"/>
+    <!-- <menuitem name="List" id="website_diza.menu_1_list" parent="website_diza.product_groups"
+              action="website_diza.action_window"/> -->
+    <!--    <menuitem name="Server to list" id="website_diza" parent="website_diza.menu_2"
+              action="website_diza.action_server"/>
     -->
   </data>
 </odoo>
