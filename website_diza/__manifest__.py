@@ -30,6 +30,9 @@
         'views/views.xml',
         'views/product.xml',
         'views/cart.xml',
+        'views/cart_popover.xml',
+        'views/checkout.xml',
+        'views/search_popover.xml',
         'views/homepage.xml',
         'views/adverts.xml',
         'views/product_quickview.xml',
@@ -39,7 +42,7 @@
         'views/top_rating.xml',
         'views/shipping_and_payment.xml',
         'views/last_chance_to_buy.xml',
-
+        'views/shop.xml',
         'views/product_detail.xml',
 
     ],

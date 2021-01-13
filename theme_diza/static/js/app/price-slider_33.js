@@ -66,7 +66,7 @@ jQuery(function($) {
 
                 $('.price_slider_amount #min_price').val(current_min_price);
                 $('.price_slider_amount #max_price').val(current_max_price);
-
+                console.log('price', current_min_price, current_max_price)
                 $(document.body).trigger('price_slider_create', [current_min_price, current_max_price]);
             },
             slide: function(event, ui) {

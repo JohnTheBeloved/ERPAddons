@@ -1,0 +1,48 @@
+<odoo>
+    <template id="search_popover">
+
+        <div class="autocomplete-suggestions" style="position: absolute; width: 100%; z-index: 9999; display: block;">
+            <t t-set="noOfProducts" t-value="len(products)"/>
+            <t t-if="noOfProducts > 0">
+                <div class="list-header">
+                    <span>
+                        showing 3 results of
+                        <span t-esc="noOfProducts" class="count"/>
+                        found with
+                        '<span class="keywork" t-esc="search"/>'
+                    </span>
+                </div>
+                <div class="autocomplete-suggestion" t-foreach="products" t-as="product" t-if="product_index &lt; 3">
+                    <t t-set="product_href" t-value="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager and pager['page']['num']&gt;1 else None))" />
+                    <div class="suggestion-thumb">
+                        <span t-field="product.image" t-options="{'widget': 'image', 'resize': None if product_image_big else '280x280'}"/>
+                    </div>
+                    <div class="suggestion-group">
+                        <div class="suggestion-title product-title">
+                            <!--Bolden search text-->
+                            <t t-esc="product.name" />
+                        </div>
+                        <div class="suggestion-price price">
+                            <span class="woocs_price_code" data-product-id="767">
+                                <span class="woocommerce-Price-amount amount">
+                                    <bdi>
+                                        <t t-esc="product.list_price" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                    </bdi>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </t>
+            <t t-else="">
+                <div class="autocomplete-suggestion" data-index="0">
+                    <div class="suggestion-title no-found-msg">No products found.</div>
+                </div>
+            </t>
+            <t class="autocomplete-suggestion" t-if="noOfProducts == 0 or noOfProducts > 3">
+                <span>Browse similar products</span>
+                <a t-attf-href="/shop?search=#{search}">here</a>
+            </t>
+        </div>
+    </template>
+</odoo>

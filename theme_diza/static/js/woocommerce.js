@@ -2024,18 +2024,19 @@ class SingleProduct {
     _initBuyNow() {
         if ($('.tbay-buy-now').length === 0) return;
         $('body').on('click', '.tbay-buy-now', function(e) {
-            e.preventDefault();
+            //e.preventDefault();
             let productform = $(this).closest('form.cart'),
                 submit_btn = productform.find('[type="submit"]'),
                 buy_now = productform.find('input[name="diza_buy_now"]'),
                 is_disabled = submit_btn.is('.disabled');
 
-            if (is_disabled) {
-                submit_btn.trigger('click');
-            } else {
-                buy_now.val('1');
-                productform.find('.single_add_to_cart_button').click();
-            }
+            //FIXME: uncomment
+            // if (is_disabled) {
+            //     submit_btn.trigger('click');
+            // } else {
+            //     buy_now.val('1');
+            //     productform.find('.single_add_to_cart_button').click();
+            // }
         });
         $(document.body).on('check_variations', function() {
             let btn_submit = $('form.variations_form').find('.single_add_to_cart_button');

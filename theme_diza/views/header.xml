@@ -187,7 +187,7 @@
                                                                     <form action="//" method="get" class="diza-ajax-search searchform" data-thumbnail="1" data-appendto=".search-results-DWIMQ" data-price="1" data-minChars="2" data-post-type="product" data-count="5">
                                                                         <div class="form-group">
                                                                             <div class="input-group">
-                                                                                <input data-style="right" type="text" placeholder="Search products..." name="s" required="true" oninvalid="this.setCustomValidity(&apos;Enter at least 2 characters&apos;)" oninput="setCustomValidity(&apos;&apos;)" class="tbay-search form-control input-sm"/>
+                                                                                <input data-style="right" type="text" placeholder="Search products..." name="search_text" required="true" oninvalid="this.setCustomValidity(&apos;Enter at least 2 characters&apos;)" oninput="setCustomValidity(&apos;&apos;)" class="tbay-search form-control input-sm"/>
                                                                                 <div class="search-results-wrapper">
                                                                                     <div class="diza-search-results search-results-DWIMQ"/>
                                                                                 </div>
@@ -267,10 +267,11 @@
                                                                                     <span class="woocs_special_price_code">
                                                                                         <span class="woocommerce-Price-amount amount">
                                                                                             <bdi>
-                                                                                                <span t-field="website_sale_order.amount_total" style="white-space: nowrap;" t-options='{
+                                                                                                <!-- <span t-field="website_sale_order.amount_total" style="white-space: nowrap;" t-options='{
                                                                                                     "widget": "monetary",
-                                                                                                    "display_currency": website_sale_order.currency_id,
-                                                                                                }'/>
+                                                                                                    "display_curren
+                                                                                                    cy": website_sale_order and website_sale_order.currency_id or 1,
+                                                                                                }'/> -->
                                                                                             </bdi>
                                                                                         </span>
                                                                                     </span>
@@ -282,6 +283,7 @@
                                                                                 <a href="javascript:;" class="offcanvas-close">
                                                                                     <i class="tb-icon tb-icon-cross"/>
                                                                                 </a>
+
                                                                             </div>
                                                                             <div class="widget_shopping_cart_content">
                                                                                 

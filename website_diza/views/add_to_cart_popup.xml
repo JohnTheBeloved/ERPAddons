@@ -1,0 +1,9 @@
+<div id="tbay-cart-modal" tabindex="-1" role="dialog" aria-hidden="true" class="active">
+		        <div class="modal-dialog modal-lg">
+		            <div class="modal-content">
+		                <div class="modal-body">
+		                    <div class="modal-body-content"><div class="popup-cart"><div class="main-content"><p>"Carbo TS" was added to shopping cart.</p><a class="button view-cart" href="https://elementor.thembay.com/diza_medicine/cart/" title="View cart">View cart</a><a class="button checkout" href="https://elementor.thembay.com/diza_medicine/checkout/" title="Checkout">Checkout</a><button type="button" class="close btn btn-close" data-dismiss="modal" aria-hidden="true"><i class="tb-icon tb-icon-cross"></i></button></div></div></div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>

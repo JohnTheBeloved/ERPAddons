@@ -28,7 +28,7 @@
 
         <record id="website_diza.category_diza" model="product.category"> 
             <field name="name">Diza</field>
-            <field name="parent_id" eval="1.0"/>
+            <field name="parent_id" eval="1"/>
         </record>
 
         <record id="website_diza.product_fortamox" model="product.template"> 
@@ -40,10 +40,10 @@
             <field name="categ_id" ref="website_diza.category_diza"/>
             <field name="is_medicine">True</field>
             <field name="medicine_id" ref="website_diza.medicine_zinc"/> 
-            <field name="company_id" eval="1.0"/>
-            <field name="uom_id" eval="1.0"/>
-            <field name="uom_po_id" eval="1.0"/>
-            <field name="list_price">300.0</field> 
+            <field name="company_id" eval="1"/>
+            <field name="uom_id" eval="1"/>
+            <field name="uom_po_id" eval="1"/>
+            <field name="list_price">300.00</field> 
             <field name="image_medium" type="base64" file="website_diza/static/img/products/featured/adant_meiji.jpg"/>
         </record> 
         <record id="website_diza.product_ringerfundin" model="product.template"> 
@@ -55,10 +55,10 @@
             <field name="categ_id" ref="website_diza.category_diza"/>
             <field name="is_medicine">True</field>
             <field name="medicine_id" ref="website_diza.medicine_azith"/> 
-            <field name="company_id" eval="1.0"/>
-            <field name="uom_id" eval="1.0"/>
-            <field name="uom_po_id" eval="1.0"/>
-            <field name="list_price">140.0</field> 
+            <field name="company_id" eval="1"/>
+            <field name="uom_id" eval="1"/>
+            <field name="uom_po_id" eval="1"/>
+            <field name="list_price">140.00</field> 
             <field name="image_medium" type="base64" file="website_diza/static/img/products/featured/Ringerfundin1.jpg"/>
         </record>
         <record id="website_diza.product_record_b_medlac" model="product.template"> 
@@ -70,10 +70,10 @@
             <field name="categ_id" ref="website_diza.category_diza"/>
             <field name="is_medicine">True</field>
             <field name="medicine_id" ref="website_diza.medicine_azith"/> 
-            <field name="company_id" eval="1.0"/>
-            <field name="uom_id" eval="1.0"/>
-            <field name="uom_po_id" eval="1.0"/>
-            <field name="list_price">50.0</field> 
+            <field name="company_id" eval="1"/>
+            <field name="uom_id" eval="1"/>
+            <field name="uom_po_id" eval="1"/>
+            <field name="list_price">50.00</field> 
             <field name="image_medium" type="base64" file="website_diza/static/img/products/featured/RecordBMedlac1.jpg"/>
         </record> 
         <record id="website_diza.product_macdin_600" model="product.template"> 
@@ -85,10 +85,10 @@
             <field name="categ_id" ref="website_diza.category_diza"/>
             <field name="is_medicine">True</field>
             <field name="medicine_id" ref="website_diza.medicine_at_lum"/> 
-            <field name="company_id" eval="1.0"/>
-            <field name="uom_id" eval="1.0"/>
-            <field name="uom_po_id" eval="1.0"/>
-            <field name="list_price">50.0</field> 
+            <field name="company_id" eval="1"/>
+            <field name="uom_id" eval="1"/>
+            <field name="uom_po_id" eval="1"/>
+            <field name="list_price">50.00</field> 
             <field name="image_medium" type="base64" file="website_diza/static/img/products/featured/Macdin600Medicine1.jpg"/>
         </record> 
         <record id="website_diza.product_adant" model="product.template"> 
@@ -100,10 +100,10 @@
             <field name="categ_id" ref="website_diza.category_diza"/>
             <field name="is_medicine">True</field>
             <field name="medicine_id" ref="website_diza.medicine_pcm"/> 
-            <field name="company_id" eval="1.0"/>
-            <field name="uom_id" eval="1.0"/>
-            <field name="uom_po_id" eval="1.0"/>
-            <field name="list_price">500.0</field> 
+            <field name="company_id" eval="1"/>
+            <field name="uom_id" eval="1"/>
+            <field name="uom_po_id" eval="1"/>
+            <field name="list_price">500.00</field> 
             <field name="image_medium" type="base64" file="website_diza/static/img/products/featured/Fortamox1.jpg"/>
         </record> 
         <record id="website_diza.product_gown" model="product.template"> 
@@ -115,9 +115,9 @@
             <field name="categ_id" ref="website_diza.category_diza"/>
             <field name="is_medicine">True</field>
             <field name="medicine_id" ref="website_diza.medicine_zinc"/> 
-            <field name="company_id" eval="1.0"/>
-            <field name="uom_id" eval="1.0"/>
-            <field name="uom_po_id" eval="1.0"/>
+            <field name="company_id" eval="1"/>
+            <field name="uom_id" eval="1"/>
+            <field name="uom_po_id" eval="1"/>
             <field name="list_price">175.07</field> 
             <field name="image_medium" type="base64" file="website_diza/static/img/products/featured/StandardSurgicalGown1.jpg"/>
         </record> 

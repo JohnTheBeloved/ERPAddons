@@ -1,52 +1,23 @@
 <odoo>
-  <template id="featured_products" inherit_id="diza_home" name="Featured products"  customize_show="True">
-    <data inherit_id="diza_home">
-        <xpath expr="//*[@id='after_featured_products']" position="before">
-            <div class="elementor-element elementor-element-e95fdb3 elementor-product-v1 elementor-widget elementor-widget-tbay-product-categories-tabs"
-            data-id="e95fdb3" data-element_type="widget" data-widget_type="tbay-product-categories-tabs.default">
-                <div class="elementor-widget-container">
-                    <div class="tbay-element tbay-element-product-categories-tabs">
-                        <h3 class="heading-tbay-title">
-                            <span class="title">
-                                <span class="title-child">
-                                    Featured Products
-                                    <i  class="tb-icon tb-icon-plus-sub"></i>
-                                </span>
-                            </span>
-                        </h3>
 
-                        <div class="heading-product-category-tabs">
-                            <ul class="tabs-list nav nav-tabs">
-                                <t t-foreach="featured_product_groups" t-as="product_group">
-                                    <li>
-                                        <a t-attf-class="{{product_group.first_class(product_group_first, 'active')}}" t-att-href="product_group.my_hash_href()" data-toggle="tab"
-                                            t-att-data-title="product_group.name"><t t-esc="product_group.name"/></a>
-                                    </li>
-                                </t>
-                            </ul>
-                        </div>
+    <template id="diza_product_list_item"  name="Product List Item">
+        
+        <t t-set="product_href" t-value="keep('/shop/product/%s' % slug(product), page=(pager['page']['num'] if pager and pager['page']['num']&gt;1 else None))" />
+        <t t-set="combination_info" t-value="product._get_combination_info(only_template=True, add_qty=add_qty or 1, pricelist=pricelist)"/>
 
-                        <div class="content-product-category-tab">
-                            <div class="tbay-addon-content tab-content woocommerce">
-                                <t t-foreach="featured_product_groups" t-as="product_group">
-                                    <div t-attf-class="tab-pane fade {{product_group.first_class(product_group_first, 'show', '')}} {{product_group.first_class(product_group_first, 'active', '')}}" t-att-id="product_group.my_href()">
-                                        <div class="product-categories-tabs row grid products" data-xlgdesktop="3" data-desktop="3"
-                                            data-desktopsmall="3" data-tablet="3" data-landscape="2" data-mobile="2">
-                                            <t t-foreach="product_group.product_ids" t-as="product">
-                                                <t t-set="product_href" t-value="keep('/shop/product/%s' % slug(product), None)"/>
-                                                <div class="item diza_product_item">
-                                                    <div class="product-block grid product v1"  t-ttf-data-product_id="{{product.id}}">
-                                                        <div class="product-top"></div>
-                                                        <div class="product-content">
-                                                            <div class="block-inner">
-                                                                <figure class="image">
-                                                                    <a title="Standard Surgical Gown"
-                                                                        itemprop="url" t-att-href="product_href" class="product-image">
-                                                                        <span t-field="product.image" t-options="{'widget': 'image', 'resize': None if product_image_big else '300x300'}"/>
-                                                                    </a>
-                                                                </figure>
-                                                                <div class="group-buttons">
-                                                                   <!-- <div class="button-wishlist shown-mobile" title="Wishlist">
+        <div class="item diza_product_item">
+            <div class="product-block grid product v1" t-ttf-data-product_id="{{product.id}}">
+                <div class="product-top"/>
+                <div class="product-content">
+                    <div class="block-inner">
+                        <figure class="image">
+                            <a title="Standard Surgical Gown"
+                                itemprop="url" t-att-href="product_href" class="product-image">
+                                <span t-field="product.image" t-options="{'widget': 'image', 'resize': None if product_image_big else '300x300'}"/>
+                            </a>
+                        </figure>
+                        <div class="group-buttons">
+                            <!-- <div class="button-wishlist shown-mobile" title="Wishlist">
                                                                         <div class="yith-wcwl-add-to-wishlist add-to-wishlist-1634 wishlist-fragment on-first-load"
                                                                             data-fragment-ref="1634"
                                                                             data-fragment-options='{"base_url":"","in_default_wishlist":false,"is_single":false,"show_exists":false,"product_id":1634,"parent_product_id":1634,"product_type":"simple","show_view":false,"browse_wishlist_text":"Browse wishlist","already_in_wishslist_text":"The product is already in your wishlist!","product_added_text":"Product added!","heading_icon":"fa-heart-o","available_multi_wishlist":false,"disable_wishlist":false,"show_count":false,"ajax_loading":false,"loop_position":"after_add_to_cart","item":"add_to_wishlist"}'>
@@ -66,17 +37,17 @@
                                                                             <  COUNT TEXT  >
                                                                         </div>
                                                                     </div> -->
-                                                                    <!-- <div class="yith-compare">
+                            <!-- <div class="yith-compare">
                                                                         <a href="/diza_medicine/?action=yith-woocompare-add-product&amp;id=1634&amp;_wpnonce=4460ae475c"
                                                                             title="Compare" class="compare" data-product_id="1634">
                                                                             <span>Compare</span>
                                                                         </a>
                                                                     </div> -->
-                                                                    <div class="tbay-quick-view">
-                                                                        <form t-if="product._is_add_to_cart_possible()" action="/shop/cart/update" method="POST">
-                                                                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
-                                                                            <div class="js_product js_main_product">
-                                                                                <!-- <t t-placeholder="select">
+                            <div class="tbay-quick-view">
+                                <form t-if="product._is_add_to_cart_possible()" action="/shop/cart/update" method="POST">
+                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                                    <div class="js_product js_main_product">
+                                        <!-- <t t-placeholder="select">
                                                                                     <input type="hidden" class="product_id" name="product_id" t-att-value="product_variant.id" />
                                                                                     <input type="hidden" class="product_template_id" name="product_template_id" t-att-value="product.id" />
                                                                                     <t t-if="first_possible_combination" t-call="sale.variants">
@@ -87,85 +58,133 @@
                                                                                         <ul class="d-none js_add_cart_variants" t-att-data-attribute_exclusions="{'exclusions: []'}"/>
                                                                                     </t>
                                                                                 </t> -->
-                                                                                <t t-set="product_variant_id" t-value="product._get_first_possible_variant_id()"/>
-                                                                                <input name="product_id" t-att-value="product_variant_id" type="hidden"/>
-                                                                                <a id="add_to_cart" role="button" href="#"  class=" btn btn-secondary qvieew-button btn-sm a-submit" title="Add to Cart">
-                                                                                    <i class="tb-icon tb-icon-shopping-cart"></i>
-                                                                                    <span>Add to Cart</span>
-                                                                                </a>
-                                                                            </div>
-                                                                        </form>
-                                                                    </div>
-                                                                    <!-- <div class="tbay-quick-view">
+                                        <t t-set="product_variant_id" t-value="product._get_first_possible_variant_id()"/>
+                                        <input name="product_id" t-att-value="product_variant_id" type="hidden"/>
+                                        <a id="add_to_cart" role="button" href="#" class=" btn btn-secondary qvieew-button btn-sm a-submit" title="Add to Cart">
+                                            <i class="tb-icon tb-icon-shopping-cart"/>
+                                            <span>Add to Cart</span>
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- <div class="tbay-quick-view">
                                                                         <a   itemprop="url" t-att-href="product_href"  class="qview-buytton" title="Add to Cart">
                                                                             <i class="tb-icon tb-icon-shopping-cart"></i>
                                                                             <span>Add to Cart</span>
                                                                         </a>
                                                                     </div> -->
-                                                                    <div class="tbay-quick-view">
-                                                                        <a href="#" class="qview-button" title="Quick View"
-                                                                            data-effect="mfp-move-from-top"  t-attf-data-product_id="#{product.id}"
-                                                                            data-toggle="modal" data-target="#tbay-quickview-modal">
-                                                                            <i class="tb-icon tb-icon-eye"></i>
-                                                                            <span>Quick View</span>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                            <div class="tbay-quick-view">
+                                <a href="#" class="qview-button" title="Quick View"
+                                    data-effect="mfp-move-from-top" t-attf-data-product_id="#{product.id}"
+                                    data-toggle="modal" data-target="#tbay-quickview-modal">
+                                    <i class="tb-icon tb-icon-eye"/>
+                                    <span>Quick View</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-                                                            <div class="caption">
-                                                                <h3 class="name">
-                                                                    <a itemprop="url" t-att-href="product_href" ><t t-esc="product.name"/></a>
-                                                                </h3>
+                    <div class="caption">
+                        <h3 class="name">
+                            <a itemprop="url" t-att-href="product_href">
+                                <t t-esc="product.name"/>
+                            </a>
+                        </h3>
 
-                                                                <ul class="show-brand">
-                                                                    <li>
-                                                                        <a href="//product-brands/3m-healthcare/"><t t-esc="product.medicine_id.name"/></a>
-                                                                    </li>
-                                                                </ul>
-                                                                <div class="rating no-rate">
-                                                                    <div class="star-rating"></div>
-                                                                    <div class="count">
-                                                                        (0)
-                                                                    </div>
-                                                                </div>
-                                                                <div class="price-wrapper">
-                                                                    <span class="price"><span class="woocs_price_code"
-                                                                             t-ttf-data-product_id="{{product_variant_id}}"><span
-                                                                                class="woocommerce-Price-amount amount">
-                                                                            <bdi>
-                                                                                <span class="woocommerce-Price-currencySymbol"></span>
-                                                                                <t t-esc="product.list_price" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
-                                                                            </bdi>
-                                                                            </span>
-                                                                        </span>
-                                                                    </span>
-                                                                </div>
-                                                                <form t-if="product._is_add_to_cart_possible()" action="/shop/cart/update" method="POST">
-                                                                    <div  class="add-cart" title="Add to cart">
-                                                                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
-                                                                            <t t-set="product_variant_id" t-value="product._get_first_possible_variant_id()"/>
-                                                                            <input name="product_id" t-att-value="product_variant_id" type="hidden"/>
-                                                                            <a id="add_to_cart" href="#" t-ttf-data-product_id="{{product_variant_id}}"
-                                                                            data-product_sku="MEGA-SHOE-034321-1" data-quantity="1"
-                                                                            class="button product_type_simple padd_to_cart_button ajjax_add_to_cart product_type_simple a-submit"><span
-                                                                                class="title-cart">Add to cart</span></a>
-                                                                    </div>
-                                                                </form>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </t>
+                        <ul class="show-brand">
+                            <li>
+                                <a href="//product-brands/3m-healthcare/">
+                                    <t t-esc="product.medicine_id.name"/>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="rating no-rate">
+                            <div class="star-rating"/>
+                            <div class="count">
+                                (0)
+                            </div>
+                        </div>
+                        <div class="price-wrapper">
+                            <span class="price">
+                                <span class="woocs_price_code"
+                                    t-ttf-data-product_id="{{product_variant_id}}">
+                                    <span
+                                        class="woocommerce-Price-amount amount">
+                                        <bdi>
+                                            <span class="woocommerce-Price-currencySymbol"/>
+                                            
+                                             
+                                        </bdi>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <form t-if="product._is_add_to_cart_possible()" action="/shop/cart/update" method="POST">
+                            <div class="add-cart" title="Add to cart">
+                                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                                <t t-set="product_variant_id" t-value="product._get_first_possible_variant_id()"/>
+                                <input name="product_id" t-att-value="product_variant_id" type="hidden"/>
+                                <a id="add_to_cart" href="#" t-ttf-data-product_id="{{product_variant_id}}"
+                                    data-product_sku="MEGA-SHOE-034321-1" data-quantity="1"
+                                    class="button product_type_simple padd_to_cart_button ajjax_add_to_cart product_type_simple a-submit">
+                                    <span
+                                        class="title-cart">Add to cart</span>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+    <template id="featured_products" inherit_id="diza_home" name="Featured products" customize_show="True">
+        <data inherit_id="diza_home">
+            <xpath expr="//*[@id='after_featured_products']" position="before">
+                <div class="elementor-element elementor-element-e95fdb3 elementor-product-v1 elementor-widget elementor-widget-tbay-product-categories-tabs"
+                    data-id="e95fdb3" data-element_type="widget" data-widget_type="tbay-product-categories-tabs.default">
+                    <div class="elementor-widget-container">
+                        <div class="tbay-element tbay-element-product-categories-tabs">
+                            <h3 class="heading-tbay-title">
+                                <span class="title">
+                                    <span class="title-child">
+                                        Featured Products
+                                        <i class="tb-icon tb-icon-plus-sub"/>
+                                    </span>
+                                </span>
+                            </h3>
+
+                            <div class="heading-product-category-tabs">
+                                <ul class="tabs-list nav nav-tabs">
+                                    <t t-foreach="featured_product_groups" t-as="product_group">
+                                        <li>
+                                            <a t-attf-class="{{product_group.first_class(product_group_first, 'active')}}" t-att-href="product_group.my_hash_href()" data-toggle="tab"
+                                                t-att-data-title="product_group.name">
+                                                <t t-esc="product_group.name"/>
+                                            </a>
+                                        </li>
+                                    </t>
+                                </ul>
+                            </div>
+
+                            <div class="content-product-category-tab">
+                                <div class="tbay-addon-content tab-content woocommerce">
+                                    <t t-foreach="featured_product_groups" t-as="product_group">
+                                        <div t-attf-class="tab-pane fade {{product_group.first_class(product_group_first, 'show', '')}} {{product_group.first_class(product_group_first, 'active', '')}}" t-att-id="product_group.my_href()">
+                                            <div class="product-categories-tabs row grid products" data-xlgdesktop="3" data-desktop="3"
+                                                data-desktopsmall="3" data-tablet="3" data-landscape="2" data-mobile="2">
+                                                <t t-foreach="product_group.product_ids" t-as="product">
+                                                    <t t-call="website_diza.diza_product_list_item" />
+                                                </t>
+                                            </div>
                                         </div>
-                                    </div>
-                                </t>
+                                    </t>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </xpath>
-    </data>
-  </template>
+            </xpath>
+        </data>
+    </template>
+
 </odoo>

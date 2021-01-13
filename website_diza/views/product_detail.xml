@@ -168,7 +168,7 @@
                                                     <p t-raw="product.web_description"></p>
                                                 </div>
                                                 <p class="stock in-stock"><t t-esc="product.qty_available"></t> in stock</p>
-                                                <form class="cart" method="post" enctype="multipart/form-data">
+                                                <form class="cart" method="post" enctype="multipart/form-data" action="/shop/cart/update">
                                                     <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
                                                     <input type="hidden" class="product_id" name="product_id" t-att-value="product_variant.id" />
                                                     <input type="hidden" class="product_template_id" name="product_template_id" t-att-value="product.id" />
@@ -186,8 +186,8 @@
                                                                 </button>
                                                             </span>
                                                         </div>
-                                                        <button type="submit" name="add-to-cart" value="767" class="single_add_to_cart_button button alt a-submit js_check_product">Add to cart</button>
-                                                        <button class="tbay-buy-now button">Buy Now</button>
+                                                        <button type="button" name="add-to-cart" value="767" class="single_add_to_cart_button button alt a-submit js_check_product">Add to cart</button>
+                                                        <button type="submit"  name="buy-now" class="tbay-buy-now button">Buy Now</button> 
                                                         <input type="hidden" value="0" name="diza_buy_now">
                                                             <div class="group-button">
                                                                 <div class="tbay-wishlist">

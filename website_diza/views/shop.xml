@@ -1,1256 +1,355 @@
-<odoo>
-	<template id="shop">
-	<div id="tbay-main-content" class="mm-page mm-slideout">
-		<div id="main-wrapper" class="shop-left main-wrapper ">
-			<section id="tbay-breadscrumb" class="tbay-breadscrumb  breadcrumbs-image">
-				<img width="1920" height="200" src="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/image-background-woo.jpg" class="attachment-full size-full" alt="breadscrumb">
-					<div class="container">
-						<div class="breadscrumb-inner">
-							<h1 class="page-title">Shop</h1>
-							<ol class="tbay-woocommerce-breadcrumb breadcrumb">
-								<li>
-									<a href="https://elementor.thembay.com/diza_medicine">Home</a>
-								</li>
-								<li>Shop</li>
-							</ol>
+<odoo><!--Product Listing page-->
+	<template id="diza_products" inherit_id="website_sale.products" name="Products Listing Grid">
+		<data id="diza_products" inherit_id="website_sale.products" name="Products Listing Grid">
+			<xpath expr="//table" position="replace">
+				<div id="main-wrapper" class="shop-left main-wrapper ">
+					<section id="tbay-breadscrumb" class="tbay-breadscrumb  breadcrumbs-image">
+						<img width="1920" height="200" src="/theme_diza/static/img/diza/07/image-background-woo.jpg" class="attachment-full size-full" alt="breadscrumb">
+							<div class="container">
+								<div class="breadscrumb-inner">
+									<h1 class="page-title">Shop</h1>
+									<ol class="tbay-woocommerce-breadcrumb breadcrumb">
+										<li>
+											<a href="https://elementor.thembay.com/diza_medicine">Home</a>
+										</li>
+										<li>
+											<a href="https://elementor.thembay.com/diza_medicine/shop/">Shop</a>
+										</li>
+										<li>Page 2</li>
+									</ol>
+								</div>
+							</div>
+						</img>
+					</section>
+					<div id="main-container" class="container">
+						<div class="row">
+							<div id="products_side_filter"/>
+							<div id="main" class="archive-shop col-12 col-xl-9 content col-12">
+								<header class="woocommerce-products-header"/>
+								<div id="products_top_filter"/>
+								<div class="display-products products products-grid" style="display: block;">
+									<div class="row" data-xlgdesktop="4" data-desktop="4" data-desktopsmall="4" data-tablet="3" data-landscape="3" data-mobile="2">
+										<t t-foreach="products" t-as="product">
+											<t t-call="website_diza.diza_product_list_item"/>
+										</t>
+									</div>
+								</div>
+								<div id="products_bottom_pagination"/>
+							</div>
 						</div>
 					</div>
-				</img>
-			</section>
-			<div id="main-container" class="container">
-				<div class="row ">
-					<aside id="sidebar-shop" class="sidebar  d-none d-xl-block tbay-sidebar-shop col-12 col-xl-3 ">
-						<aside id="woof_widget-4" class="widget WOOF_Widget">
-							<div class="widget widget-woof">
-								<div class="woof woof_sid woof_sid_widget" data-sid="widget" data-shortcode="woof sid=&apos;widget&apos; autosubmit=&apos;-1&apos; start_filtering_btn=&apos;0&apos; price_filter=&apos;1&apos; redirect=&apos;&apos; ajax_redraw=&apos;0&apos; btn_position=&apos;b&apos; dynamic_recount=&apos;-1&apos; " data-redirect="" data-autosubmit="1" data-ajax-redraw="0">
-									<a href="#" class="woof_edit_view" data-sid="widget">show blocks helper</a>
-									<div/><!--- here is possible to drop html code which is never redraws by AJAX -->
-									<div class="woof_redraw_zone" data-woof-ver="2.2.4">
-										<div data-css-class="woof_container_product_cat" class="woof_container woof_container_radio woof_container_product_cat woof_container_0 woof_container_productcategories">
-											<div class="woof_container_overlay_item"/>
-											<div class="woof_container_inner woof_container_inner_productcategories">
-												<h4>
-														Product categories
-														<a href="javascript: void(0);" title="toggle" class="woof_front_toggle woof_front_toggle_opened" data-condition="opened">+</a>
-												</h4>
-												<div class="woof_block_html_items">
-													<ul class="woof_list woof_list_radio">
-														<li class="woof_term_79 ">
-															<input type="radio" id="woof_79_5fde1dbbaab98" class="woof_radio_term woof_radio_term_79" data-slug="anti-fungal-anti-itch" data-term-id="79" name="product_cat" value="79">
-																<label class="woof_radio_label " for="woof_79_5fde1dbbaab98">Anti-Fungal &amp; Anti-Itch</label>
-																<a href="#" data-name="product_cat" data-term-id="79" style="display: none;" class="woof_radio_term_reset   woof_radio_term_reset_79">
-																	<img src="https://elementor.thembay.com/diza_medicine/wp-content/plugins/woocommerce-products-filter/img/delete.png" height="12" width="12" alt="Delete"></img>
-																</a>
-																<input type="hidden" value="Anti-Fungal &amp; Anti-Itch" data-anchor="woof_n_product_cat_anti-fungal-anti-itch"></input>
-															</input>
-														</li>
-														<li class="woof_term_19 ">
-															<input type="radio" id="woof_19_5fde1dbbaabac" class="woof_radio_term woof_radio_term_19" data-slug="cough-cold-allergy" data-term-id="19" name="product_cat" value="19">
-																<label class="woof_radio_label " for="woof_19_5fde1dbbaabac">Cough, Cold &amp; Allergy</label>
-																<a href="#" data-name="product_cat" data-term-id="19" style="display: none;" class="woof_radio_term_reset   woof_radio_term_reset_19">
-																	<img src="https://elementor.thembay.com/diza_medicine/wp-content/plugins/woocommerce-products-filter/img/delete.png" height="12" width="12" alt="Delete"></img>
-																</a>
-																<input type="hidden" value="Cough, Cold &amp; Allergy" data-anchor="woof_n_product_cat_cough-cold-allergy"></input>
-															</input>
-														</li>
-														<li class="woof_term_18 ">
-															<input type="radio" id="woof_18_5fde1dbbaabb4" class="woof_radio_term woof_radio_term_18" data-slug="pain-fever-relief" data-term-id="18" name="product_cat" value="18">
-																<label class="woof_radio_label " for="woof_18_5fde1dbbaabb4">Pain &amp; Fever Relief</label>
-																<a href="#" data-name="product_cat" data-term-id="18" style="display: none;" class="woof_radio_term_reset   woof_radio_term_reset_18">
-																	<img src="https://elementor.thembay.com/diza_medicine/wp-content/plugins/woocommerce-products-filter/img/delete.png" height="12" width="12" alt="Delete"></img>
-																</a>
-																<input type="hidden" value="Pain &amp; Fever Relief" data-anchor="woof_n_product_cat_pain-fever-relief"></input>
-															</input>
-														</li>
-														<li class="woof_term_16 ">
-															<input type="radio" id="woof_16_5fde1dbbaabb9" class="woof_radio_term woof_radio_term_16" data-slug="sleep-aids" data-term-id="16" name="product_cat" value="16">
-																<label class="woof_radio_label " for="woof_16_5fde1dbbaabb9">Sleep Aids</label>
-																<a href="#" data-name="product_cat" data-term-id="16" style="display: none;" class="woof_radio_term_reset   woof_radio_term_reset_16">
-																	<img src="https://elementor.thembay.com/diza_medicine/wp-content/plugins/woocommerce-products-filter/img/delete.png" height="12" width="12" alt="Delete"></img>
-																</a>
-																<input type="hidden" value="Sleep Aids" data-anchor="woof_n_product_cat_sleep-aids"></input>
-															</input>
-														</li>
-														<li class="woof_term_17 ">
-															<input type="radio" id="woof_17_5fde1dbbaabbf" class="woof_radio_term woof_radio_term_17" data-slug="stomach-remedies" data-term-id="17" name="product_cat" value="17">
-																<label class="woof_radio_label " for="woof_17_5fde1dbbaabbf">Stomach Remedies</label>
-																<a href="#" data-name="product_cat" data-term-id="17" style="display: none;" class="woof_radio_term_reset   woof_radio_term_reset_17">
-																	<img src="https://elementor.thembay.com/diza_medicine/wp-content/plugins/woocommerce-products-filter/img/delete.png" height="12" width="12" alt="Delete"></img>
-																</a>
-																<input type="hidden" value="Stomach Remedies" data-anchor="woof_n_product_cat_stomach-remedies"></input>
-															</input>
-														</li>
-													</ul>
-												</div>
-												<input type="hidden" name="woof_t_product_cat" value="Product categories"><!-- for red button search nav panel --></input>
+				</div>
+			</xpath>
+		</data>
+		<data id="diza_restyle_layout" inherit_id="website_sale.products" name="Remove Attributes">
+			<xpath expr="//div[@id='products_grid']" position="attributes">
+			 	<attribute name="class"></attribute>
+			</xpath>
+		</data>
+		<data id="diza_restyle_layout" inherit_id="website.layout" name="Restyle Layout Attributes">
+			<xpath expr="//div[hasclass('oe_website_sale')]" position="attributes">
+			 	<attribute name="class"></attribute>
+			</xpath>
+		</data>
+	</template>
+	<template id="diza_products_categories" inherit_id="website_sale.products" name="Products Sidebar">
+		<data id="diza_products_categories" inherit_id="website_sale.products" name="Products Sidebar">
+			<xpath expr="//div[@id='products_side_filter']" position="after">
+				<aside id="sidebar-shop" class="sidebar  d-none d-xl-block tbay-sidebar-shop col-12 col-xl-3 ">
+					<aside id="woof_widget-4" class="widget WOOF_Widget">
+						<div class="widget widget-woof">
+							<div class="woof woof_sid woof_sid_widget" data-sid="widget" data-shortcode="woof sid=&apos;widget&apos; autosubmit=&apos;-1&apos; start_filtering_btn=&apos;0&apos; price_filter=&apos;1&apos; redirect=&apos;&apos; ajax_redraw=&apos;0&apos; btn_position=&apos;b&apos; dynamic_recount=&apos;-1&apos; " data-redirect="" data-autosubmit="1" data-ajax-redraw="0">
+								<a href="#" class="woof_edit_view" data-sid="widget">show blocks helper</a>
+								<div/><!-- here is possible to drop html code which is never redraws by AJAX -->
+								<div class="woof_redraw_zone" data-woof-ver="2.2.4">
+									<div data-css-class="woof_container_product_cat" class="woof_container woof_container_radio woof_container_product_cat woof_container_0 woof_container_productcategories">
+										<div class="woof_container_overlay_item"/>
+										<div class="woof_container_inner woof_container_inner_productcategories">
+											<h4>
+												Product categories
+												<a href="javascript: void(0);" title="toggle" class="woof_front_toggle woof_front_toggle_opened" data-condition="opened">+</a>
+											</h4>
+											<div class="woof_block_html_items">
+												<ul class="woof_list woof_list_radio">
+													<li class="woof_term_79 " t-foreach="categories" t-as="c">
+														<input type="radio" id="woof_79_5fef0c770a7f1" class="woof_radio_term woof_radio_term_79" data-slug="anti-fungal-anti-itch" t-att-data-term-id="c.id" name="product_cat" value="79">
+															<label class="woof_radio_label " for="woof_79_5fef0c770a7f1" t-esc="c.name"/>
+															<a t-att-href="keep(&apos;/shop/category/&apos; + slug(c), category=0)" data-name="product_cat" data-term-id="79" style="display: none;" class="woof_radio_term_reset   woof_radio_term_reset_79">
+																<img src="https://elementor.thembay.com/diza_medicine/wp-content/plugins/woocommerce-products-filter/img/delete.png" height="12" width="12" alt="Delete"/>
+															</a>
+															<input type="hidden" t-att-value="c.name" data-anchor="woof_n_product_cat_anti-fungal-anti-itch"/>
+														</input>
+													</li>
+												</ul>
 											</div>
+											<input type="hidden" name="woof_t_product_cat" value="Product categories"><!-- for red button search nav panel --></input>
 										</div>
-										<div data-css-class="woof_price_search_container" class="woof_price_search_container woof_container woof_price_filter">
-											<div class="woof_container_overlay_item"/>
-											<div class="woof_container_inner">
-												<div class="woocommerce widget_price_filter">
-													<h4>
-																															Price
-																														</h4>
-													<form method="get" action="https://elementor.thembay.com/diza_medicine/shop/">
-														<div class="price_slider_wrapper">
-															<div class="price_slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="">
-																<div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 100%;"/>
-																<span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"/>
-																<span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 100%;"/>
-															</div>
-															<div class="price_slider_amount">
-																<input type="text" id="min_price" name="min_price" value="40" data-min="40" placeholder="Min price" style="display: none;">
-																	<input type="text" id="max_price" name="max_price" value="320" data-max="320" placeholder="Max price" style="display: none;">
-																		<button type="submit" class="button">Filter</button>
-																		<div class="price_label" style="">
-																																				Price:
-																																				<span class="from">$40.00</span>
-																																				—
-																																				<span class="to">$320.00</span>
-																		</div>
-																		<div class="clear"/>
-																	</input>
+									</div>
+									<div data-css-class="woof_price_search_container" class="woof_price_search_container woof_container woof_price_filter">
+										<div class="woof_container_overlay_item"/>
+										<div class="woof_container_inner">
+											<div class="woocommerce widget_price_filter">
+												<h4>
+													Price
+												</h4>
+												<form method="get" action="https://elementor.thembay.com/diza_medicine/shop/">
+													<div class="price_slider_wrapper">
+														<div class="price_slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="">
+															<div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 100%;"/>
+															<span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 0%;"/>
+															<span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 100%;"/>
+														</div>
+														<div class="price_slider_amount">
+															<input type="text" id="min_price" name="min_price" t-att-value="price_range['min']" t-att-data-min="price_range['min']" placeholder="Min price" style="display: none;">
+																<input type="text" id="max_price" name="max_price" t-att-value="price_range['max']" t-att-data-max="price_range['max']" placeholder="Max price" style="display: none;">
+																	<button type="submit" class="button">Filter</button>
+																	<div class="price_label" style="">
+																		Price:
+																		<span class="from"></span>
+																		—
+																		<span class="to"></span>
+																	</div>
+																	<div class="clear"/>
 																</input>
-															</div>
+															</input>
 														</div>
-													</form>
-												</div>
+													</div>
+												</form>
 											</div>
 										</div>
-										<div style="clear:both;"/>
-										<div data-css-class="woof_container_yith_product_brand" class="woof_container woof_container_radio woof_container_yith_product_brand woof_container_3 woof_container_brands">
-											<div class="woof_container_overlay_item"/>
-											<div class="woof_container_inner woof_container_inner_brands">
-												<h4>
-																																Brands
-																																<a href="javascript: void(0);" title="toggle" class="woof_front_toggle woof_front_toggle_opened" data-condition="opened">+</a>
-												</h4>
-												<div class="woof_block_html_items">
-													<ul class="woof_list woof_list_radio">
-														<li class="woof_term_41 ">
-															<input type="radio" id="woof_41_5fde1dbbacd12" class="woof_radio_term woof_radio_term_41" data-slug="3m-healthcare" data-term-id="41" name="yith_product_brand" value="41">
-																<label class="woof_radio_label " for="woof_41_5fde1dbbacd12">3M Healthcare</label>
-																<a href="#" data-name="yith_product_brand" data-term-id="41" style="display: none;" class="woof_radio_term_reset   woof_radio_term_reset_41">
-																	<img src="https://elementor.thembay.com/diza_medicine/wp-content/plugins/woocommerce-products-filter/img/delete.png" height="12" width="12" alt="Delete"></img>
-																</a>
-																<input type="hidden" value="3M Healthcare" data-anchor="woof_n_yith_product_brand_3m-healthcare"></input>
-															</input>
-														</li>
-														<li class="woof_term_42 ">
-															<input type="radio" id="woof_42_5fde1dbbacd24" class="woof_radio_term woof_radio_term_42" data-slug="basic-medical" data-term-id="42" name="yith_product_brand" value="42">
-																<label class="woof_radio_label " for="woof_42_5fde1dbbacd24">Basic Medical</label>
-																<a href="#" data-name="yith_product_brand" data-term-id="42" style="display: none;" class="woof_radio_term_reset   woof_radio_term_reset_42">
-																	<img src="https://elementor.thembay.com/diza_medicine/wp-content/plugins/woocommerce-products-filter/img/delete.png" height="12" width="12" alt="Delete"></img>
-																</a>
-																<input type="hidden" value="Basic Medical" data-anchor="woof_n_yith_product_brand_basic-medical"></input>
-															</input>
-														</li>
-														<li class="woof_term_43 ">
-															<input type="radio" id="woof_43_5fde1dbbacd2b" class="woof_radio_term woof_radio_term_43" data-slug="curad" data-term-id="43" name="yith_product_brand" value="43">
-																<label class="woof_radio_label " for="woof_43_5fde1dbbacd2b">Curad</label>
-																<a href="#" data-name="yith_product_brand" data-term-id="43" style="display: none;" class="woof_radio_term_reset   woof_radio_term_reset_43">
-																	<img src="https://elementor.thembay.com/diza_medicine/wp-content/plugins/woocommerce-products-filter/img/delete.png" height="12" width="12" alt="Delete"></img>
-																</a>
-																<input type="hidden" value="Curad" data-anchor="woof_n_yith_product_brand_curad"></input>
-															</input>
-														</li>
-														<li class="woof_term_44 ">
-															<input type="radio" id="woof_44_5fde1dbbacd31" class="woof_radio_term woof_radio_term_44" data-slug="devon-medical" data-term-id="44" name="yith_product_brand" value="44">
-																<label class="woof_radio_label " for="woof_44_5fde1dbbacd31">Devon Medical</label>
-																<a href="#" data-name="yith_product_brand" data-term-id="44" style="display: none;" class="woof_radio_term_reset   woof_radio_term_reset_44">
-																	<img src="https://elementor.thembay.com/diza_medicine/wp-content/plugins/woocommerce-products-filter/img/delete.png" height="12" width="12" alt="Delete"></img>
-																</a>
-																<input type="hidden" value="Devon Medical" data-anchor="woof_n_yith_product_brand_devon-medical"></input>
-															</input>
-														</li>
-														<li class="woof_term_45 ">
-															<input type="radio" id="woof_45_5fde1dbbacd37" class="woof_radio_term woof_radio_term_45" data-slug="medline" data-term-id="45" name="yith_product_brand" value="45">
-																<label class="woof_radio_label " for="woof_45_5fde1dbbacd37">Medline</label>
-																<a href="#" data-name="yith_product_brand" data-term-id="45" style="display: none;" class="woof_radio_term_reset   woof_radio_term_reset_45">
-																	<img src="https://elementor.thembay.com/diza_medicine/wp-content/plugins/woocommerce-products-filter/img/delete.png" height="12" width="12" alt="Delete"></img>
-																</a>
-																<input type="hidden" value="Medline" data-anchor="woof_n_yith_product_brand_medline"></input>
-															</input>
-														</li>
-														<li class="woof_term_47 ">
-															<input type="radio" id="woof_47_5fde1dbbacd3c" class="woof_radio_term woof_radio_term_47" data-slug="posey-company" data-term-id="47" name="yith_product_brand" value="47">
-																<label class="woof_radio_label " for="woof_47_5fde1dbbacd3c">Posey Company</label>
-																<a href="#" data-name="yith_product_brand" data-term-id="47" style="display: none;" class="woof_radio_term_reset   woof_radio_term_reset_47">
-																	<img src="https://elementor.thembay.com/diza_medicine/wp-content/plugins/woocommerce-products-filter/img/delete.png" height="12" width="12" alt="Delete"></img>
-																</a>
-																<input type="hidden" value="Posey Company" data-anchor="woof_n_yith_product_brand_posey-company"></input>
-															</input>
-														</li>
-														<li class="woof_term_46 ">
-															<input type="radio" id="woof_46_5fde1dbbacd44" class="woof_radio_term woof_radio_term_46" data-slug="protective-industrial" data-term-id="46" name="yith_product_brand" value="46">
-																<label class="woof_radio_label " for="woof_46_5fde1dbbacd44">Protective Industrial</label>
-																<a href="#" data-name="yith_product_brand" data-term-id="46" style="display: none;" class="woof_radio_term_reset   woof_radio_term_reset_46">
-																	<img src="https://elementor.thembay.com/diza_medicine/wp-content/plugins/woocommerce-products-filter/img/delete.png" height="12" width="12" alt="Delete"></img>
-																</a>
-																<input type="hidden" value="Protective Industrial" data-anchor="woof_n_yith_product_brand_protective-industrial"></input>
-															</input>
-														</li>
-													</ul>
-												</div>
-												<input type="hidden" name="woof_t_yith_product_brand" value="Brands"><!-- for red button search nav panel --></input>
-											</div>
-										</div>
-										<div class="woof_submit_search_form_container"></div>
 									</div>
+									<div style="clear:both;"/>
+									<div data-css-class="woof_container_yith_product_brand" class="woof_container woof_container_radio woof_container_yith_product_brand woof_container_3 woof_container_brands">
+										<div class="woof_container_overlay_item"/>
+										<div class="woof_container_inner woof_container_inner_brands">
+											<h4>
+												Brands
+												<a href="javascript: void(0);" title="toggle" class="woof_front_toggle woof_front_toggle_opened" data-condition="opened">+</a>
+											</h4>
+											<div class="woof_block_html_items">
+												<ul class="woof_list woof_list_radio">
+													<li class="woof_term_41 ">
+														<input type="radio" id="woof_41_5fef0c770bfb8" class="woof_radio_term woof_radio_term_41" data-slug="3m-healthcare" data-term-id="41" name="yith_product_brand" value="41">
+															<label class="woof_radio_label " for="woof_41_5fef0c770bfb8">3M Healthcare</label>
+															<a href="#" data-name="yith_product_brand" data-term-id="41" style="display: none;" class="woof_radio_term_reset   woof_radio_term_reset_41">
+																<img src="https://elementor.thembay.com/diza_medicine/wp-content/plugins/woocommerce-products-filter/img/delete.png" height="12" width="12" alt="Delete"/>
+															</a>
+															<input type="hidden" value="3M Healthcare" data-anchor="woof_n_yith_product_brand_3m-healthcare"/>
+														</input>
+													</li>
+													<li class="woof_term_42 ">
+														<input type="radio" id="woof_42_5fef0c770bfc6" class="woof_radio_term woof_radio_term_42" data-slug="basic-medical" data-term-id="42" name="yith_product_brand" value="42">
+															<label class="woof_radio_label " for="woof_42_5fef0c770bfc6">Basic Medical</label>
+															<a href="#" data-name="yith_product_brand" data-term-id="42" style="display: none;" class="woof_radio_term_reset   woof_radio_term_reset_42">
+																<img src="https://elementor.thembay.com/diza_medicine/wp-content/plugins/woocommerce-products-filter/img/delete.png" height="12" width="12" alt="Delete"/>
+															</a>
+															<input type="hidden" value="Basic Medical" data-anchor="woof_n_yith_product_brand_basic-medical"/>
+														</input>
+													</li>
+													<li class="woof_term_43 ">
+														<input type="radio" id="woof_43_5fef0c770bfcd" class="woof_radio_term woof_radio_term_43" data-slug="curad" data-term-id="43" name="yith_product_brand" value="43">
+															<label class="woof_radio_label " for="woof_43_5fef0c770bfcd">Curad</label>
+															<a href="#" data-name="yith_product_brand" data-term-id="43" style="display: none;" class="woof_radio_term_reset   woof_radio_term_reset_43">
+																<img src="https://elementor.thembay.com/diza_medicine/wp-content/plugins/woocommerce-products-filter/img/delete.png" height="12" width="12" alt="Delete"/>
+															</a>
+															<input type="hidden" value="Curad" data-anchor="woof_n_yith_product_brand_curad"/>
+														</input>
+													</li>
+													<li class="woof_term_44 ">
+														<input type="radio" id="woof_44_5fef0c770bfd3" class="woof_radio_term woof_radio_term_44" data-slug="devon-medical" data-term-id="44" name="yith_product_brand" value="44">
+															<label class="woof_radio_label " for="woof_44_5fef0c770bfd3">Devon Medical</label>
+															<a href="#" data-name="yith_product_brand" data-term-id="44" style="display: none;" class="woof_radio_term_reset   woof_radio_term_reset_44">
+																<img src="https://elementor.thembay.com/diza_medicine/wp-content/plugins/woocommerce-products-filter/img/delete.png" height="12" width="12" alt="Delete"/>
+															</a>
+															<input type="hidden" value="Devon Medical" data-anchor="woof_n_yith_product_brand_devon-medical"/>
+														</input>
+													</li>
+													<li class="woof_term_45 ">
+														<input type="radio" id="woof_45_5fef0c770bfd8" class="woof_radio_term woof_radio_term_45" data-slug="medline" data-term-id="45" name="yith_product_brand" value="45">
+															<label class="woof_radio_label " for="woof_45_5fef0c770bfd8">Medline</label>
+															<a href="#" data-name="yith_product_brand" data-term-id="45" style="display: none;" class="woof_radio_term_reset   woof_radio_term_reset_45">
+																<img src="https://elementor.thembay.com/diza_medicine/wp-content/plugins/woocommerce-products-filter/img/delete.png" height="12" width="12" alt="Delete"/>
+															</a>
+															<input type="hidden" value="Medline" data-anchor="woof_n_yith_product_brand_medline"/>
+														</input>
+													</li>
+													<li class="woof_term_47 ">
+														<input type="radio" id="woof_47_5fef0c770bfdc" class="woof_radio_term woof_radio_term_47" data-slug="posey-company" data-term-id="47" name="yith_product_brand" value="47">
+															<label class="woof_radio_label " for="woof_47_5fef0c770bfdc">Posey Company</label>
+															<a href="#" data-name="yith_product_brand" data-term-id="47" style="display: none;" class="woof_radio_term_reset   woof_radio_term_reset_47">
+																<img src="https://elementor.thembay.com/diza_medicine/wp-content/plugins/woocommerce-products-filter/img/delete.png" height="12" width="12" alt="Delete"/>
+															</a>
+															<input type="hidden" value="Posey Company" data-anchor="woof_n_yith_product_brand_posey-company"/>
+														</input>
+													</li>
+													<li class="woof_term_46 ">
+														<input type="radio" id="woof_46_5fef0c770bfe2" class="woof_radio_term woof_radio_term_46" data-slug="protective-industrial" data-term-id="46" name="yith_product_brand" value="46">
+															<label class="woof_radio_label " for="woof_46_5fef0c770bfe2">Protective Industrial</label>
+															<a href="#" data-name="yith_product_brand" data-term-id="46" style="display: none;" class="woof_radio_term_reset   woof_radio_term_reset_46">
+																<img src="https://elementor.thembay.com/diza_medicine/wp-content/plugins/woocommerce-products-filter/img/delete.png" height="12" width="12" alt="Delete"/>
+															</a>
+															<input type="hidden" value="Protective Industrial" data-anchor="woof_n_yith_product_brand_protective-industrial"/>
+														</input>
+													</li>
+												</ul>
+											</div>
+											<input type="hidden" name="woof_t_yith_product_brand" value="Brands"><!-- for red button search nav panel --></input>
+										</div>
+									</div>
+									<div class="woof_submit_search_form_container"/>
 								</div>
 							</div>
-						</aside>
+						</div>
 					</aside>
-					<div id="main" class="archive-shop col-12 col-xl-9 content col-12"><!-- .content -->
-						<ul class="all-subcategories"/>
-						<header class="woocommerce-products-header"></header>
-						<div class="tbay-filter">
-							<div class="woocommerce-notices-wrapper"/>
-							<div class="main-filter d-flex justify-content-end">
-								<p class="woocommerce-result-count">
-																																																		Showing 1–12 of 36 results
-																																																	</p>
-								<div class="filter-btn-wrapper d-xl-none">
-									<button id="button-filter-btn" class="button-filter-btn hidden-lg hidden-md" type="submit">
-										<i class="tb-icon tb-icon-filter" aria-hidden="true"/>
-																																																			Filter
-																																																		</button>
-								</div>
-								<div id="filter-close"/>
-								<form class="woocommerce-ordering" method="get">
-									<div class="SumoSelect sumo_orderby" tabindex="0" role="button" aria-expanded="false">
-										<select name="orderby" class="orderby SumoUnder" aria-label="Shop order" tabindex="-1">
-											<option value="menu_order" selected="selected">Default sorting</option>
-											<option value="popularity">Sort by popularity</option>
-											<option value="rating">Sort by average rating</option>
-											<option value="date">Sort by latest</option>
-											<option value="price">Sort by price: low to high</option>
-											<option value="price-desc">Sort by price: high to low</option>
-										</select>
-										<p class="CaptionCont SelectBox" title=" Default sorting">
-											<span>Default sorting</span>
-											<label>
-												<i/>
-											</label>
-										</p>
-										<div class="optWrapper">
-											<ul class="options">
-												<li class="opt selected">
-													<label>Default sorting</label>
-												</li>
-												<li class="opt">
-													<label>Sort by popularity</label>
-												</li>
-												<li class="opt">
-													<label>Sort by average rating</label>
-												</li>
-												<li class="opt">
-													<label>Sort by latest</label>
-												</li>
-												<li class="opt">
-													<label>Sort by price: low to high</label>
-												</li>
-												<li class="opt">
-													<label>Sort by price: high to low</label>
-												</li>
-											</ul>
-										</div>
+				</aside>
+			</xpath>
+		</data>
+		<data id="old_products_categories" inherit_id="website_sale.products" name="Old Product category">
+			<xpath expr="//div[@id=&apos;products_grid_before&apos;]" position="replace">
+				<div/>
+			</xpath>
+		</data>
+	</template>
+	<template id="diza_top_products_filter" inherit_id="website_sale.products" name="Top Products Filter">
+		<data id="diza_top_products_filter" inherit_id="website_sale.products" name="Top Products Filter">
+			<xpath expr="//div[@id=&apos;products_top_filter&apos;]" position="replace">
+				<div>
+					<div class="tbay-filter">
+						<div class="woocommerce-notices-wrapper"/>
+						<div class="main-filter d-flex justify-content-end">
+							<p class="woocommerce-result-count">
+								Showing 1–12 of 36 results
+							</p>
+							<div class="filter-btn-wrapper d-xl-none">
+								<button id="button-filter-btn" class="button-filter-btn hidden-lg hidden-md" type="submit">
+									<i class="tb-icon tb-icon-filter" aria-hidden="true"/>
+									Filter
+								</button>
+							</div>
+							<div id="filter-close"/>
+							<form class="woocommerce-ordering" method="get">
+								<div class="SumoSelect sumo_orderby" tabindex="0" role="button" aria-expanded="false">
+									<t t-set="list_price_desc_label">Sort by price: low to high</t>
+									<t t-set="list_price_asc_label">Sort by price: high to low</t>
+									<t t-set="rating_asc_label">Sort by rating : low to high</t>
+									<t t-set="rating_desc_label">Sort by rating: high to low</t>
+									<t t-set="name_asc_label">Sort Alphabeticaly : A to Z</t>
+									<t t-set="name_desc_label">Sort Alphabeticaly: Z to A</t>
+									<t t-set="website_sale_sortable" t-value="[
+										(list_price_desc_label, 'list_price+desc'),
+										(list_price_asc_label, 'list_price+asc'),
+										(rating_asc_label, 'rating+asc'),
+										(rating_desc_label, 'rating+esc'),
+										(name_asc_label, 'name+asc'),
+										(name_desc_label, 'name+desc')
+									]"/>
+									<t t-set="website_sale_sortable_current" t-value="[sort for sort in website_sale_sortable if sort[1]==request.params.get('order', '')]"/>
+										
+									<select name="order" class="orderby SumoUnder" aria-label="Shop order" tabindex="-1">
+										<option t-raw="sortby[0]" t-att-value="sortby[1]" t-attf-selected="#{'selected ' if not sortby else ''}" t-foreach="website_sale_sortable" t-as="sortby" />
+										<!-- <option value="menu_order" selected="selected"> Default sorting</option>
+										<option value="popularity">Sort by popularity</option>
+										<option value="rating">Sort by average rating</option>
+										<option value="date">Sort by latest</option>
+										<option value="price">Sort by price: low to high</option>
+										<option value="price-desc">Sort by price: high to low</option> -->
+									</select>
+									<div class="optWrapper">
+										<ul class="options">
+											<li class="opt selected" t-foreach="website_sale_sortable" t-as="sortby">
+												<label t-esc="sortby[0]"/>
+											</li>
+											<!-- <li class="opt">
+												<label>Sort by popularity</label>
+											</li>
+											<li class="opt">
+												<label>Sort by average rating</label>
+											</li>
+											<li class="opt">
+												<label>Sort by latest</label>
+											</li>
+											<li class="opt">
+												<label>Sort by price: low to high</label>
+											</li>
+											<li class="opt">
+												<label>Sort by price: high to low</label>
+											</li> -->
+										</ul>
 									</div>
-									<input type="hidden" name="paged" value="1">
-										<input type="hidden" name="q" value="/diza_medicine/shop/"></input>
+								</div>
+								<input type="hidden" name="paged" value="1">
+									<input type="hidden" name="q" value="/diza_medicine/shop/">
+										<input type="hidden" name="display_mode" value="grid">
+											<input type="hidden" name="product_archive_layout" value="shop-left">
+												<input type="hidden" name="product_columns" value="4"/>
+											</input>
+										</input>
 									</input>
-								</form>
-								<div class="display-mode-warpper">
-									<a href="javascript:void(0);" id="display-mode-grid" class="display-mode-btn active" title="Grid">
-										<i class="tb-icon tb-icon-view-grid"/>
-									</a>
-									<a href="javascript:void(0);" id="display-mode-list" class="display-mode-btn list " title="List">
-										<i class="tb-icon tb-icon-view-list"/>
-									</a>
-								</div>
+								</input>
+							</form>
+							<div class="display-mode-warpper">
+								<a href="javascript:void(0);" id="display-mode-grid" class="display-mode-btn active" title="Grid">
+									<i class="tb-icon tb-icon-view-grid"/>
+								</a>
+								<a href="javascript:void(0);" id="display-mode-list" class="display-mode-btn list " title="List">
+									<i class="tb-icon tb-icon-view-list"/>
+								</a>
 							</div>
 						</div>
-						<div class="display-products products products-grid">
-							<div class="row" data-xlgdesktop="4" data-desktop="4" data-desktopsmall="4" data-tablet="3" data-landscape="3" data-mobile="2">
-								<div class="product type-product post-767 status-publish first instock product_cat-anti-fungal-anti-itch product_cat-sleep-aids product_tag-clinic product_tag-corona product_tag-functional-foods product_tag-medicine product_tag-vitamin has-post-thumbnail featured shipping-taxable purchasable product-type-simple">
-									<div class="product-block grid product v1" data-product-id="767">
-										<div class="product-top">
-											<span class="only-featured onsale">
-												<span class="featured">Hot</span>
-											</span>
-										</div>
-										<div class="product-content">
-											<div class="block-inner">
-												<figure class="image ">
-													<a title="Adant Meiji" href="https://elementor.thembay.com/diza_medicine/product/adant-meiji/" class="product-image">
-														<img width="280" height="280" src="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-21-280x280.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""></img>
-													</a>
-												</figure>
-												<div class="group-buttons">
-													<div class="button-wishlist shown-mobile" title="Wishlist">
-														<div class="yith-wcwl-add-to-wishlist add-to-wishlist-767  wishlist-fragment on-first-load" data-fragment-ref="767" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:767,&quot;parent_product_id&quot;:767,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}"><!-- ADD TO WISHLIST -->
-															<div class="yith-wcwl-add-button">
-																<a href="?add_to_wishlist=767" rel="nofollow" data-product-id="767" data-product-type="simple" data-original-product-id="767" class="add_to_wishlist single_add_to_wishlist" data-title="&lt;i class=&quot;tb-icon tb-icon-heart&quot;&gt;&lt;/i&gt;&lt;span&gt;Add to wishlist&lt;/span&gt;">
-																	<i class="yith-wcwl-icon fa fa-heart-o"/>
-																	<span>
-																		<i class="tb-icon tb-icon-heart"/>
-																		<span>Add to wishlist</span>
-																	</span>
-																</a>
-															</div><!-- COUNT TEXT -->
-														</div>
-													</div>
-													<div class="yith-compare">
-														<a href="/diza_medicine/?action=yith-woocompare-view-table&amp;iframe=yes" title="Compare" class="compare added" data-product_id="767" style="position: static; zoom: 1;">Added</a>
-													</div>
-													<div class="tbay-quick-view">
-														<a href="#" class="qview-button" title="Quick View" data-effect="mfp-move-from-top" data-product_id="767" data-toggle="modal" data-target="#tbay-quickview-modal">
-															<i class="tb-icon tb-icon-eye"/>
-															<span>Quick View</span>
-														</a>
-													</div>
-												</div>
-											</div>
-											<div class="caption">
-												<h3 class="name ">
-													<a href="https://elementor.thembay.com/diza_medicine/product/adant-meiji/">Adant Meiji</a>
-												</h3>
-												<ul class="show-brand">
-													<li>
-														<a href="https://elementor.thembay.com/diza_medicine/product-brands/devon-medical/">Devon Medical</a>
-													</li>
-												</ul>
-												<div class="rating ">
-													<div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-														<span style="width:100%">
-																																																											Rated
-																																																											<strong class="rating">5.00</strong>
-																																																											out of 5
-																																																										</span>
-													</div>
-													<div class="count">
-														<span>(2)</span>
-													</div>
-												</div>
-												<div class="price-wrapper">
-													<span class="price">
-														<span class="woocs_price_code" data-product-id="767">
-															<span class="woocommerce-Price-amount amount">
-																<bdi>
-																	<span class="woocommerce-Price-currencySymbol">$</span>
-																																																													50.00
-																																																												</bdi>
-															</span>
-														</span>
-													</span>
-												</div>
-												<div class="add-cart" title="Add to cart">
-													<a href="?add-to-cart=767" data-product_id="767" data-product_sku="MEGA-JEWE-12" data-quantity="1" class=" button product_type_simple add_to_cart_button ajax_add_to_cart product_type_simple">
-														<span class="title-cart">Add to cart</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product type-product post-734 status-publish instock product_cat-sleep-aids product_tag-aspirin product_tag-medical-instruments product_tag-vitamin has-post-thumbnail sale shipping-taxable purchasable product-type-simple">
-									<div class="product-block grid product v1" data-product-id="734">
-										<div class="product-top">
-											<span class="onsale">
-												<span class="saled">-9%</span>
-											</span>
-										</div>
-										<div class="product-content">
-											<div class="block-inner">
-												<figure class="image ">
-													<a title="Carbo TS" href="https://elementor.thembay.com/diza_medicine/product/carbo-ts/" class="product-image">
-														<img width="280" height="280" src="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-45-280x280.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""></img>
-													</a>
-												</figure>
-												<div class="group-buttons">
-													<div class="button-wishlist shown-mobile" title="Wishlist">
-														<div class="yith-wcwl-add-to-wishlist add-to-wishlist-734  wishlist-fragment on-first-load" data-fragment-ref="734" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:734,&quot;parent_product_id&quot;:734,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}"><!-- ADD TO WISHLIST -->
-															<div class="yith-wcwl-add-button">
-																<a href="?add_to_wishlist=734" rel="nofollow" data-product-id="734" data-product-type="simple" data-original-product-id="734" class="add_to_wishlist single_add_to_wishlist" data-title="&lt;i class=&quot;tb-icon tb-icon-heart&quot;&gt;&lt;/i&gt;&lt;span&gt;Add to wishlist&lt;/span&gt;">
-																	<i class="yith-wcwl-icon fa fa-heart-o"/>
-																	<span>
-																		<i class="tb-icon tb-icon-heart"/>
-																		<span>Add to wishlist</span>
-																	</span>
-																</a>
-															</div><!-- COUNT TEXT -->
-														</div>
-													</div>
-													<div class="yith-compare">
-														<a href="/diza_medicine/shop/?action=yith-woocompare-add-product&amp;id=734&amp;_wpnonce=14b59f1fec" title="Compare" class="compare" data-product_id="734">
-															<span>Compare</span>
-														</a>
-													</div>
-													<div class="tbay-quick-view">
-														<a href="#" class="qview-button" title="Quick View" data-effect="mfp-move-from-top" data-product_id="734" data-toggle="modal" data-target="#tbay-quickview-modal">
-															<i class="tb-icon tb-icon-eye"/>
-															<span>Quick View</span>
-														</a>
-													</div>
-												</div>
-											</div>
-											<div class="caption">
-												<h3 class="name ">
-													<a href="https://elementor.thembay.com/diza_medicine/product/carbo-ts/">Carbo TS</a>
-												</h3>
-												<ul class="show-brand">
-													<li>
-														<a href="https://elementor.thembay.com/diza_medicine/product-brands/3m-healthcare/">3M Healthcare</a>
-													</li>
-												</ul>
-												<div class="rating no-rate">
-													<div class="star-rating"></div>
-													<div class="count">(0)</div>
-												</div>
-												<div class="price-wrapper">
-													<span class="price">
-														<span class="woocs_price_code" data-product-id="734">
-															<ins>
-																<span class="woocommerce-Price-amount amount">
-																	<bdi>
-																		<span class="woocommerce-Price-currencySymbol">$</span>
-																																																															200.00
-																																																														</bdi>
-																</span>
-															</ins>
-															<del>
-																<span class="woocommerce-Price-amount amount">
-																	<bdi>
-																		<span class="woocommerce-Price-currencySymbol">$</span>
-																																																															220.00
-																																																														</bdi>
-																</span>
-															</del>
-														</span>
-													</span>
-												</div>
-												<div class="add-cart" title="Add to cart">
-													<a href="?add-to-cart=734" data-product_id="734" data-product_sku="MEGA-SHOE-117887" data-quantity="1" class=" button product_type_simple add_to_cart_button ajax_add_to_cart product_type_simple">
-														<span class="title-cart">Add to cart</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product type-product post-739 status-publish instock product_cat-sleep-aids product_tag-ear-piece product_tag-face-mask product_tag-functional-foods product_tag-the-scissors has-post-thumbnail shipping-taxable purchasable product-type-simple">
-									<div class="product-block grid product v1" data-product-id="739">
-										<div class="product-top"></div>
-										<div class="product-content">
-											<div class="block-inner">
-												<figure class="image ">
-													<a title="Ceteco Collagen Extra" href="https://elementor.thembay.com/diza_medicine/product/ceteco-collagen-extra/" class="product-image">
-														<img width="280" height="280" src="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-43-280x280.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""></img>
-													</a>
-												</figure>
-												<div class="group-buttons">
-													<div class="button-wishlist shown-mobile" title="Wishlist">
-														<div class="yith-wcwl-add-to-wishlist add-to-wishlist-739  wishlist-fragment on-first-load" data-fragment-ref="739" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:739,&quot;parent_product_id&quot;:739,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}"><!-- ADD TO WISHLIST -->
-															<div class="yith-wcwl-add-button">
-																<a href="?add_to_wishlist=739" rel="nofollow" data-product-id="739" data-product-type="simple" data-original-product-id="739" class="add_to_wishlist single_add_to_wishlist" data-title="&lt;i class=&quot;tb-icon tb-icon-heart&quot;&gt;&lt;/i&gt;&lt;span&gt;Add to wishlist&lt;/span&gt;">
-																	<i class="yith-wcwl-icon fa fa-heart-o"/>
-																	<span>
-																		<i class="tb-icon tb-icon-heart"/>
-																		<span>Add to wishlist</span>
-																	</span>
-																</a>
-															</div><!-- COUNT TEXT -->
-														</div>
-													</div>
-													<div class="yith-compare">
-														<a href="/diza_medicine/shop/?action=yith-woocompare-add-product&amp;id=739&amp;_wpnonce=14b59f1fec" title="Compare" class="compare" data-product_id="739">
-															<span>Compare</span>
-														</a>
-													</div>
-													<div class="tbay-quick-view">
-														<a href="#" class="qview-button" title="Quick View" data-effect="mfp-move-from-top" data-product_id="739" data-toggle="modal" data-target="#tbay-quickview-modal">
-															<i class="tb-icon tb-icon-eye"/>
-															<span>Quick View</span>
-														</a>
-													</div>
-												</div>
-											</div>
-											<div class="caption">
-												<h3 class="name ">
-													<a href="https://elementor.thembay.com/diza_medicine/product/ceteco-collagen-extra/">Ceteco Collagen Extra</a>
-												</h3>
-												<ul class="show-brand">
-													<li>
-														<a href="https://elementor.thembay.com/diza_medicine/product-brands/3m-healthcare/">3M Healthcare</a>
-													</li>
-												</ul>
-												<div class="rating ">
-													<div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-														<span style="width:100%">
-																																																													Rated
-																																																													<strong class="rating">5.00</strong>
-																																																													out of 5
-																																																												</span>
-													</div>
-													<div class="count">
-														<span>(1)</span>
-													</div>
-												</div>
-												<div class="price-wrapper">
-													<span class="price">
-														<span class="woocs_price_code" data-product-id="739">
-															<span class="woocommerce-Price-amount amount">
-																<bdi>
-																	<span class="woocommerce-Price-currencySymbol">$</span>
-																																																															40.00
-																																																														</bdi>
-															</span>
-														</span>
-													</span>
-												</div>
-												<div class="add-cart" title="Add to cart">
-													<a href="?add-to-cart=739" data-product_id="739" data-product_sku="MEGA-SHOE-037575" data-quantity="1" class=" button product_type_simple add_to_cart_button ajax_add_to_cart product_type_simple">
-														<span class="title-cart">Add to cart</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product type-product post-70 status-publish last instock product_cat-stomach-remedies product_tag-aspirin product_tag-corona product_tag-face-mask product_tag-medicine has-post-thumbnail shipping-taxable purchasable product-type-variable">
-									<div class="product-block grid product v1" data-product-id="70">
-										<div class="product-top"></div>
-										<div class="product-content">
-											<div class="block-inner">
-												<figure class="image ">
-													<a title="Chemotherapy Isolation" href="https://elementor.thembay.com/diza_medicine/product/chemotherapy-isolation/" class="product-image">
-														<img width="280" height="280" src="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-48-280x280.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""></img>
-													</a>
-												</figure>
-												<div class="group-buttons">
-													<div class="button-wishlist shown-mobile" title="Wishlist">
-														<div class="yith-wcwl-add-to-wishlist add-to-wishlist-70  wishlist-fragment on-first-load" data-fragment-ref="70" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:70,&quot;parent_product_id&quot;:70,&quot;product_type&quot;:&quot;variable&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}"><!-- ADD TO WISHLIST -->
-															<div class="yith-wcwl-add-button">
-																<a href="?add_to_wishlist=70" rel="nofollow" data-product-id="70" data-product-type="variable" data-original-product-id="70" class="add_to_wishlist single_add_to_wishlist" data-title="&lt;i class=&quot;tb-icon tb-icon-heart&quot;&gt;&lt;/i&gt;&lt;span&gt;Add to wishlist&lt;/span&gt;">
-																	<i class="yith-wcwl-icon fa fa-heart-o"/>
-																	<span>
-																		<i class="tb-icon tb-icon-heart"/>
-																		<span>Add to wishlist</span>
-																	</span>
-																</a>
-															</div><!-- COUNT TEXT -->
-														</div>
-													</div>
-													<div class="yith-compare">
-														<a href="/diza_medicine/shop/?action=yith-woocompare-add-product&amp;id=70&amp;_wpnonce=14b59f1fec" title="Compare" class="compare" data-product_id="70">
-															<span>Compare</span>
-														</a>
-													</div>
-													<div class="tbay-quick-view">
-														<a href="#" class="qview-button" title="Quick View" data-effect="mfp-move-from-top" data-product_id="70" data-toggle="modal" data-target="#tbay-quickview-modal">
-															<i class="tb-icon tb-icon-eye"/>
-															<span>Quick View</span>
-														</a>
-													</div>
-												</div>
-											</div>
-											<div class="caption">
-												<h3 class="name ">
-													<a href="https://elementor.thembay.com/diza_medicine/product/chemotherapy-isolation/">Chemotherapy Isolation</a>
-												</h3>
-												<ul class="show-brand">
-													<li>
-														<a href="https://elementor.thembay.com/diza_medicine/product-brands/3m-healthcare/">3M Healthcare</a>
-													</li>
-													<li>
-														<a href="https://elementor.thembay.com/diza_medicine/product-brands/medline/">Medline</a>
-													</li>
-												</ul>
-												<div class="rating ">
-													<div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-														<span style="width:100%">
-																																																														Rated
-																																																														<strong class="rating">5.00</strong>
-																																																														out of 5
-																																																													</span>
-													</div>
-													<div class="count">
-														<span>(1)</span>
-													</div>
-												</div>
-												<div class="price-wrapper">
-													<span class="price">
-														<span class="woocs_price_code" data-product-id="70">
-															<span class="woocommerce-Price-amount amount">
-																<bdi>
-																	<span class="woocommerce-Price-currencySymbol">$</span>
-																																																																105.00
-																																																															</bdi>
-															</span>
-																																																														–
-																																																														<span class="woocommerce-Price-amount amount">
-																<bdi>
-																	<span class="woocommerce-Price-currencySymbol">$</span>
-																																																																125.00
-																																																															</bdi>
-															</span>
-														</span>
-													</span>
-												</div>
-												<div class="add-cart" title="Select options">
-													<a href="https://elementor.thembay.com/diza_medicine/product/chemotherapy-isolation/" data-product_id="70" data-product_sku="MEGA-JEWE-124354342" data-quantity="1" class=" button product_type_variable add_to_cart_button product_type_variable">
-														<span class="title-cart">Select options</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product type-product post-718 status-publish first instock product_cat-cough-cold-allergy product_tag-clinic product_tag-corona product_tag-ear-piece product_tag-functional-foods product_tag-the-scissors product_tag-thermometer has-post-thumbnail shipping-taxable purchasable product-type-simple">
-									<div class="product-block grid product v1" data-product-id="718">
-										<div class="product-top"></div>
-										<div class="product-content">
-											<div class="block-inner">
-												<figure class="image ">
-													<a title="Constipation medication" href="https://elementor.thembay.com/diza_medicine/product/constipation-medication/" class="product-image">
-														<img width="280" height="280" src="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/07/product-57-280x280.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""></img>
-													</a>
-												</figure>
-												<div class="group-buttons">
-													<div class="button-wishlist shown-mobile" title="Wishlist">
-														<div class="yith-wcwl-add-to-wishlist add-to-wishlist-718  wishlist-fragment on-first-load" data-fragment-ref="718" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:718,&quot;parent_product_id&quot;:718,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}"><!-- ADD TO WISHLIST -->
-															<div class="yith-wcwl-add-button">
-																<a href="?add_to_wishlist=718" rel="nofollow" data-product-id="718" data-product-type="simple" data-original-product-id="718" class="add_to_wishlist single_add_to_wishlist" data-title="&lt;i class=&quot;tb-icon tb-icon-heart&quot;&gt;&lt;/i&gt;&lt;span&gt;Add to wishlist&lt;/span&gt;">
-																	<i class="yith-wcwl-icon fa fa-heart-o"/>
-																	<span>
-																		<i class="tb-icon tb-icon-heart"/>
-																		<span>Add to wishlist</span>
-																	</span>
-																</a>
-															</div><!-- COUNT TEXT -->
-														</div>
-													</div>
-													<div class="yith-compare">
-														<a href="/diza_medicine/shop/?action=yith-woocompare-add-product&amp;id=718&amp;_wpnonce=14b59f1fec" title="Compare" class="compare" data-product_id="718">
-															<span>Compare</span>
-														</a>
-													</div>
-													<div class="tbay-quick-view">
-														<a href="#" class="qview-button" title="Quick View" data-effect="mfp-move-from-top" data-product_id="718" data-toggle="modal" data-target="#tbay-quickview-modal">
-															<i class="tb-icon tb-icon-eye"/>
-															<span>Quick View</span>
-														</a>
-													</div>
-												</div>
-											</div>
-											<div class="caption">
-												<h3 class="name ">
-													<a href="https://elementor.thembay.com/diza_medicine/product/constipation-medication/">Constipation medication</a>
-												</h3>
-												<ul class="show-brand">
-													<li>
-														<a href="https://elementor.thembay.com/diza_medicine/product-brands/curad/">Curad</a>
-													</li>
-												</ul>
-												<div class="rating no-rate">
-													<div class="star-rating"></div>
-													<div class="count">(0)</div>
-												</div>
-												<div class="price-wrapper">
-													<span class="price">
-														<span class="woocs_price_code" data-product-id="718">
-															<span class="woocommerce-Price-amount amount">
-																<bdi>
-																	<span class="woocommerce-Price-currencySymbol">$</span>
-																																																																	122.00
-																																																																</bdi>
-															</span>
-														</span>
-													</span>
-												</div>
-												<div class="add-cart" title="Add to cart">
-													<a href="?add-to-cart=718" data-product_id="718" data-product_sku="MEGA-SHOE-0545345" data-quantity="1" class=" button product_type_simple add_to_cart_button ajax_add_to_cart product_type_simple">
-														<span class="title-cart">Add to cart</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product type-product post-740 status-publish instock product_cat-sleep-aids product_tag-chamber product_tag-clinic product_tag-the-scissors product_tag-vitamin has-post-thumbnail shipping-taxable purchasable product-type-simple">
-									<div class="product-block grid product v1" data-product-id="740">
-										<div class="product-top"></div>
-										<div class="product-content">
-											<div class="block-inner">
-												<figure class="image ">
-													<a title="Coveram Tab.5/10" href="https://elementor.thembay.com/diza_medicine/product/coveram-tab-5-10/" class="product-image">
-														<img width="280" height="280" src="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-43-280x280.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""></img>
-													</a>
-												</figure>
-												<div class="group-buttons">
-													<div class="button-wishlist shown-mobile" title="Wishlist">
-														<div class="yith-wcwl-add-to-wishlist add-to-wishlist-740  wishlist-fragment on-first-load" data-fragment-ref="740" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:740,&quot;parent_product_id&quot;:740,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}"><!-- ADD TO WISHLIST -->
-															<div class="yith-wcwl-add-button">
-																<a href="?add_to_wishlist=740" rel="nofollow" data-product-id="740" data-product-type="simple" data-original-product-id="740" class="add_to_wishlist single_add_to_wishlist" data-title="&lt;i class=&quot;tb-icon tb-icon-heart&quot;&gt;&lt;/i&gt;&lt;span&gt;Add to wishlist&lt;/span&gt;">
-																	<i class="yith-wcwl-icon fa fa-heart-o"/>
-																	<span>
-																		<i class="tb-icon tb-icon-heart"/>
-																		<span>Add to wishlist</span>
-																	</span>
-																</a>
-															</div><!-- COUNT TEXT -->
-														</div>
-													</div>
-													<div class="yith-compare">
-														<a href="/diza_medicine/?action=yith-woocompare-view-table&amp;iframe=yes" title="Compare" class="compare added" data-product_id="740" style="position: static; zoom: 1;">Added</a>
-													</div>
-													<div class="tbay-quick-view">
-														<a href="#" class="qview-button" title="Quick View" data-effect="mfp-move-from-top" data-product_id="740" data-toggle="modal" data-target="#tbay-quickview-modal">
-															<i class="tb-icon tb-icon-eye"/>
-															<span>Quick View</span>
-														</a>
-													</div>
-												</div>
-											</div>
-											<div class="caption">
-												<h3 class="name ">
-													<a href="https://elementor.thembay.com/diza_medicine/product/coveram-tab-5-10/">Coveram Tab.5/10</a>
-												</h3>
-												<ul class="show-brand">
-													<li>
-														<a href="https://elementor.thembay.com/diza_medicine/product-brands/medline/">Medline</a>
-													</li>
-												</ul>
-												<div class="rating no-rate">
-													<div class="star-rating"></div>
-													<div class="count">(0)</div>
-												</div>
-												<div class="price-wrapper">
-													<span class="price">
-														<span class="woocs_price_code" data-product-id="740">
-															<span class="woocommerce-Price-amount amount">
-																<bdi>
-																	<span class="woocommerce-Price-currencySymbol">$</span>
-																																																																		99.00
-																																																																	</bdi>
-															</span>
-														</span>
-													</span>
-												</div>
-												<div class="add-cart" title="Add to cart">
-													<a href="?add-to-cart=740" data-product_id="740" data-product_sku="MEGA-JEWE-7786" data-quantity="1" class=" button product_type_simple add_to_cart_button ajax_add_to_cart product_type_simple">
-														<span class="title-cart">Add to cart</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product type-product post-725 status-publish instock product_cat-cough-cold-allergy product_cat-stomach-remedies product_tag-bandages product_tag-chamber product_tag-clinic product_tag-ear-piece has-post-thumbnail sale featured shipping-taxable purchasable product-type-simple">
-									<div class="product-block grid product v1" data-product-id="725">
-										<div class="product-top">
-											<span class="onsale">
-												<span class="saled">-18%</span>
-												<span class="featured">Hot</span>
-											</span>
-										</div>
-										<div class="product-content">
-											<div class="block-inner">
-												<figure class="image ">
-													<a title="Cumar Gold Fast" href="https://elementor.thembay.com/diza_medicine/product/cumar-gold-fast/" class="product-image">
-														<img width="280" height="280" src="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/07/product-55-280x280.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""></img>
-													</a>
-												</figure>
-												<div class="group-buttons">
-													<div class="button-wishlist shown-mobile" title="Wishlist">
-														<div class="yith-wcwl-add-to-wishlist add-to-wishlist-725  wishlist-fragment on-first-load" data-fragment-ref="725" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:725,&quot;parent_product_id&quot;:725,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}"><!-- ADD TO WISHLIST -->
-															<div class="yith-wcwl-add-button">
-																<a href="?add_to_wishlist=725" rel="nofollow" data-product-id="725" data-product-type="simple" data-original-product-id="725" class="add_to_wishlist single_add_to_wishlist" data-title="&lt;i class=&quot;tb-icon tb-icon-heart&quot;&gt;&lt;/i&gt;&lt;span&gt;Add to wishlist&lt;/span&gt;">
-																	<i class="yith-wcwl-icon fa fa-heart-o"/>
-																	<span>
-																		<i class="tb-icon tb-icon-heart"/>
-																		<span>Add to wishlist</span>
-																	</span>
-																</a>
-															</div><!-- COUNT TEXT -->
-														</div>
-													</div>
-													<div class="yith-compare">
-														<a href="/diza_medicine/shop/?action=yith-woocompare-add-product&amp;id=725&amp;_wpnonce=14b59f1fec" title="Compare" class="compare" data-product_id="725">
-															<span>Compare</span>
-														</a>
-													</div>
-													<div class="tbay-quick-view">
-														<a href="#" class="qview-button" title="Quick View" data-effect="mfp-move-from-top" data-product_id="725" data-toggle="modal" data-target="#tbay-quickview-modal">
-															<i class="tb-icon tb-icon-eye"/>
-															<span>Quick View</span>
-														</a>
-													</div>
-												</div>
-											</div>
-											<div class="caption">
-												<h3 class="name ">
-													<a href="https://elementor.thembay.com/diza_medicine/product/cumar-gold-fast/">Cumar Gold Fast</a>
-												</h3>
-												<ul class="show-brand">
-													<li>
-														<a href="https://elementor.thembay.com/diza_medicine/product-brands/curad/">Curad</a>
-													</li>
-													<li>
-														<a href="https://elementor.thembay.com/diza_medicine/product-brands/protective-industrial/">Protective Industrial</a>
-													</li>
-												</ul>
-												<div class="rating ">
-													<div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-														<span style="width:100%">
-																																																																	Rated
-																																																																	<strong class="rating">5.00</strong>
-																																																																	out of 5
-																																																																</span>
-													</div>
-													<div class="count">
-														<span>(1)</span>
-													</div>
-												</div>
-												<div class="price-wrapper">
-													<span class="price">
-														<span class="woocs_price_code" data-product-id="725">
-															<ins>
-																<span class="woocommerce-Price-amount amount">
-																	<bdi>
-																		<span class="woocommerce-Price-currencySymbol">$</span>
-																																																																				41.00
-																																																																			</bdi>
-																</span>
-															</ins>
-															<del>
-																<span class="woocommerce-Price-amount amount">
-																	<bdi>
-																		<span class="woocommerce-Price-currencySymbol">$</span>
-																																																																				50.00
-																																																																			</bdi>
-																</span>
-															</del>
-														</span>
-													</span>
-												</div>
-												<div class="add-cart" title="Add to cart">
-													<a href="?add-to-cart=725" data-product_id="725" data-product_sku="MEGA-SHOE-064231" data-quantity="1" class=" button product_type_simple add_to_cart_button ajax_add_to_cart product_type_simple">
-														<span class="title-cart">Add to cart</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product type-product post-741 status-publish last instock product_cat-pain-fever-relief product_tag-face-mask product_tag-functional-foods product_tag-medicine has-post-thumbnail shipping-taxable purchasable product-type-simple">
-									<div class="product-block grid product v1" data-product-id="741">
-										<div class="product-top"></div>
-										<div class="product-content">
-											<div class="block-inner">
-												<figure class="image ">
-													<a title="Demoferidon" href="https://elementor.thembay.com/diza_medicine/product/demoferidon/" class="product-image">
-														<img width="280" height="280" src="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-41-280x280.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""></img>
-													</a>
-												</figure>
-												<div class="group-buttons">
-													<div class="button-wishlist shown-mobile" title="Wishlist">
-														<div class="yith-wcwl-add-to-wishlist add-to-wishlist-741  wishlist-fragment on-first-load" data-fragment-ref="741" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:741,&quot;parent_product_id&quot;:741,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}"><!-- ADD TO WISHLIST -->
-															<div class="yith-wcwl-add-button">
-																<a href="?add_to_wishlist=741" rel="nofollow" data-product-id="741" data-product-type="simple" data-original-product-id="741" class="add_to_wishlist single_add_to_wishlist" data-title="&lt;i class=&quot;tb-icon tb-icon-heart&quot;&gt;&lt;/i&gt;&lt;span&gt;Add to wishlist&lt;/span&gt;">
-																	<i class="yith-wcwl-icon fa fa-heart-o"/>
-																	<span>
-																		<i class="tb-icon tb-icon-heart"/>
-																		<span>Add to wishlist</span>
-																	</span>
-																</a>
-															</div><!-- COUNT TEXT -->
-														</div>
-													</div>
-													<div class="yith-compare">
-														<a href="/diza_medicine/shop/?action=yith-woocompare-add-product&amp;id=741&amp;_wpnonce=14b59f1fec" title="Compare" class="compare" data-product_id="741">
-															<span>Compare</span>
-														</a>
-													</div>
-													<div class="tbay-quick-view">
-														<a href="#" class="qview-button" title="Quick View" data-effect="mfp-move-from-top" data-product_id="741" data-toggle="modal" data-target="#tbay-quickview-modal">
-															<i class="tb-icon tb-icon-eye"/>
-															<span>Quick View</span>
-														</a>
-													</div>
-												</div>
-											</div>
-											<div class="caption">
-												<h3 class="name ">
-													<a href="https://elementor.thembay.com/diza_medicine/product/demoferidon/">Demoferidon</a>
-												</h3>
-												<ul class="show-brand">
-													<li>
-														<a href="https://elementor.thembay.com/diza_medicine/product-brands/devon-medical/">Devon Medical</a>
-													</li>
-												</ul>
-												<div class="rating no-rate">
-													<div class="star-rating"></div>
-													<div class="count">(0)</div>
-												</div>
-												<div class="price-wrapper">
-													<span class="price">
-														<span class="woocs_price_code" data-product-id="741">
-															<span class="woocommerce-Price-amount amount">
-																<bdi>
-																	<span class="woocommerce-Price-currencySymbol">$</span>
-																																																																				80.00
-																																																																			</bdi>
-															</span>
-														</span>
-													</span>
-												</div>
-												<div class="add-cart" title="Add to cart">
-													<a href="?add-to-cart=741" data-product_id="741" data-product_sku="MEGA-SHOE-058678" data-quantity="1" class=" button product_type_simple add_to_cart_button ajax_add_to_cart product_type_simple">
-														<span class="title-cart">Add to cart</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product type-product post-716 status-publish first instock product_cat-pain-fever-relief product_tag-corona product_tag-doctor product_tag-ear-piece product_tag-functional-foods product_tag-needle has-post-thumbnail shipping-taxable purchasable product-type-variable">
-									<div class="product-block grid product v1" data-product-id="716">
-										<div class="product-top"></div>
-										<div class="product-content">
-											<div class="block-inner">
-												<figure class="image ">
-													<a title="Deodorizing Nabifar" href="https://elementor.thembay.com/diza_medicine/product/deodorizing-nabifar/" class="product-image">
-														<img width="280" height="280" src="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/07/product-59-280x280.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""></img>
-													</a>
-												</figure>
-												<div class="group-buttons">
-													<div class="button-wishlist shown-mobile" title="Wishlist">
-														<div class="yith-wcwl-add-to-wishlist add-to-wishlist-716  wishlist-fragment on-first-load" data-fragment-ref="716" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:716,&quot;parent_product_id&quot;:716,&quot;product_type&quot;:&quot;variable&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}"><!-- ADD TO WISHLIST -->
-															<div class="yith-wcwl-add-button">
-																<a href="?add_to_wishlist=716" rel="nofollow" data-product-id="716" data-product-type="variable" data-original-product-id="716" class="add_to_wishlist single_add_to_wishlist" data-title="&lt;i class=&quot;tb-icon tb-icon-heart&quot;&gt;&lt;/i&gt;&lt;span&gt;Add to wishlist&lt;/span&gt;">
-																	<i class="yith-wcwl-icon fa fa-heart-o"/>
-																	<span>
-																		<i class="tb-icon tb-icon-heart"/>
-																		<span>Add to wishlist</span>
-																	</span>
-																</a>
-															</div><!-- COUNT TEXT -->
-														</div>
-													</div>
-													<div class="yith-compare">
-														<a href="/diza_medicine/shop/?action=yith-woocompare-add-product&amp;id=716&amp;_wpnonce=14b59f1fec" title="Compare" class="compare" data-product_id="716">
-															<span>Compare</span>
-														</a>
-													</div>
-													<div class="tbay-quick-view">
-														<a href="#" class="qview-button" title="Quick View" data-effect="mfp-move-from-top" data-product_id="716" data-toggle="modal" data-target="#tbay-quickview-modal">
-															<i class="tb-icon tb-icon-eye"/>
-															<span>Quick View</span>
-														</a>
-													</div>
-												</div>
-											</div>
-											<div class="caption">
-												<h3 class="name ">
-													<a href="https://elementor.thembay.com/diza_medicine/product/deodorizing-nabifar/">Deodorizing Nabifar</a>
-												</h3>
-												<ul class="show-brand">
-													<li>
-														<a href="https://elementor.thembay.com/diza_medicine/product-brands/posey-company/">Posey Company</a>
-													</li>
-												</ul>
-												<div class="rating no-rate">
-													<div class="star-rating"></div>
-													<div class="count">(0)</div>
-												</div>
-												<div class="price-wrapper">
-													<span class="price">
-														<span class="woocs_price_code" data-product-id="716">
-															<span class="woocommerce-Price-amount amount">
-																<bdi>
-																	<span class="woocommerce-Price-currencySymbol">$</span>
-																																																																					190.00
-																																																																				</bdi>
-															</span>
-																																																																			–
-																																																																			<span class="woocommerce-Price-amount amount">
-																<bdi>
-																	<span class="woocommerce-Price-currencySymbol">$</span>
-																																																																					210.00
-																																																																				</bdi>
-															</span>
-														</span>
-													</span>
-												</div>
-												<div class="add-cart" title="Select options">
-													<a href="https://elementor.thembay.com/diza_medicine/product/deodorizing-nabifar/" data-product_id="716" data-product_sku="MEGA-SHOE-0654345" data-quantity="1" class=" button product_type_variable add_to_cart_button product_type_variable">
-														<span class="title-cart">Select options</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product type-product post-731 status-publish instock product_cat-sleep-aids product_tag-ear-piece product_tag-functional-foods product_tag-vitamin has-post-thumbnail shipping-taxable purchasable product-type-simple">
-									<div class="product-block grid product v1" data-product-id="731">
-										<div class="product-top"></div>
-										<div class="product-content">
-											<div class="block-inner">
-												<figure class="image ">
-													<a title="Doctor Gout Box.12" href="https://elementor.thembay.com/diza_medicine/product/doctor-gout-box-12/" class="product-image">
-														<img width="280" height="280" src="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-50-280x280.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""></img>
-													</a>
-												</figure>
-												<div class="group-buttons">
-													<div class="button-wishlist shown-mobile" title="Wishlist">
-														<div class="yith-wcwl-add-to-wishlist add-to-wishlist-731  wishlist-fragment on-first-load" data-fragment-ref="731" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:731,&quot;parent_product_id&quot;:731,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}"><!-- ADD TO WISHLIST -->
-															<div class="yith-wcwl-add-button">
-																<a href="?add_to_wishlist=731" rel="nofollow" data-product-id="731" data-product-type="simple" data-original-product-id="731" class="add_to_wishlist single_add_to_wishlist" data-title="&lt;i class=&quot;tb-icon tb-icon-heart&quot;&gt;&lt;/i&gt;&lt;span&gt;Add to wishlist&lt;/span&gt;">
-																	<i class="yith-wcwl-icon fa fa-heart-o"/>
-																	<span>
-																		<i class="tb-icon tb-icon-heart"/>
-																		<span>Add to wishlist</span>
-																	</span>
-																</a>
-															</div><!-- COUNT TEXT -->
-														</div>
-													</div>
-													<div class="yith-compare">
-														<a href="/diza_medicine/shop/?action=yith-woocompare-add-product&amp;id=731&amp;_wpnonce=14b59f1fec" title="Compare" class="compare" data-product_id="731">
-															<span>Compare</span>
-														</a>
-													</div>
-													<div class="tbay-quick-view">
-														<a href="#" class="qview-button" title="Quick View" data-effect="mfp-move-from-top" data-product_id="731" data-toggle="modal" data-target="#tbay-quickview-modal">
-															<i class="tb-icon tb-icon-eye"/>
-															<span>Quick View</span>
-														</a>
-													</div>
-												</div>
-											</div>
-											<div class="caption">
-												<h3 class="name ">
-													<a href="https://elementor.thembay.com/diza_medicine/product/doctor-gout-box-12/">Doctor Gout Box.12</a>
-												</h3>
-												<ul class="show-brand">
-													<li>
-														<a href="https://elementor.thembay.com/diza_medicine/product-brands/posey-company/">Posey Company</a>
-													</li>
-												</ul>
-												<div class="rating ">
-													<div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
-														<span style="width:100%">
-																																																																				Rated
-																																																																				<strong class="rating">5.00</strong>
-																																																																				out of 5
-																																																																			</span>
-													</div>
-													<div class="count">
-														<span>(1)</span>
-													</div>
-												</div>
-												<div class="price-wrapper">
-													<span class="price">
-														<span class="woocs_price_code" data-product-id="731">
-															<span class="woocommerce-Price-amount amount">
-																<bdi>
-																	<span class="woocommerce-Price-currencySymbol">$</span>
-																																																																						180.00
-																																																																					</bdi>
-															</span>
-														</span>
-													</span>
-												</div>
-												<div class="add-cart" title="Add to cart">
-													<a href="?add-to-cart=731" data-product_id="731" data-product_sku="MEGA-SHOE-03868" data-quantity="1" class=" button product_type_simple add_to_cart_button ajax_add_to_cart product_type_simple">
-														<span class="title-cart">Add to cart</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product type-product post-63 status-publish instock product_cat-stomach-remedies product_tag-clinic product_tag-ear-piece product_tag-functional-foods has-post-thumbnail sale shipping-taxable product-type-grouped">
-									<div class="product-block grid product v1" data-product-id="63">
-										<div class="product-top">
-											<span class="onsale"/>
-										</div>
-										<div class="product-content">
-											<div class="block-inner">
-												<figure class="image ">
-													<a title="Double-Tread Toddler" href="https://elementor.thembay.com/diza_medicine/product/double-tread-toddler/" class="product-image">
-														<img width="280" height="280" src="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-51-280x280.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""></img>
-													</a>
-												</figure>
-												<div class="group-buttons">
-													<div class="button-wishlist shown-mobile" title="Wishlist">
-														<div class="yith-wcwl-add-to-wishlist add-to-wishlist-63  wishlist-fragment on-first-load" data-fragment-ref="63" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:63,&quot;parent_product_id&quot;:63,&quot;product_type&quot;:&quot;grouped&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}"><!-- ADD TO WISHLIST -->
-															<div class="yith-wcwl-add-button">
-																<a href="?add_to_wishlist=63" rel="nofollow" data-product-id="63" data-product-type="grouped" data-original-product-id="63" class="add_to_wishlist single_add_to_wishlist" data-title="&lt;i class=&quot;tb-icon tb-icon-heart&quot;&gt;&lt;/i&gt;&lt;span&gt;Add to wishlist&lt;/span&gt;">
-																	<i class="yith-wcwl-icon fa fa-heart-o"/>
-																	<span>
-																		<i class="tb-icon tb-icon-heart"/>
-																		<span>Add to wishlist</span>
-																	</span>
-																</a>
-															</div><!-- COUNT TEXT -->
-														</div>
-													</div>
-													<div class="yith-compare">
-														<a href="/diza_medicine/shop/?action=yith-woocompare-add-product&amp;id=63&amp;_wpnonce=14b59f1fec" title="Compare" class="compare" data-product_id="63">
-															<span>Compare</span>
-														</a>
-													</div>
-													<div class="tbay-quick-view">
-														<a href="#" class="qview-button" title="Quick View" data-effect="mfp-move-from-top" data-product_id="63" data-toggle="modal" data-target="#tbay-quickview-modal">
-															<i class="tb-icon tb-icon-eye"/>
-															<span>Quick View</span>
-														</a>
-													</div>
-												</div>
-											</div>
-											<div class="caption">
-												<h3 class="name ">
-													<a href="https://elementor.thembay.com/diza_medicine/product/double-tread-toddler/">Double-Tread Toddler</a>
-												</h3>
-												<ul class="show-brand">
-													<li>
-														<a href="https://elementor.thembay.com/diza_medicine/product-brands/curad/">Curad</a>
-													</li>
-												</ul>
-												<div class="rating no-rate">
-													<div class="star-rating"></div>
-													<div class="count">(0)</div>
-												</div>
-												<div class="price-wrapper">
-													<span class="price">
-														<span class="woocs_price_code" data-product-id="63">
-															<span class="woocommerce-Price-amount amount">
-																<bdi>
-																	<span class="woocommerce-Price-currencySymbol">$</span>
-																																																																							50.00
-																																																																						</bdi>
-															</span>
-																																																																					–
-																																																																					<span class="woocommerce-Price-amount amount">
-																<bdi>
-																	<span class="woocommerce-Price-currencySymbol">$</span>
-																																																																							200.00
-																																																																						</bdi>
-															</span>
-														</span>
-													</span>
-												</div>
-												<div class="add-cart" title="View products">
-													<a href="https://elementor.thembay.com/diza_medicine/product/double-tread-toddler/" data-product_id="63" data-product_sku="123456-HBDS" data-quantity="1" class=" button product_type_grouped product_type_grouped">
-														<span class="title-cart">View products</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="product type-product post-1637 status-publish last instock product_cat-pain-fever-relief product_tag-clinic product_tag-corona product_tag-functional-foods product_tag-medicine has-post-thumbnail featured shipping-taxable purchasable product-type-simple">
-									<div class="product-block grid product v1" data-product-id="1637">
-										<div class="product-top">
-											<span class="only-featured onsale">
-												<span class="featured">Hot</span>
-											</span>
-										</div>
-										<div class="product-content">
-											<div class="block-inner">
-												<figure class="image ">
-													<a title="Easy-Care Medical Uniforms" href="https://elementor.thembay.com/diza_medicine/product/easy-care-medical-uniforms/" class="product-image">
-														<img width="280" height="280" src="https://elementor.thembay.com/diza_medicine/wp-content/uploads/2020/06/product-17-280x280.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""></img>
-													</a>
-												</figure>
-												<div class="group-buttons">
-													<div class="button-wishlist shown-mobile" title="Wishlist">
-														<div class="yith-wcwl-add-to-wishlist add-to-wishlist-1637  wishlist-fragment on-first-load" data-fragment-ref="1637" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:1637,&quot;parent_product_id&quot;:1637,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}"><!-- ADD TO WISHLIST -->
-															<div class="yith-wcwl-add-button">
-																<a href="?add_to_wishlist=1637" rel="nofollow" data-product-id="1637" data-product-type="simple" data-original-product-id="1637" class="add_to_wishlist single_add_to_wishlist" data-title="&lt;i class=&quot;tb-icon tb-icon-heart&quot;&gt;&lt;/i&gt;&lt;span&gt;Add to wishlist&lt;/span&gt;">
-																	<i class="yith-wcwl-icon fa fa-heart-o"/>
-																	<span>
-																		<i class="tb-icon tb-icon-heart"/>
-																		<span>Add to wishlist</span>
-																	</span>
-																</a>
-															</div><!-- COUNT TEXT -->
-														</div>
-													</div>
-													<div class="yith-compare">
-														<a href="/diza_medicine/shop/?action=yith-woocompare-add-product&amp;id=1637&amp;_wpnonce=14b59f1fec" title="Compare" class="compare" data-product_id="1637">
-															<span>Compare</span>
-														</a>
-													</div>
-													<div class="tbay-quick-view">
-														<a href="#" class="qview-button" title="Quick View" data-effect="mfp-move-from-top" data-product_id="1637" data-toggle="modal" data-target="#tbay-quickview-modal">
-															<i class="tb-icon tb-icon-eye"/>
-															<span>Quick View</span>
-														</a>
-													</div>
-												</div>
-											</div>
-											<div class="caption">
-												<h3 class="name ">
-													<a href="https://elementor.thembay.com/diza_medicine/product/easy-care-medical-uniforms/">Easy-Care Medical Uniforms</a>
-												</h3>
-												<ul class="show-brand">
-													<li>
-														<a href="https://elementor.thembay.com/diza_medicine/product-brands/devon-medical/">Devon Medical</a>
-													</li>
-												</ul>
-												<div class="rating no-rate">
-													<div class="star-rating"></div>
-													<div class="count">(0)</div>
-												</div>
-												<div class="price-wrapper">
-													<span class="price">
-														<span class="woocs_price_code" data-product-id="1637">
-															<span class="woocommerce-Price-amount amount">
-																<bdi>
-																	<span class="woocommerce-Price-currencySymbol">$</span>
-																																																																								65.00
-																																																																							</bdi>
-															</span>
-														</span>
-													</span>
-												</div>
-												<div class="add-cart" title="Add to cart">
-													<a href="?add-to-cart=1637" data-product_id="1637" data-product_sku="MEGA-JEWE-12-1" data-quantity="1" class=" button product_type_simple add_to_cart_button ajax_add_to_cart product_type_simple">
-														<span class="title-cart">Add to cart</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="tbay-pagination woocommerce-pagination">
-							<ul class="page-numbers">
-								<li>
-									<span aria-current="page" class="page-numbers current">1</span>
-								</li>
-								<li>
-									<a class="page-numbers" href="https://elementor.thembay.com/diza_medicine/shop/page/2/">2</a>
-								</li>
-								<li>
-									<a class="page-numbers" href="https://elementor.thembay.com/diza_medicine/shop/page/3/">3</a>
-								</li>
-								<li>
-									<a class="next page-numbers" href="https://elementor.thembay.com/diza_medicine/shop/page/2/">
-										<i class="tb-icon tb-icon-chevron-right"/>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div><!-- .content -->
-				</div><!-- .row -->
-			</div><!-- container -->
-		</div><!-- main wrapper-->
-	</div>
+					</div>
+					<!--FIXME: replace with-->
+					<div class="tbay-pagination woocommerce-pagination">
+						<ul class="page-numbers" t-if="pager['page_count'] > 1">
+							<li t-attf-class="#{'hide' if pager['page']['num'] == 1 else ''}">
+								<a class="prev page-numbers" t-att-href=" pager['page_previous']['url'] if pager['page']['num'] != 1 else None">
+									<i class="tb-icon tb-icon-chevron-left"/>
+								</a>
+							</li>
+							<li t-foreach="pager['pages']" t-as="page">
+								<a t-attf-class="page-numbers #{'current' if page['num'] == pager['page']['num'] else ''}" t-att-href="page['url']" t-raw="page['num']" />
+							</li>
+							<li t-attf-class="#{'hide' if pager['page']['num'] == pager['page_count'] else ''}">
+								<a class="next page-numbers" t-att-href="pager['page_next']['url'] if pager['page']['num'] != pager['page_count'] else None" >
+									<i class="tb-icon tb-icon-chevron-right"/>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</xpath>
+		</data>
+		<data id="old_products_pager_top" inherit_id="website_sale.products" name="Old Product Pager top">
+			<xpath expr="//div[hasclass(&apos;products_pager&apos;)]" position="replace">
+				<div/>
+			</xpath>
+		</data>
+		<data id="old_products_categories_bottom" inherit_id="website_sale.products" name="Old Product pager bottom">
+			<xpath expr="//div[hasclass(&apos;products_pager&apos;)]" position="replace">
+				<div/>
+			</xpath>
+		</data>
+	</template>
+	<template id="diza_product_pagination" inherit_id="website_sale.products" name="Product Pager">
+		<data id="diza_product_pagination" inherit_id="website_sale.products" name="Top Products Filter">
+			<xpath expr="//div[@id=&apos;products_bottom_pagination&apos;]" position="after">
+				<div class="tbay-pagination woocommerce-pagination">
+					<ul class="page-numbers" t-if="pager['page_count'] > 1">
+						<li t-attf-class="#{'hide' if pager['page']['num'] == 1 else ''}">
+							<a class="prev page-numbers" t-att-href=" pager['page_previous']['url'] if pager['page']['num'] != 1 else None">
+								<i class="tb-icon tb-icon-chevron-left"/>
+							</a>
+						</li>
+						<li t-foreach="pager['pages']" t-as="page">
+							<a t-attf-class="page-numbers #{'current' if page['num'] == pager['page']['num'] else ''}" t-att-href="page['url']" t-raw="page['num']" />
+						</li>
+						<li t-attf-class="#{'hide' if pager['page']['num'] == pager['page_count'] else ''}">
+							<a class="next page-numbers" t-att-href="pager['page_next']['url'] if pager['page']['num'] != pager['page_count'] else None" >
+								<i class="tb-icon tb-icon-chevron-right"/>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</xpath>
+		</data>
 	</template>
 </odoo>

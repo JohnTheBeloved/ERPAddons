@@ -1,0 +1,69 @@
+<odoo>
+    <template id="cart_popover">
+        <div class="widget_shopping_cart_content">
+            <div class="mini_cart_content">
+                <div class="mini_cart_inner">
+                    <div class="mcart-border">
+                        <ul class="cart_list product_list_widget ">
+                            <li t-foreach="website_sale_order.website_order_line" t-as="line">
+                                <div class="product-image">
+                                    <a class="image" href="https://elementor.thembay.com/diza_medicine/product/adant-meiji/">
+                                        <span t-field="line.product_id.image_small" t-options="{'widget': 'image', 'class': 'rounded'}" />
+                                    </a>
+                                </div>
+                                <div class="product-details">
+                                    <a class="product-name" href="https://elementor.thembay.com/diza_medicine/product/adant-meiji/">
+                                        <span t-esc="line.name_short"/>
+                                    </a>
+                                    <div class="group">
+                                        <span class="quantity">
+                                            <t t-esc="int(line.product_uom_qty) == line.product_uom_qty and int(line.product_uom_qty) or line.product_uom_qty" />
+                                            x
+                                        </span>
+                                        <span class="woocs_special_price_code">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <bdi t-att-data-precision="str(website.currency_id.decimal_places)">
+                                                    <span t-field="line.price_reduce_taxexcl" style="white-space: nowrap;" t-options="{'widget': 'monetary', 'display_currency': website_sale_order.currency_id}" groups="account.group_show_line_subtotals_tax_excluded" />
+                                                    <!-- <span t-field="product.list_price"
+                                                        t-options='{"widget": "monetary", "display_currency": product.currency_id}'/> -->
+                                                </bdi>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <a href="#remove" class="remove remove_from_cart_button" aria-label="Remove this item" data-product_id="767" data-product_sku="MEGA-JEWE-12" data-cart_item_key="f2201f5191c4e92cc5af043eebfd0946">
+                                        <i class="tb-icon tb-icon-trash"/>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- end product list -->
+                        <div class="group-button">
+                            <p class="total">
+                                <strong>Subtotal:</strong>
+                                <span class="woocs_special_price_code">
+                                    <span class="woocommerce-Price-amount amount">
+                                        <bdi>
+                                            <span t-field="website_sale_order.amount_total" style="white-space: nowrap;" t-options='{
+                                                "widget": "monetary",
+                                                "display_currency": website_sale_order.currency_id,
+                                            }'/>
+                                        </bdi>
+                                    </span>
+                                </span>
+                            </p>
+                            <p class="buttons">
+                                <a href="/shop/cart" class="button view-cart">
+                                    View Cart (
+                                    <t t-esc="website_sale_order.cart_quantity" />
+                                    items)
+                                </a>
+                                <a href="/shop/payment" class="button checkout">Checkout</a>
+                            </p>
+                        </div>
+                        <div class="clearfix"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</odoo>

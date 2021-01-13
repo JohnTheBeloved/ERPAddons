@@ -5,6 +5,7 @@
             <script type="text/javascript" src="/website_diza/static/src/js/diza_wish_list.js"></script>
             <script type="text/javascript" src="/website_diza/static/src/js/diza_chatter.js"></script>
             <script type="text/javascript" src="/website_diza/static/src/js/diza_cart.js"></script>
+            <script type="text/javascript" src="/website_diza/static/src/js/diza_search.js"></script>
         </xpath>
     </template>
 </odoo>
